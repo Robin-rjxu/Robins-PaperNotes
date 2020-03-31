@@ -1,14 +1,20 @@
 ---
-title: introduction
-toc: true
-date: 2020-03-30 14:40:58
+title: 这里是 Robin 的论文阅读笔记
+toc: false
 tags:
+  - notes
+abbrlink: 21345
+date: 2020-03-30 14:40:58
 ---
 
+## 写在笔记的最初
 
+2020年是非常特殊的一年，无论是世界发生的太多出乎意料，自身一段异国修行的经历，还是内心对未来期许的变化。
 
+过去几十年的时间内心有太多的疑问，迷茫，都在这个契机里需要找寻出口。
 
+希望通过一系列笔记的整理与展开，我能找到自我认知的立足点。
 
-## References
-> - []()
-> - []()
+此为序。
+
+![Silicon-Feature](https://i.loli.net/2020/03/31/R27crb6NTI9xnmJ.jpg) \
