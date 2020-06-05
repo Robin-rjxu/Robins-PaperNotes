@@ -1,6 +1,5 @@
 ---
-title: >-
-  JSSC-2020 An Energy-Efficient Comparator With Dynamic Floating Inverter
+title: JSSC-2020 An Energy-Efficient Comparator With Dynamic Floating Inverter
   Amplifier
 toc: true
 tags:
