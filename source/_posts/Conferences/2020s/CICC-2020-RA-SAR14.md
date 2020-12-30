@@ -1,12 +1,15 @@
 ---
-title: CICC-2020 A 72.6 dB SNDR 14b 100 MSPS Ring Amplifier Based Pipelined SAR ADC with Dynamic Deadzone Control in 16 nm CMOS
+title: >-
+  CICC-2020 A 72.6 dB SNDR 14b 100 MSPS Ring Amplifier Based Pipelined SAR ADC
+  with Dynamic Deadzone Control in 16 nm CMOS
 toc: true
-date: 2020-12-29 21:18:41
 tags:
-    - ADC
-    - CICC
-    - 2020
-    - TSMC
+  - ADC
+  - CICC
+  - 2020
+  - TSMC
+abbrlink: 44870
+date: 2020-12-29 21:18:41
 ---
 
 ![Keypoints](https://api2.mubu.com/v3/document_image/67e0dee3-2cc1-4b1c-8f67-23139fb25995-216525.jpg) \
@@ -63,10 +66,10 @@ M. Kinyua and E. Soenen, "**A 72.6 dB SNDR 14b 100 MSPS Ring Amplifier Based Pip
 - **FOM_W** 7.2 fJ/conv.-step
 
 ## Important Reference
->
->typical ring amplifier
+>*typical ring amplifier* 
+> 
 >- [3] Y. Lim, and M. Flynn, “A 100 MS/s, 10.5 Bit, 2.46 mW Comparator-Less Pipeline ADC Using Self-Biased Ring Amplifiers,” IEEE J. Solid-State Circuits, vol. 50, no. 10, pp. 2331–2341, Oct. 2015. \
->
->fully-differential input stage, high Vth in the second and third stages
->
+> 
+>*fully-differential input stage, high Vth in the second and third stages*
+> 
 >- [4] Y. Lim, and M. Flynn, “A 1 mW 71.5 dB SNDR 50 MS/s 13 bit Fully Differential Ring Amplifier Based SAR-Assisted Pipeline ADC,” IEEE J. Solid-State Circuits, vol. 50, no. 12, pp. 2901–2911, Dec. 2015. \
