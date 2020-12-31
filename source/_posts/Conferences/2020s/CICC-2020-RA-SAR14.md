@@ -17,7 +17,7 @@ date: 2020-12-29 21:18:41
 ##### Full Citation
 
 M. Kinyua and E. Soenen, "**A 72.6 dB SNDR 14b 100 MSPS Ring Amplifier Based Pipelined SAR ADC with Dynamic Deadzone Control in 16 nm CMOS**," 2020 IEEE Custom Integrated Circuits Conference (CICC), Boston, MA, USA, 2020, pp. 1-4, doi: 10.1109/CICC48029.2020.9075921.
-![IEEE Link]https://ieeexplore.ieee.org/document/9075921 \
+[IEEE Link]https://ieeexplore.ieee.org/document/9075921 \
 
 ## Keypoints
 
