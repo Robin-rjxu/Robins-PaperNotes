@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Robin&#39;s Paper Reading Notes</title>
+  
+  <subtitle>Focus and summarize</subtitle>
+  <link href="https://papers.robin-ic.fun/atom.xml" rel="self"/>
+  
+  <link href="https://papers.robin-ic.fun/"/>
+  <updated>2021-02-01T12:25:51.182Z</updated>
+  <id>https://papers.robin-ic.fun/</id>
+  
+  <author>
+    <name>Robin-rjxu</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JSSC-2020 An 8-Bit 1-GS/s Asynchronous Loop-Unrolled SAR-Flash ADC With Complementary Dynamic Amplifiers in 28-nm CMOS</title>
+    <link href="https://papers.robin-ic.fun/papers/34595/"/>
+    <id>https://papers.robin-ic.fun/papers/34595/</id>
+    <published>2021-02-01T12:14:14.000Z</published>
+    <updated>2021-02-01T12:25:51.182Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://api2.mubu.com/v3/document_image/3081f7cd-7998-4ad1-b8e5-f5ec18a88ea3-216525.jpg" alt="keypoints" /><br /></p><h5 id="full-citation">Full Citation</h5><p>D. -R. Oh, K. -J. Moon, W. -M. Lim, Y. -D. Kim, E. -J. An and S. -T. Ryu, "<strong>An 8-Bit 1-GS/s Asynchronous Loop-Unrolled SAR-Flash ADC With Complementary Dynamic Amplifiers in 28-nm CMOS</strong>," in IEEE Journal of Solid-State Circuits, doi: 10.1109/JSSC.2020.3044624.</p><p><a href="https://ieeexplore.ieee.org/document/9311408">IEEE Link</a><br /></p><h2 id="keypoints">Keypoints</h2><ul><li>hybrid ADC: LU-SAR + flash<ul><li>preamplifier shared by the LU-SAR and Interpolating-flash</li><li>complementary dynamic amplifier (CDA)</li><li>interpolation by 8 with embedded references</li><li>further shoot-through and unwanted latching</li><li>foreground offset and mismatch calibration</li></ul></li></ul><h2 id="background">Background</h2><ul><li>high-speed medium resolution ADC<ul><li>SAR<ul><li>POSs: compactness, power efficiency; NEGs: limited speed</li><li>loop-unrolled (LU) : eliminate delay of logic and comparator reset</li></ul></li><li>flash<ul><li>fastest speed; hardware overhead</li><li>dynamic interpolation<ul><li>NEGs: limited linearity</li></ul></li></ul></li></ul></li></ul><h2 id="details">Details</h2><ul><li>compare with conventional DA and time-domian I-Flash AD<ul><li>CDA: amplify when both charge and discharge, reuse the charge, no reset phase</li><li>time-domain interpolation: multiple reference voltages</li></ul></li><li>4-BIT hybrid SAR + 4.5-bit I-Flash ADC, 5 cycles<ul><li>P-input: charging, for SAR; N-input: discharging, for I-Flash</li><li>8x interpolation, only 4 CDAs</li></ul></li><li>circuits<ul><li>modified CDA<ul><li>reduce kickback: stack transistors</li><li>eliminate memory effect: switches'</li><li>offset calibration: current cells</li></ul></li><li>embedded references<ul><li>CDA input size-mismatch ratio m:n</li><li>offset calibration</li></ul></li><li>power: reduce shoot-through current(STP) and unwanted latching</li></ul></li></ul><p><img src="https://api2.mubu.com/v3/document_image/18ae0b14-2117-4ca5-9efc-af14b2b5649e-216525.jpg" alt="block diagram" /><br /></p><p><img src="https://api2.mubu.com/v3/document_image/5ff94b46-2e9a-4a70-b491-bdbbdef5d5b1-216525.jpg" alt="CDA" /><br /></p><h2 id="conclusion">Conclusion</h2><ul><li><strong>TECH</strong> 28nm<br /></li><li><strong>RES</strong> 8-bit<br /></li><li><strong>SAMPLING RATE</strong> 1GS/s  </li><li><strong>POWER</strong> 2.55 mW@1.1V<br /></li><li><strong>DNL</strong> 0.59 LSB<br /></li><li><strong>INL</strong> 0.82 LSB<br /></li><li><strong>SFDR</strong> 59.4 dB<br /></li><li><strong>SNDR</strong> 45.5 dB<br /></li><li><strong>ENOB</strong> 7.26<br /></li><li><strong>FOM_W</strong> 16.6 fJ/conv.-step<br /></li></ul><h2 id="important-reference">Important Reference</h2><blockquote><p><em>conference paper</em></p><ul><li>[14] D.-R. Oh, K.-J. Moon, W.-M. Lim, Y.-D. Kim, E.-J. An, and S.-T. Ryu, “An 8b 1GS/s 2.55 mW SAR-flash ADC with complementary dynamic amplifiers,” in Proc. IEEE Symp. VLSI Circuits, Jun. 2020, pp. 1–2.<br /></li></ul><p><em>time-domain interpolating</em></p><ul><li>[12] D.-R. Oh, J.-I. Kim, D.-S. Jo, W.-C. Kim, D.-J. Chang, and S.-T. Ryu, “A 65-nm CMOS 6-bit 2.5-GS/s 7.5-mW 8× time-domain interpolating flash ADC with sequential slope-matching offset calibration,” IEEE J. Solid-State Circuits, vol. 54, no. 1, pp. 288–297, Jan. 2019.<br /></li></ul><p><em>DA and CDA</em></p><ul><li>[15] D.-R. Oh, D.-S. Jo, K.-J. Moon, Y.-J. Roh, and S.-T. Ryu, “Powerefficient flash ADC with complementary voltage-to-time converter,” Electron. Lett., vol. 53, no. 12, pp. 772–773, Jun. 2017.<br /></li><li>[16] Q. Fan, R. Zhang, P. Bikkina, E. Mikkola, and J. Chen, “A 500 MS/s 10-bit single-channel SAR ADC with a double-rate comparator,” in Proc. ESSCIRC—IEEE 45th Eur. Solid State Circuits Conf. (ESSCIRC), Sep. 2019, pp. 193–196.<br /></li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://api2.mubu.com/v3/document_image/3081f7cd-7998-4ad1-b8e5-f5ec18a88ea3-216525.jpg&quot; alt=&quot;keypoints&quot; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h5 id=&quot;</summary>
+      
+    
+    
+    
+    <category term="JSSC" scheme="https://papers.robin-ic.fun/categories/JSSC/"/>
+    
+    <category term="2020" scheme="https://papers.robin-ic.fun/categories/JSSC/2020/"/>
+    
+    
+    <category term="2020" scheme="https://papers.robin-ic.fun/tags/2020/"/>
+    
+    <category term="ADC" scheme="https://papers.robin-ic.fun/tags/ADC/"/>
+    
+    <category term="KAIST" scheme="https://papers.robin-ic.fun/tags/KAIST/"/>
+    
+    <category term="JSSC" scheme="https://papers.robin-ic.fun/tags/JSSC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CICC-2020 A 77.1-dB 6.25-MHz-BW Pipeline SAR ADC with Enhanced Interstage Gain Error Shaping and Quantization Error Shaping</title>
+    <link href="https://papers.robin-ic.fun/papers/26608/"/>
+    <id>https://papers.robin-ic.fun/papers/26608/</id>
+    <published>2021-01-01T08:27:22.000Z</published>
+    <updated>2021-02-01T12:25:51.178Z</updated>
+    
+    <content type="html"><![CDATA[<figure><img src="https://api2.mubu.com/v3/document_image/c7d5a9ff-6292-4809-bbeb-77a37fb23a1f-216525.jpg" alt="" /><figcaption>keypoints</figcaption></figure><h5 id="full-citation"><strong>Full Citation</strong></h5><p>C. Hsu et al., "<strong>A 77.1-dB 6.25-MHz-BW Pipeline SAR ADC with Enhanced Interstage Gain Error Shaping and Quantization Error Shaping</strong>," 2020 IEEE Custom Integrated Circuits Conference (CICC), Boston, MA, USA, 2020, pp. 1-4, doi: 10.1109/CICC48029.2020.9075905.</p><p><a href="https://ieeexplore.ieee.org/document/9075905">IEEE Link</a><br /></p><h2 id="keypoints">Keypoints</h2><ul><li>digital error feedback<ul><li>shape the truncation error</li><li>all in digital domain</li><li>extend interstage gain error tolerance</li></ul></li><li>passive quantization error shaping<ul><li>reduce the ratio comparator</li><li>passive residual gain 2x</li><li>interstage gain 32x<ul><li>dynamic amplifier 4x</li><li>reference scaling 8x</li></ul></li></ul></li></ul><h2 id="background">Background</h2><ul><li>increase accuracy of the interstage gain<ul><li>minimization<ul><li>closed loop OTA: high power, unfriendly to scaling</li><li>CDS, CLS: extra clock phase, reduce settling time</li><li>digital amplifier: require low noise/offset comparator</li></ul></li><li>correction<ul><li>foreground calibration: interrupt normal operation</li><li>background calibration: constrain on the input signal, long converge time</li><li>interstage gain error shaping (GES): limited error tolerance due to truncation error</li></ul></li></ul></li><li>prior GES scheme<ul><li>principle<ul><li>substract quantized Q1_tr before amplifier</li><li>add it back at the output of the amplifier</li><li>error is high-pass shaped</li></ul></li><li>limits<ul><li>scaling gain from capacitance ratio</li><li>large mismatch error</li></ul></li></ul></li></ul><h2 id="details">Details</h2><ul><li>digital error feedback, DEF<ul><li>truncates the result of D2 subtracted by the output of Htr(z)</li><li>the truncation error is also high-pass shaped</li><li>solely in the digital domain</li></ul></li><li>passive noise shaping<ul><li>back-to-back 2 CRES to an voltage gain of 2<ul><li>reduce the ratio of comparator, power and noise</li></ul></li><li>2 CINT to perform passive integration</li><li>NTF = 1 - 0.75z^-1 by CIN/CRES=3</li><li>residue amplifier<ul><li>attentues KT/C noise</li><li>smaller CRES/CINT</li></ul></li></ul></li><li>2-stage pipelined SAR ADC<ul><li>7+6 (2b redundancy)</li><li>G=32<ul><li>4x dynamic amplifier</li><li>8x reference scaling</li></ul></li><li>2nd-order GES</li><li>GES DAC is 1/16 SAR DAC1</li></ul></li></ul><p><img src="https://api2.mubu.com/v3/document_image/f9e18c58-7e88-472f-97cd-3c10d3c131f1-216525.jpg" alt="proposed GES+DEF" /><br /></p><p><img src="https://api2.mubu.com/v3/document_image/7dc6f02d-b38e-4060-81a2-b2480e7c5f24-216525.jpg" alt="proposed noise shaping" /><br /></p><h2 id="conclusion">Conclusion</h2><ul><li><strong>TECH</strong> 40 nm<br /></li><li><strong>RES</strong> 11-bit<br /></li><li><strong>SAMPLING RATE</strong> 100MS/s<br /></li><li><strong>BW</strong> 6.25 MHz<br /></li><li><strong>POWER</strong> 1.38 mW@1.0V<br /></li><li><strong>SNDR</strong> 77.1 dB<br /></li><li><strong>FOM_S</strong> 173.7<br /></li></ul><h2 id="ortant-reference">ortant Reference</h2><blockquote><p><em>correlated double sampling, CDS</em></p><ul><li>[1] K. Nagaraj et al., “Switched-capacitor circuits with reduced sensitivity to amplifier gain,” IEEE Transactions on Circuits and Systems, vol. 34, 50 no. 5, pp. 571–574, May 1987.<br /></li></ul><p><em>correlated level shifting, CLS</em></p><ul><li>[2] B. R. Gregoire et al., “An Over-60 dB True Rail-to-Rail Performance Using Correlated Level Shifting and an Opamp With Only 30 dB Loop Gain,” IEEE Journal of Solid-State Circuits, vol. 43, no. 12, pp. 2620– 2630, Dec 2008.<br /></li></ul><p><em>digital amplifier</em></p><ul><li>[3] K. Yoshioka et al., “28.7 A 0.7V 12b 160MS/s 12.8fJ/conv-step pipelined-SAR ADC in 28nm CMOS with digital amplifier technique,” in 2017 IEEE International Solid-State Circuits Conference (ISSCC), Feb 2017, pp. 478–479.<br /></li></ul><p><em>foreground calibration</em></p><ul><li>[4] D.-Y. Chang et al., “Radix-based digital calibration techniques for multistage recycling pipelined ADCs,” IEEE Transactions on Circuits and Systems I: Regular Papers, vol. 51, no. 11, pp. 2133–2140, Nov 2004.<br /></li></ul><p><em>background calibration</em></p><ul><li>[5] Y. Zhou et al., “A 12 bit 160 MS/s Two-Step SAR ADC With Background Bit-Weight Calibration Using a Time-Domain Proximity Detector,” IEEE Journal of Solid-State Circuits, vol. 50, no. 4, pp. 920– 931, April 2015.<br /></li></ul><p><em>interstage gain error shaping (GES)</em></p><ul><li>[6]C.-K. Hsu et al., “A 75.8dB-SNDR Pipeline SAR ADC with 2nd-order Interstage Gain Error Shaping,” in 2019 Symposium on VLSI Circuits, June 2019, pp. C68–C69.<br /></li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;figure&gt;
+&lt;img src=&quot;https://api2.mubu.com/v3/document_image/c7d5a9ff-6292-4809-bbeb-77a37fb23a1f-216525.jpg&quot; alt=&quot;&quot; /&gt;&lt;figcaption&gt;keypoints&lt;/</summary>
+      
+    
+    
+    
+    <category term="Conferences" scheme="https://papers.robin-ic.fun/categories/Conferences/"/>
+    
+    <category term="2020s" scheme="https://papers.robin-ic.fun/categories/Conferences/2020s/"/>
+    
+    
+    <category term="CICC" scheme="https://papers.robin-ic.fun/tags/CICC/"/>
+    
+    <category term="2020" scheme="https://papers.robin-ic.fun/tags/2020/"/>
+    
+    <category term="ADC" scheme="https://papers.robin-ic.fun/tags/ADC/"/>
+    
+    <category term="UTAustin" scheme="https://papers.robin-ic.fun/tags/UTAustin/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CICC-2020 A 0.5V-to-0.9V 0.2GHz-to-5GHz Ultra-Low-Power Digitally-Assisted Analog Ring PLL with Less Than 200ns Lock Time in 22nm FinFET CMOS Technology</title>
+    <link href="https://papers.robin-ic.fun/papers/23879/"/>
+    <id>https://papers.robin-ic.fun/papers/23879/</id>
+    <published>2021-01-01T08:17:45.000Z</published>
+    <updated>2021-02-01T12:25:51.178Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://api2.mubu.com/v3/document_image/ab546327-2a7e-42bc-aa5c-a98fb4672596-216525.jpg" alt="keypoints" /><br /></p><h5 id="full-citation">Full Citation</h5><p>B. Xiang, Y. Fan, J. Ayers, J. Shen and D. Zhang, "<strong>A 0.5V-to-0.9V 0.2GHz-to-5GHz Ultra-Low-Power Digitally-Assisted Analog Ring PLL with Less Than 200ns Lock Time in 22nm FinFET CMOS Technology</strong>," 2020 IEEE Custom Integrated Circuits Conference (CICC), Boston, MA, USA, 2020, pp. 1-4, doi: 10.1109/CICC48029.2020.9075897. <a href="https://ieeexplore.ieee.org/document/9075897">IEEE Link</a><br /></p><h2 id="keypoints">Keypoints</h2><ul><li>analog charge pump based loop<ul><li>tunable switched capacitor loop filter</li><li>power gated charge pump bias</li></ul></li><li>RO<ul><li>V-F linearization by source degeneration</li><li>VCO startup circuit</li></ul></li></ul><h2 id="background">Background</h2><ul><li>maximum energy efficiency for SOC and IoT: ring oscillator<ul><li>wide voltage/frequency range</li><li>rapid wake up</li><li>compact area</li></ul></li></ul><h2 id="details">Details</h2><ul><li>tunable switched capacitor loop filter<ul><li>proportional capacitor Cp1/Cp2 + integral capacitor C1</li><li>swcaps act as a effective resistance<ul><li>require no precision resistor</li></ul></li><li>swap capacitor top/bottom plate to cancel out proportional volatge<ul><li>require no reset voltage</li></ul></li><li>split into charge pump and reset events to two phases<ul><li>reduce large ripple</li><li>maintain proportional voltage for only half cycle</li><li>smaller Cp</li></ul></li><li>tunable Cp banks<ul><li>support different reference clock</li></ul></li></ul></li><li>VCO startup circuit<ul><li>reset VCTL0 to VCC when the VCO is turned off</li><li>start pulling down VCTL0</li><li>TIMER cnt</li><li>turn on charge pump bias</li></ul></li></ul><p><img src="https://api2.mubu.com/v3/document_image/b67f38be-4cd3-4491-9998-841e1a22fd99-216525.jpg" alt="tunable switched capacitor loop filter" /><br /></p><h2 id="conclusion">Conclusion</h2><ul><li><strong>TECH</strong> 22nm<br /></li><li><strong>REF</strong> 20~200 MHz<br /></li><li><strong>OUT</strong> 0.2~5 GHz<br /></li><li><strong>POWER</strong> 0.628 mW @ 0.8 V, 3.2GHz<br /></li><li><strong>RMS JITTER</strong> 2.3 ps<br /></li><li><strong>FOM</strong> -234.4 dB<br /></li></ul><h2 id="important-reference">Important Reference</h2><blockquote><p><em>sample-reset loop filter (SR-LPF)</em></p><ul><li><p>[4] Y. Fan, et al, “Digital Leakage Compensation for a Low-Power and Low Jitter 0.5-to-5GHz PLL in 10nm FinFET CMOS Technology”, ISSCC, pp. 320-321, Feb. 2019.<br /></p></li><li><p>[5] K. Shen, et al, “A 0.17-to-3.5mW 0.15-to-5GHz SoC PLL with 15dB Build-In Supply Noise Rejection and Self-Bandwidth Control in 14nm CMOS”, ISSCC, pp. 330-331, Feb. 2016.<br /></p></li></ul><p><em>switched capacitor loop filter (SC-LPF)</em></p><ul><li>[10] H. Lee, et al, “A Scalable Sub-1.2mW 300MHz-to-1.5GHz Host-Clock PLL for System-on-Chip in 32nm CMOS”, ISSCC, pp. 96-97, Feb. 2011.<br /></li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://api2.mubu.com/v3/document_image/ab546327-2a7e-42bc-aa5c-a98fb4672596-216525.jpg&quot; alt=&quot;keypoints&quot; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h5 id=&quot;</summary>
+      
+    
+    
+    
+    <category term="Conferences" scheme="https://papers.robin-ic.fun/categories/Conferences/"/>
+    
+    <category term="2020s" scheme="https://papers.robin-ic.fun/categories/Conferences/2020s/"/>
+    
+    
+    <category term="PLL" scheme="https://papers.robin-ic.fun/tags/PLL/"/>
+    
+    <category term="CICC" scheme="https://papers.robin-ic.fun/tags/CICC/"/>
+    
+    <category term="2020" scheme="https://papers.robin-ic.fun/tags/2020/"/>
+    
+    <category term="Intel" scheme="https://papers.robin-ic.fun/tags/Intel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CICC-2020 A 0.55mW Fractional-N PLL with a DC-DC Powered Class-D VCO Achieving Better than -66dBc Fractional and Reference Spurs for NB-IoT</title>
+    <link href="https://papers.robin-ic.fun/papers/48962/"/>
+    <id>https://papers.robin-ic.fun/papers/48962/</id>
+    <published>2020-12-31T05:30:32.000Z</published>
+    <updated>2021-02-01T12:25:51.178Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://api2.mubu.com/v3/document_image/dc00fe77-6752-4d06-9405-6926853fe738-216525.jpg" alt="Keypoints" /><br /></p><h5 id="full-citation">Full Citation</h5><p>H. R. Kooshkaki and P. P. Mercier, "<strong>A 0.55mW Fractional-N PLL with a DC-DC Powered Class-D VCO Achieving Better than -66dBc Fractional and Reference Spurs for NB-IoT</strong>," 2020 IEEE Custom Integrated Circuits Conference (CICC), Boston, MA, USA, 2020, pp. 1-4, doi: 10.1109/CICC48029.2020.9075944. <a href="https://ieeexplore.ieee.org/document/9075944">IEEE Link</a><br /></p><h2 id="keypoints">Keypoints</h2><ul><li>low power<ul><li>class-D oscillator with a resistive header <span class="citation" data-cites="0.22">@0.22</span> V</li><li>swcap DC-DC converter (0.55 → 0.22 V)</li></ul></li><li>low spurious<ul><li>use reference frequency for DC-DC switching</li><li>4-phase interleaving</li><li>large off-chip decoupling capacitor</li></ul></li></ul><h2 id="background">Background</h2><ul><li>NB-IoT<ul><li>congested bands<ul><li>proximal GSM and LTE</li><li>larger blocker power</li></ul></li><li>require minimal spurious to avoid reciprocal mixing<ul><li>primarily arising due to DTC/TDC nonlinearity</li></ul></li></ul></li><li>power supply for PLL<ul><li>low supply voltage for the DCO</li><li>LDO: good for ripple, but large voltage headroom</li><li>DC-DC: high efficiency, but large ripple for spur content</li></ul></li></ul><h2 id="details">Details</h2><ul><li>low power/spur design<ul><li>class-D VCO<ul><li>3 VDD output swing</li><li>head resistor 15Ω<ul><li>increase common-mode tank impedance at 2fLO</li><li>small area comparing with inductive resonant</li><li>reduce power</li><li>improve noise</li></ul></li></ul></li><li>swcap DC-DC converter<ul><li>use reference frequency for DC-DC switching</li><li>4-phase interleaving</li><li>large off-chip decoupling capacitor</li></ul></li></ul></li><li>loop design<ul><li>small bandwidth</li><li>8b cap bank to cover bands</li><li>7b parallel cap bank in series with the varactor<ul><li>conteract the parallel bank by increasing KVCO</li><li>reduce settling time</li><li>constant phase margin</li></ul></li></ul></li></ul><p><img src="https://api2.mubu.com/v3/document_image/15fad2dd-f88c-4236-882d-3f447a9b5c0d-216525.jpg" alt="block diagram" /><br /></p><h2 id="conclusion">Conclusion</h2><ul><li><strong>TECH</strong> 65nm<br /></li><li><strong>REF</strong> 6MHz<br /></li><li><strong>OUT</strong> 729~960 MHz<br /></li><li><strong>REF SPUR</strong> -67.5 dBc<br /></li><li><strong>FRAC SPUR</strong> -66.3 dBc<br /></li><li><strong>POWER 0.55</strong> mW @ 0.55 V<br /></li><li><strong>RMS JITTER</strong> 6 ps<br /></li><li><strong>FOM</strong> -227 dB<br /></li></ul><h2 id="important-reference">Important Reference</h2><blockquote><p><em>NB-IoT requirements</em></p><ul><li>[1] Evolved Universal Terrestrial Radio Access (E-UTRA); NB-IOT; Technical Report for BS and EU Radio Transmission and Reception (Release 13), document TS 36.802, 3GPP.<br /></li></ul><p><em>class-D VCO</em></p><ul><li>[5] L. Fanori and P. Andreani, "Class-D CMOS Oscillators," in IEEE Journal of Solid-State Circuits, vol. 48, no. 12, pp. 3105-3119, Dec. 2013.<br /></li></ul><p><em>head impedance</em></p><ul><li>[7] E. Hegazi, H. Sjoland and A. A. Abidi, "A filtering technique to lower LC oscillator phase noise," in IEEE Journal of Solid-State Circuits, vol. 36, no. 12, pp. 1921-1930, Dec. 2001.<br /></li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://api2.mubu.com/v3/document_image/dc00fe77-6752-4d06-9405-6926853fe738-216525.jpg&quot; alt=&quot;Keypoints&quot; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h5 id=&quot;</summary>
+      
+    
+    
+    
+    <category term="Conferences" scheme="https://papers.robin-ic.fun/categories/Conferences/"/>
+    
+    <category term="2020s" scheme="https://papers.robin-ic.fun/categories/Conferences/2020s/"/>
+    
+    
+    <category term="PLL" scheme="https://papers.robin-ic.fun/tags/PLL/"/>
+    
+    <category term="DCDC" scheme="https://papers.robin-ic.fun/tags/DCDC/"/>
+    
+    <category term="CICC" scheme="https://papers.robin-ic.fun/tags/CICC/"/>
+    
+    <category term="2020" scheme="https://papers.robin-ic.fun/tags/2020/"/>
+    
+    <category term="UCSD" scheme="https://papers.robin-ic.fun/tags/UCSD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CICC-2020 A Fully Synthesized Integrated Buck Regulator with Auto-generated GDS-II in 65nm CMOS Process</title>
+    <link href="https://papers.robin-ic.fun/papers/8136/"/>
+    <id>https://papers.robin-ic.fun/papers/8136/</id>
+    <published>2020-12-30T06:51:03.000Z</published>
+    <updated>2021-02-01T12:25:51.178Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://api2.mubu.com/v3/document_image/a5c28186-cd14-4888-832b-cca1ce5aa14f-216525.jpg" alt="keypoints" /><br /></p><h5 id="full-citation">Full Citation</h5><ul><li>V. C. Krishna Chekuri, N. M. Rahman, E. Lee, A. Signh and S. Mukhopadhyay, "<strong>A Fully Synthesized Integrated Buck Regulator with Auto-generated GDS-II in 65nm CMOS Process</strong>," <em>2020 IEEE Custom Integrated Circuits Conference (CICC)</em>, Boston, MA, USA, 2020, pp. 1-4, doi: 10.1109/CICC48029.2020.9075924. <a href="https://ieeexplore.ieee.org/document/9075924">IEEE Link</a></li></ul><h2 id="keypoints">Keypoints</h2><ul><li>flexible precision feedback loop<ul><li>high-precision low-frequency mode</li><li>low-precision high-frequency mode</li></ul></li><li>fully synthesized generation<ul><li>pcell + macro + auto PR</li><li>design space exploration and reduced sets</li></ul></li></ul><h2 id="background">Background</h2><ul><li>inductive voltage regulator (IVR)<ul><li>for fine-grain power management</li><li>fast dynamic voltage scaling</li><li>reduce power noise</li><li>reduce complexity by synthesizable loop</li></ul></li></ul><h2 id="details">Details</h2><ul><li>flexible precision feedback loop<ul><li>high-precision low-frequency mode (6b, 2xFSW)</li><li>low-precision high-frequency mode (4b, 4xFSW)</li></ul></li><li>synthesizable blocks<ul><li>ADC<ul><li>input voltage controlled delay line and latch</li><li>count the number of ones</li><li>re-configure to different precision and frequency<ul><li>different pulse width</li><li>restrict the number of stages</li><li>bit shedding</li></ul></li></ul></li><li>DPWM<ul><li>tri-state buffers and DLL</li><li>a mux selects phases by the compensators</li></ul></li></ul></li><li>on-chip autotuning engine<ul><li>use a cost metric summing aggregated absolute error values</li></ul></li><li>auto-generation tool<ul><li>power stage: multiple custom pcells</li><li>loop: standard cell based synthesis</li><li>top: automated place and route; coupled back/front-end optimization</li><li>mixed-signal design space exploration<ul><li>extend design space: IRV, controller, RTL, physical design, including digital parameters</li><li>reduce set: timing closure, target settling time, defined constraints</li></ul></li></ul></li></ul><p><img src="https://api2.mubu.com/v3/document_image/aa791a4e-ead0-4fa4-bc46-bbf6640dc355-216525.jpg" alt="overall architecture" /><br /></p><p><img src="https://api2.mubu.com/v3/document_image/e8dbeea1-ac6f-4669-9e8c-429b9e6625c2-216525.jpg" alt="auto-generation tool flow" /><br /></p><h2 id="conclusion">Conclusion</h2><ul><li><strong>TECH</strong> 65nm</li><li><strong>VIN</strong> 0.9~1.2 V</li><li><strong>VOUT</strong> 0.6~1 V</li><li><strong>F_SW</strong> 80~120 MHz</li><li><strong>L_LOAD</strong> 62 nH</li><li><strong>C_LOAD</strong> 23 nF</li><li><strong>PEAK EFFICIENCY</strong> 157 uW@1.1V</li><li><strong>RESPONSE TIME</strong> 200 ns@ΔI=30mA</li><li><strong>VOLTAGE RAMP</strong> 130 mV/250 ns</li></ul><h2 id="important-reference">Important Reference</h2><blockquote><p><em>automated tool flow</em></p><ul><li>[2] V. C. Krishna Chekuri, N. Dasari, A. Singh and S. Mukhopadhyay, "Automatic GDSII Generator for On-Chip Voltage Regulator for Easy Integration in Digital SoCs," 2019 IEEE/ACM International Symposium on Low Power Electronics and Design (ISLPED), Lausanne, Switzerland, 2019, pp. 1-6, doi: 10.1109/ISLPED.2019.8824797. <a href="https://ieeexplore.ieee.org/document/8824797">IEEE Link</a><br /></li></ul><p><em>a lightweight all-digital auto-tuner for post-silicon tuning the PID coefficients</em></p><ul><li>[3] M. Kar, A. Singh, A. Rajan, V. De and S. Mukhopadhyay, "An All-Digital Fully Integrated Inductive Buck Regulator With A 250-MHz Multi-Sampled Compensator and a Lightweight Auto-Tuner in 130-nm CMOS," in IEEE Journal of Solid-State Circuits, vol. 52, no. 7, pp. 1825-1835, July 2017, doi: 10.1109/JSSC.2017.2693243. <a href="https://ieeexplore.ieee.org/document/7947104">IEEE Link</a><br /></li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://api2.mubu.com/v3/document_image/a5c28186-cd14-4888-832b-cca1ce5aa14f-216525.jpg&quot; alt=&quot;keypoints&quot; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h5 id=&quot;</summary>
+      
+    
+    
+    
+    <category term="Conferences" scheme="https://papers.robin-ic.fun/categories/Conferences/"/>
+    
+    <category term="2020s" scheme="https://papers.robin-ic.fun/categories/Conferences/2020s/"/>
+    
+    
+    <category term="CICC" scheme="https://papers.robin-ic.fun/tags/CICC/"/>
+    
+    <category term="2020" scheme="https://papers.robin-ic.fun/tags/2020/"/>
+    
+    <category term="Power" scheme="https://papers.robin-ic.fun/tags/Power/"/>
+    
+    <category term="Buck" scheme="https://papers.robin-ic.fun/tags/Buck/"/>
+    
+    <category term="CAD" scheme="https://papers.robin-ic.fun/tags/CAD/"/>
+    
+    <category term="GIT" scheme="https://papers.robin-ic.fun/tags/GIT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CICC-2020 A 72.6 dB SNDR 14b 100 MSPS Ring Amplifier Based Pipelined SAR ADC with Dynamic Deadzone Control in 16 nm CMOS</title>
+    <link href="https://papers.robin-ic.fun/papers/44870/"/>
+    <id>https://papers.robin-ic.fun/papers/44870/</id>
+    <published>2020-12-29T13:18:41.000Z</published>
+    <updated>2021-02-01T12:25:51.178Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://api2.mubu.com/v3/document_image/67e0dee3-2cc1-4b1c-8f67-23139fb25995-216525.jpg" alt="Keypoints" /><br /></p><h5 id="full-citation">Full Citation</h5><p>M. Kinyua and E. Soenen, "<strong>A 72.6 dB SNDR 14b 100 MSPS Ring Amplifier Based Pipelined SAR ADC with Dynamic Deadzone Control in 16 nm CMOS</strong>," 2020 IEEE Custom Integrated Circuits Conference (CICC), Boston, MA, USA, 2020, pp. 1-4, doi: 10.1109/CICC48029.2020.9075921. [IEEE Link]https://ieeexplore.ieee.org/document/9075921<br /></p><h2 id="keypoints">Keypoints</h2><ul><li>a merged deadzone control circuit<ul><li>dynamically control the offset embedded in the second-stage inverter</li><li>obviates the need to use high VTH devices</li><li>accomplish coarse estimation and fine settling of the output signal</li></ul></li><li>pipelined 14b(6+9) SAR ADC<ul><li>half reference design</li><li>minimal fast SAR for decision cycling</li></ul></li></ul><h2 id="background">Background</h2><ul><li>ring amplifier<ul><li>inverter-based, wide-swing, high output resistance</li><li>stable when the amplifier input approaches the desired common-mode<ul><li>operating the 3rd stage in deep subthreshold</li><li>high output resistance that forms a dominant pole for stable feedback operation.</li></ul></li></ul></li><li>three-stage ring amplifier<ul><li>dynamically embedded offset via a resistor RB in the second stage inverter</li><li>high threshold devices in the third stage to accomplish high gain</li></ul></li></ul><h2 id="details">Details</h2><ul><li><strong>Principle of the dynamic deadzone control</strong><ul><li>a compact input pair and a matching resistor RB regulate the VDZ by current mirroring</li><li>proper design trading of VRB, RB and inverter sizing</li><li>transient response of voltage (VRB) to accomplish coarse and fine amplification</li></ul></li><li><strong>Implementation</strong><ul><li>RA: reduction in the number of stacked devices</li><li>14b = 6b + 9b, half reference design to avoid capacitor scaling</li><li>asynchronous, SC-CMFB, minimal sized fast SAR for decision cycling</li></ul></li></ul><p><img src="https://api2.mubu.com/v3/document_image/f7f9c1f3-2dac-488b-8be2-ea1698a93108-216525.jpg" alt="proposed ring amplifier with deadzone control circuits" /><br /></p><p><img src="https://api2.mubu.com/v3/document_image/33fca48e-80f7-4bc6-b188-ef7d7e19273a-216525.jpg" alt="block diagram" /><br /></p><h2 id="conclusion">Conclusion</h2><ul><li><strong>TECH</strong> 16nm</li><li><strong>RES</strong> 14-bit</li><li><strong>SAMPLING RATE</strong> 100MS/s</li><li><strong>POWER</strong> 2.5 mW@0.75/1.2 V</li><li><strong>SFDR</strong> 86.5 dB</li><li><strong>SNDR</strong> 72.6 dB</li><li><strong>FOM_S</strong> 175.6</li><li><strong>FOM_W</strong> 7.2 fJ/conv.-step</li></ul><h2 id="important-reference">Important Reference</h2><blockquote><p><em>typical ring amplifier</em></p><ul><li>[3] Y. Lim, and M. Flynn, “A 100 MS/s, 10.5 Bit, 2.46 mW Comparator-Less Pipeline ADC Using Self-Biased Ring Amplifiers,” IEEE J. Solid-State Circuits, vol. 50, no. 10, pp. 2331–2341, Oct. 2015.<br /></li></ul><p><em>fully-differential input stage, high Vth in the second and third stages</em></p><ul><li>[4] Y. Lim, and M. Flynn, “A 1 mW 71.5 dB SNDR 50 MS/s 13 bit Fully Differential Ring Amplifier Based SAR-Assisted Pipeline ADC,” IEEE J. Solid-State Circuits, vol. 50, no. 12, pp. 2901–2911, Dec. 2015.<br /></li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://api2.mubu.com/v3/document_image/67e0dee3-2cc1-4b1c-8f67-23139fb25995-216525.jpg&quot; alt=&quot;Keypoints&quot; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h5 id=&quot;</summary>
+      
+    
+    
+    
+    <category term="Conferences" scheme="https://papers.robin-ic.fun/categories/Conferences/"/>
+    
+    <category term="2020s" scheme="https://papers.robin-ic.fun/categories/Conferences/2020s/"/>
+    
+    
+    <category term="CICC" scheme="https://papers.robin-ic.fun/tags/CICC/"/>
+    
+    <category term="2020" scheme="https://papers.robin-ic.fun/tags/2020/"/>
+    
+    <category term="ADC" scheme="https://papers.robin-ic.fun/tags/ADC/"/>
+    
+    <category term="TSMC" scheme="https://papers.robin-ic.fun/tags/TSMC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JSSC-2020 A 7-bit 900-MS/s 2-Then-3-bit/cycle SAR ADC With Background Offset Calibration Amplifier</title>
+    <link href="https://papers.robin-ic.fun/papers/54718/"/>
+    <id>https://papers.robin-ic.fun/papers/54718/</id>
+    <published>2020-12-28T14:50:45.000Z</published>
+    <updated>2021-02-01T12:25:51.182Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://api2.mubu.com/v3/document_image/95c473b7-6cdc-4ce2-964e-2321feb7f937-216525.jpg" alt="keypoints" /><br /></p><h5 id="full-citation">Full Citation</h5><p>D. Li, Z. Zhu, J. Liu, H. Zhuang, Y. Yang and N. Sun, "<strong>A 7-bit 900-MS/s 2-Then-3-bit/cycle SAR ADC With Background Offset Calibration</strong>," in IEEE Journal of Solid-State Circuits, vol. 55, no. 11, pp. 3051-3063, Nov. 2020, doi: 10.1109/JSSC.2020.3011753. <a href="https://ieeexplore.ieee.org/document/9159692">IEEE Link</a><br /></p><h2 id="keypoints">Keypoints</h2><ul><li>2-3-3 bits/cycle operation<ul><li>only 2 CDACs: 1 SIG-DAC and 1 REF-DAC</li><li>7 comparators</li></ul></li><li>embedding gain inside the two-path comparators</li><li>build-in redundancy: 8-2-0 LSBs</li><li>on-chip background offset calibration<ul><li>zero-input</li><li>extra calibration phase</li></ul></li></ul><h2 id="background">Background</h2><ul><li>high-speed ADCs → multi-bit/cycle SAR ADC<ul><li>several SIG-DACs<ul><li>reduce number of CDACs by interpolation</li><li>large input loading and area</li></ul></li><li>SIG-DAC + REF-DAC<ul><li>additional CDACs for more bits/cycle</li></ul></li><li>RDAC<ul><li>static power</li><li>dedicated gain calibration</li><li>common-mode variations</li></ul></li></ul></li></ul><h2 id="details">Details</h2><ul><li><strong><u>multi-bit/cycle operation</u></strong><ul><li>input signal sampled on SIG-DAC; REF-DAC generates thresholds</li><li>generate multiple threshold like flash ADC M-bit/cycle needs (2^M-1) thresholds</li><li>full range of each cycle scales down 8b, VFS1 = ±128(2b), VFS1 = ±32(3b), VFS2 = ±4(3b)</li><li>generate residual voltage Vres by subtract quantized output</li><li>redundancy helps to resist gain/offset/unsettling error</li></ul></li><li><strong><u>proposed M-bit/cycle</u></strong><ul><li>thresholds generation<ul><li>embedding the relative gain in comparators by size ratio</li><li>gain error analysis: wide range/gain → large nonlinearity</li></ul></li><li>7b resolution with redundancy<ul><li>considerations<ul><li>small input of the comparator→ small gain variation</li><li>less bit/cycle → small gain</li><li>error range → requirement of the redundancy</li></ul></li><li>proposed structure: 2-3-3 bits<ul><li>1 SIG-DAC, 1 REF-DAC, 7 comparators</li><li>thresholds of 3-bit cycle: -3, -2, -1, 0, 1, 2, 3</li><li>G1=1, R1=16 LSB; G2=1,2,3, R2=2; G3=1,2,3, R3=0</li></ul></li></ul></li><li>kick-back reduction<ul><li>cascaded transistors</li><li>direct grounded input pair</li></ul></li><li><u><strong>background offset calibration</strong></u><ul><li>switched-capacitor based integrator tunes the calibration pair</li><li>fast convergence: minimum cap and switches</li><li>small fluctuation: pulse width decrease as comparator resolve time increase</li></ul></li></ul></li></ul><p><img src="https://api2.mubu.com/v3/document_image/8d1e15ae-e560-4fac-922b-649392497bd3-216525.jpg" alt="topology and encoding" /><br /></p><p><img src="https://api2.mubu.com/v3/document_image/48680a9a-f7f6-4da3-b984-9b7e1e2cd631-216525.jpg" alt="full architecture and timing" /><br /></p><p><img src="https://api2.mubu.com/v3/document_image/a7b29223-afb8-4d6b-aa97-a1efdcb85939-216525.jpg" alt="offset calibration" /><br /></p><h2 id="conclusion"><strong>Conclusion</strong></h2><ul><li><strong>TECH</strong> 40nm<br /></li><li><strong>RES</strong> 7-bit<br /></li><li><strong>SAMPLING RATE</strong> 900MS/s<br /></li><li><strong>POWER</strong> 2.6 mW@1.1V<br /></li><li><strong>DNL</strong> +0.6/-0.7LSB<br /></li><li><strong>INL</strong> +0.6/-0.8 LSB<br /></li><li><strong>SNDR</strong> 39.7 dB<br /></li><li><strong>FOM_W</strong> 36.6 fJ/conv.-step<br /></li></ul><h2 id="important-reference"><strong>Important Reference</strong></h2><blockquote><p><em>REF-DAC for multi-bit/cycle</em> - [9] H.-K. Hong et al., “An 8.6 ENOB 900MS/s time-interleaved 2b/cycle SAR ADC with a 1b/cycle reconfiguration for resolution enhancement,” in IEEE Int. Solid-State Circuits Conf. (ISSCC) Dig. Tech. Papers, Feb. 2013, pp. 470–471.<br /></p><p><em>conference paper CICC 2019</em></p><ul><li>[15] D. Li, J. Liu, H. Zhuang, Z. Zhu, Y. Yang, and N. Sun, “A 7b 2.6 mW 900MS/s nonbinary 2-then-3b/cycle SAR ADC with background offset calibration,” in Proc. IEEE Custom Integr. Circuits Conf. (CICC), Apr. 2019, pp. 1–4.<br /></li></ul><p><em>switched-cap offset calibration</em></p><ul><li>[22] M. Miyahara, Y. Asada, D. Paik, and A. Matsuzawa, “A low-noise self-calibrating dynamic comparator for high-speed ADCs,” in Proc. IEEE Asian Solid-State Circuits Conf., Nov. 2008, pp. 269–272.<br /></li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://api2.mubu.com/v3/document_image/95c473b7-6cdc-4ce2-964e-2321feb7f937-216525.jpg&quot; alt=&quot;keypoints&quot; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h5 id=&quot;</summary>
+      
+    
+    
+    
+    <category term="JSSC" scheme="https://papers.robin-ic.fun/categories/JSSC/"/>
+    
+    <category term="2020" scheme="https://papers.robin-ic.fun/categories/JSSC/2020/"/>
+    
+    
+    <category term="2020" scheme="https://papers.robin-ic.fun/tags/2020/"/>
+    
+    <category term="UTAustin" scheme="https://papers.robin-ic.fun/tags/UTAustin/"/>
+    
+    <category term="JSSC" scheme="https://papers.robin-ic.fun/tags/JSSC/"/>
+    
+    <category term="SAR ADC" scheme="https://papers.robin-ic.fun/tags/SAR-ADC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TCSI-2014 Digitally Synthesized Stochastic Flash ADC Using Only Standard Digital Cells</title>
+    <link href="https://papers.robin-ic.fun/papers/49959/"/>
+    <id>https://papers.robin-ic.fun/papers/49959/</id>
+    <published>2020-08-20T15:34:10.000Z</published>
+    <updated>2021-02-01T12:25:51.182Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="citation">Citation</h4><p>S. Weaver, B. Hershberg and U. Moon, "Digitally Synthesized Stochastic Flash ADC Using Only Standard Digital Cells," in IEEE Transactions on Circuits and Systems I: Regular Papers, vol. 61, no. 1, pp. 84-91, Jan. 2014, doi: 10.1109/TCSI.2013.2268571. <a href="https://ieeexplore.ieee.org/document/6552224">IEEE Link</a>  </p><h2 id="keypoints">Keypoints</h2><figure><img src="https://api2.mubu.com/v3/document_image/01ce89ce-3e34-4c6b-800a-ca60e0e2c5ed-216525.jpg" alt="" /><figcaption>Keypoints</figcaption></figure><h2 id="notes">Notes</h2><ul><li>introduction<ul><li>standard flash ADC: a reference is generated specifically for each comparator</li><li>stochastic flash ADC: uses comparators’ inherent input-referred offsets as the trip-points</li></ul></li><li>to be synthesizable<ul><li>remove resistor ladder but use comparator offsets as virtual references</li><li>prefer comparator of small size 👈 3-input NAND gate</li><li>ones adder to build the CDF like transfer function</li><li>inverse function of the distribution to linearize to an uniform CDF</li></ul></li><li>NAND3 gate comparator<ul><li>positive feedback by cross-coupling two gates</li><li>static SR-latch holds the output</li><li>inverter based buffer to reduce the memory effect</li><li>set_dont_touch to prevent the synthesizer from altering the comparator model</li></ul></li><li>Gaussian distribution analysis<ul><li>the sum of the the comparator outputs follows the Gaussian CDF</li><li>required number of comparators ≈ 4^N (ignore DC offset)</li><li>linearization<ul><li>inverse Gaussian CDF to meet uniformed distribution assumption</li><li>proposed: piecewise linear approximation<ul><li>five piecewise region</li><li>code based: does not rely on the shift/scale of the CDF</li></ul></li></ul></li></ul></li><li>implementation and measurements<ul><li>implementation<ul><li>auto synthesis and PnR</li><li>difference of the parasitic capacitance: zero-mean Gaussian distribution</li></ul></li><li>measurements<ul><li>ramp input</li><li>PVT variation of the comparator</li><li>large input load limits input bandwidth (87 MHz)</li></ul></li></ul></li></ul><h2 id="figures">Figures</h2><figure><img src="https://api2.mubu.com/v3/document_image/f720ccff-93f0-4a62-b063-9870768ee168-216525.jpg" alt="" /><figcaption>the proposed stochastic ADC</figcaption></figure><figure><img src="https://api2.mubu.com/v3/document_image/829b42e9-abfc-4018-bbf9-760a77223ce7-216525.jpg" alt="" /><figcaption>analog comparator made from standard digital NAND3 cells</figcaption></figure><figure><img src="https://api2.mubu.com/v3/document_image/22a07250-562f-4695-9646-e4ab780f01a4-216525.jpg" alt="" /><figcaption>linearization by inverse Gaussian CDF</figcaption></figure><h2 id="conclusion">Conclusion</h2><p><strong>Technology</strong> 90 nm CMOS<br /></p><p><strong>Speed</strong> 210 MSPS<br /></p><p><strong>Input Range</strong> 280 mVpp (differential)<br /></p><p><strong>SFDR</strong> 41.46 dB<br /></p><p><strong>SNDR</strong> 35.89 dB<br /></p><p><strong>Power</strong> 34.8 mW<br /></p><p><strong>Area</strong> 0.18 mm^2<br /></p><h2 id="references">References</h2><blockquote><p>first proposed stochastic ADC</p><ul><li>[4] J. Ceballos, I. Galton, and G. Temes, “Stochastic analog-to-digital conversion,” in Proc. 48th Midwest Symp. Circuits and Systems, Aug. 2005, pp. 855–858.<br /></li></ul><p>requirement of the comparator</p><ul><li>[14] Data Conversion Handbook. Burlington, MA, USA: Newnes, 2005, ch.2,p. 69, A. D. Inc..<br /></li></ul><p>Wallace tree</p><ul><li>[15] F. Kaess et al., “New encoding scheme for high-speed flash ADC’s,” in Proc. Int. Conf. Solid-State Integrated Circuit Tech., Jun. 1997, pp. 5–8.<br /></li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h4 id=&quot;citation&quot;&gt;Citation&lt;/h4&gt;
+&lt;p&gt;S. Weaver, B. Hershberg and U. Moon, &quot;Digitally Synthesized Stochastic Flash ADC Using Only Standard Digi</summary>
+      
+    
+    
+    
+    <category term="Journals" scheme="https://papers.robin-ic.fun/categories/Journals/"/>
+    
+    <category term="2010s" scheme="https://papers.robin-ic.fun/categories/Journals/2010s/"/>
+    
+    
+    <category term="ADC" scheme="https://papers.robin-ic.fun/tags/ADC/"/>
+    
+    <category term="2014" scheme="https://papers.robin-ic.fun/tags/2014/"/>
+    
+    <category term="OSU" scheme="https://papers.robin-ic.fun/tags/OSU/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Stochastic Flash Analog-to-Digital Conversion</title>
+    <link href="https://papers.robin-ic.fun/papers/39086/"/>
+    <id>https://papers.robin-ic.fun/papers/39086/</id>
+    <published>2020-08-20T07:12:45.000Z</published>
+    <updated>2021-02-01T12:25:51.182Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="citation">Citation</h4><p>S. Weaver, B. Hershberg, P. Kurahashi, D. Knierim and U. Moon, "Stochastic Flash Analog-to-Digital Conversion," in IEEE Transactions on Circuits and Systems I: Regular Papers, vol. 57, no. 11, pp. 2825-2833, Nov. 2010, doi: 10.1109/TCSI.2010.2050225. <a href="https://ieeexplore.ieee.org/document/5491110">IEEE Link</a><br /></p><h2 id="keypoints">Keypoints</h2><p><img src="https://api2.mubu.com/v3/document_image/f3fd1885-537f-4af9-9712-2fd0ff4c2b54-216525.jpg" alt="Keypoints" /><br /></p><h2 id="notes">Notes</h2><ul><li>introduction<ul><li>standard flash ADC<ul><li>uses a resistor string to set individual comparator trip points</li></ul></li><li>stochastic flash ADC<ul><li>uses random comparator offset to set the trip points</li><li>Comparator trip points follow Gaussian CDF</li></ul></li></ul></li><li>theoretical stochastic ADC<ul><li>basic architecture<ul><li>a group of comparators with random offsets</li><li>followed by a ones adder</li></ul></li><li>principles<ul><li>comparator offset follows Gaussian distribution</li><li>the ADC voltage transfer function is the CDF of the random comparator offset</li><li>overall input referred noise of the ADC is not limited by the noise of single comparator</li></ul></li><li>required number of comparators: n ≈ 2· 4^N</li><li>non-ideality<ul><li>The actual distribution of comparator thresholds is not uniform</li><li>but rather a Gaussian distribution</li></ul></li><li>solution<ul><li>using two basic stochastic flash ADCs</li><li>each with a Gaussian CDF transfer function but with a different means</li></ul></li><li>maximum achievable number of bits (MANOB) limited to 8.97 bits</li></ul></li><li>implementation<ul><li>two separate groups of comparators</li><li>adjust means to be ± 1.078 σ</li><li>3840 comparators in each group</li><li>20 subgroups of 192 comparators<ul><li>can be independently enable/disable</li><li>study the effect of the comparator number</li></ul></li><li>pipelined Wallace tree ones adder</li><li>measured σ = 140 mV</li><li>input signal range 280 mV</li><li>8.5-dB improvement by dividing to 2 groups</li><li>the input-referred noise<ul><li>decreases as the number of comparators increases</li><li>due to an averaging effect of the noise</li></ul></li></ul></li></ul><h2 id="figures">Figures</h2><p><img src="https://api2.mubu.com/v3/document_image/5b1788bf-2180-4c9d-b254-666a56cae2c4-216525.jpg" alt="principle of the stochastic ADC" /><br /></p><p><img src="https://api2.mubu.com/v3/document_image/fa5910df-7347-40bb-ade2-e12f431dab1e-216525.jpg" alt="linearization by group splitting" /><br /></p><h2 id="conclusion">Conclusion</h2><p><strong>Technology</strong> 0.18 um CMOS<br /></p><p><strong>Resolution</strong> 6b<br /></p><p><strong>Speed</strong> 18 MS/s<br /></p><p><strong>Input Range</strong> 140 mV<br /></p><p><strong>SFDR</strong> 42.86 dB<br /></p><p><strong>SNDR</strong> 33.59 dB<br /></p><p><strong>DNL/INL</strong> 0.5/1.07 LSB<br /></p><p><strong>Power</strong> 631 uW<br /></p><p><strong>Area</strong> 0.43 mm^2<br /></p><h2 id="references">References</h2><blockquote><p><em>first propose stochastic ADC</em></p><ul><li>[5] J. L. Ceballos, I. Galton, and G. C. Temes, “Stochastic analog-to-digital conversion,” in Proc. 48th Midwest Symp. Circuits Syst., 2005, pp. 855–858.<br /></li></ul><p><em>choose comparator with desired offsets</em></p><ul><li>[6] D. C. Daly and A. P. Chandrakasan, “A 6 b 0.2-to-0.9 V highly digital flash ADC with comparator redundancy,” IEEE J. Solid-State Circuits, vol. 44, no. 11, pp. 3030–3038, Nov. 2009.<br /></li></ul><p><em>only the best of redundant comparators</em></p><ul><li>[7] C. Donovan and M. P. Flynn, “A “digital” 6-bit ADC in 0.25- m CMOS,” IEEE J. Solid-State Circuits, vol. 37, no. 3, pp. 432–437, Mar. 2002.<br /></li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h4 id=&quot;citation&quot;&gt;Citation&lt;/h4&gt;
+&lt;p&gt;S. Weaver, B. Hershberg, P. Kurahashi, D. Knierim and U. Moon, &quot;Stochastic Flash Analog-to-Digital Conver</summary>
+      
+    
+    
+    
+    <category term="Journals" scheme="https://papers.robin-ic.fun/categories/Journals/"/>
+    
+    <category term="2010s" scheme="https://papers.robin-ic.fun/categories/Journals/2010s/"/>
+    
+    
+    <category term="ADC" scheme="https://papers.robin-ic.fun/tags/ADC/"/>
+    
+    <category term="TCSI" scheme="https://papers.robin-ic.fun/tags/TCSI/"/>
+    
+    <category term="2010" scheme="https://papers.robin-ic.fun/tags/2010/"/>
+    
+    <category term="OSU" scheme="https://papers.robin-ic.fun/tags/OSU/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ISSCC-2015 15.5 A 0.6V 1.17ps PVT-tolerant and synthesizable time-to-digital converter using stochastic phase interpolation with 16× spatial redundancy in 14nm FinFET technology</title>
+    <link href="https://papers.robin-ic.fun/papers/7786/"/>
+    <id>https://papers.robin-ic.fun/papers/7786/</id>
+    <published>2020-08-19T14:04:21.000Z</published>
+    <updated>2021-02-01T12:25:51.178Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="citation">Citation</h4><ul><li>S. Kim, W. Kim, M. Song, J. Kim, T. Kim and H. Park, "15.5 A 0.6V 1.17ps PVT-tolerant and synthesizable time-to-digital converter using stochastic phase interpolation with 16× spatial redundancy in 14nm FinFET technology," 2015 IEEE International Solid-State Circuits Conference - (ISSCC) Digest of Technical Papers, San Francisco, CA, 2015, pp. 1-3, doi: 10.1109/ISSCC.2015.7063035. <a href="https://ieeexplore.ieee.org/document/7063035">IEEE Link</a>  </li></ul><h2 id="keypoints">Keypoints</h2><p><img src="https://api2.mubu.com/v3/document_image/deb72856-42f7-4c81-90bf-d35fbcc0242a-216525.jpg" alt="Keypoints" /><br /></p><h2 id="notes">Notes</h2><ul><li><p>high-resolution TDC<br />minimize the unit delay of quantization</p><ul><li>Vernier delay-line-based TDC<ul><li>limited by mismatch</li><li>require additional calibration</li></ul></li><li>time-domain SAR scheme<ul><li>too much power/area</li></ul></li><li>time-amplifier-based multi-step TDC<ul><li>power-hungry</li><li>inaccurate and PVT vulnerable</li><li>additional calibration</li></ul></li></ul></li><li><p>proposed TDC</p><ul><li>features<ul><li>using stochastic phase interpolation</li><li>quantization by counting rising edges</li><li>16x spatial redundancy</li><li>low power and PVT-variation-tolerant</li></ul></li><li>phase interpolator<ul><li>2^N delay cells (effective N-m, mx redundancy)</li><li>timing<ul><li><p>reference clock CLK_IN (T_0)</p></li><li><p>effective resolution T_0/2^(N-m)</p></li></ul></li><li>principle<ul><li>After the first rising edge of CLK_IN arrives at the output of the last delay cell</li><li>2^N times interpolated phases can be collected from each output of the delay cells</li></ul></li><li>non-ideality<ul><li>poor linearity performance<ul><li>hard to expect that the 2^N interpolated phases are uniformly distributed within one clock period</li></ul></li><li>solution : stochastic phase interpolation<ul><li>m LSB bits are truncated from the output</li><li>the final output code, DOUT, of the TDC is (N-m) bits</li><li>2^m times redundancy</li></ul></li></ul></li><li>mismatch theory<ul><li>mismatch follows Gaussian distribution<ul><li><p>the delay of delay cell Td[i] <img src="https://api2.mubu.com/v3/document_image/8fbb4f39-4653-47ca-9653-3f59501d700b-216525.jpg" alt="equation-1" /></p></li><li><p>Td[i] also experiences a dynamic random variation<br />including device noise / jitter <img src="https://api2.mubu.com/v3/document_image/7c41522f-c1e4-4414-a112-ae42a3c445b1-216525.jpg" alt="equation-2" /></p></li></ul></li><li>errors accumulated as propagating through stages<br />overall PDF can be uniformized due to the accumulation</li></ul><img src="https://api2.mubu.com/v3/document_image/0b46e4d8-853b-48a8-aa3b-636f31334746-216525.jpg" title="fig:" alt="equation-3" /></li></ul></li><li>measurement setup<ul><li>sampling frequency F_s = 100 MHz</li><li>reference CLK_IN = 850 MHz</li><li>input time difference ramp</li><li>two external clock generators<ul><li>frequencies are slightly different (100MHz and 99.995MHz)</li></ul></li></ul></li></ul></li><li><p>Figures</p><ul><li><img src="https://api2.mubu.com/v3/document_image/3d4bc1fa-03b5-4abd-8848-45a09e5cde3c-216525.jpg" title="fig:" alt="System Block" /></li></ul></li></ul><h2 id="conclusion">Conclusion</h2><p><strong>Technology</strong> 14nm FinFET</p><p><strong>Bits</strong> 10</p><p><strong>Resolution</strong> 1.17 ps</p><p><strong>Speed</strong> 100 MS/s</p><p><strong>Power</strong> 0.78 mW</p><p><strong>DNL/INL</strong> 0.8/2.3 LSB</p><p><strong>N_linear</strong> 8.28</p><p><strong>FoM</strong> 0.025</p><h2 id="references">References</h2><blockquote><p><em>vernier TDC</em></p><ul><li>[1] L. Vercesi, A. Liscidini, et al., “Two-Dimensions Vernier Time-to-Digital Converter,” IEEE J. Solid-State Circuits,” vol. 45, no. 8, pp. 1504-1512, Aug. 2010.</li></ul><p><em>time domain SAR scheme</em></p><ul><li>[2] H. Chung, H. Ishikuro, et al., “A 10-bit 80-MS/s Decision Select Successive Approximation TDC in 65-nm CMOS,” IEEE J. Solid-State Circuits, vol. 47, no. 5, pp. 1232–1241, May 2012.</li></ul><p><em>time-amplifier-based multi-step TDC</em></p><ul><li>[3] K.-S. Kim, W.-S. Yu, et al., “A 9 bit, 1.12 ps Resolution 2.5 b/Stage Pipelined Time-to-Digital Converter in 65 nm CMOS Using Time-Register,” IEEE J. SolidState Circuits, vol. 49, no. 4, pp. 1007-1016, Apr. 2014.</li><li>[4] S.-J. Kim, T. Kim, et al., “A 0.63ps, 12b, Synchronous Cyclic TDC using a Time Adder for On-chip Jitter Measurement of a SoC in 28nm CMOS Technology,” IEEE Int. Symp. VLSI Circuits Dig., 2014.</li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h4 id=&quot;citation&quot;&gt;Citation&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;S. Kim, W. Kim, M. Song, J. Kim, T. Kim and H. Park, &quot;15.5 A 0.6V 1.17ps PVT-tolerant and synthesiz</summary>
+      
+    
+    
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/categories/ISSCC/"/>
+    
+    <category term="2015" scheme="https://papers.robin-ic.fun/categories/ISSCC/2015/"/>
+    
+    
+    <category term="2020" scheme="https://papers.robin-ic.fun/tags/2020/"/>
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/tags/ISSCC/"/>
+    
+    <category term="Samsung" scheme="https://papers.robin-ic.fun/tags/Samsung/"/>
+    
+    <category term="TDC" scheme="https://papers.robin-ic.fun/tags/TDC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VLSI-2020 Model Predictive Control of an Integrated Buck Converter for Digital SoC Domains in 65nm CMOS</title>
+    <link href="https://papers.robin-ic.fun/papers/3864/"/>
+    <id>https://papers.robin-ic.fun/papers/3864/</id>
+    <published>2020-08-12T04:47:28.000Z</published>
+    <updated>2021-02-01T12:25:51.178Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="citation">Citation</h4><p>Model Predictive Control of an Integrated Buck Converter for Digital SoC Domains in 65nm CMOS</p><h2 id="keypoints">Keypoints</h2><figure><img src="https://api2.mubu.com/v3/document_image/f30f0979-29d3-48ad-ba50-8b4420d23fab-216525.jpg" alt="" /><figcaption>Keypoints</figcaption></figure><h2 id="notes">Notes</h2><ul><li>target<ul><li>minimize peak Vdd droop → adaptive clocking</li><li>minimize time τ_settle to restore Vdd to a reference Vref</li></ul></li><li>previous works for reduce τ_settle<ul><li>Proportional Integral Differential (PID) control<ul><li>classic, widely adopted, popular</li></ul></li><li>Time-Optimal Control (TOC)<ul><li>stability analysis challenges</li><li>only for load-step current</li></ul></li><li>Model Predictive Control (MPC)<ul><li>stable and optimal response under random disturbances</li><li>large computational latency</li></ul></li></ul></li><li>proposed MPC<ul><li>2-cycle trajectory prediction</li><li>deal with duty-cycle saturation<ul><li>process: maximally slew I_L; slew I_L back to I_load at n_Imax; I_L=I_load at n_Imatch</li><li>timing n_Imax for minimal τ_settle</li><li>charge Qs tracking: Qs = v_err · CL = Δi_n^2[n_Imax] · L/(2V_ref)</li></ul></li><li>optimized dataflow<ul><li>only d[n] is computed in cycle n, no calculate d[n+1]</li><li>migrating computations away from the critical path between Vdd[n] and d[n]</li></ul></li></ul></li></ul><h2 id="conclusion">Conclusion</h2><p><strong>Vin</strong> 1.8 V<br /></p><p><strong>Vout </strong> 0.6-1.0 V<br /></p><p><strong>Max I_load</strong> 400 mA<br /></p><p><strong>L</strong> 1 uH<br /></p><p><strong>C_L</strong> 1 uF<br /></p><p><strong>F_sw</strong> 10MHz<br /></p><p><strong>Peak Efficiency</strong> 91.9%<br /></p><p><strong>Vout droop</strong> 37.5 mV@191 mA/0.12 ns<br /></p><p><strong>Settling Time</strong> 550 ns<br /></p><h2 id="figures">Figures</h2><p><img src="https://api2.mubu.com/v3/document_image/d4da06ed-49d5-4f14-8d75-1f6c0d2a75af-216525.jpg" alt="system overview" /><br /></p><p><img src="https://api2.mubu.com/v3/document_image/5e0db805-9b4a-4380-9da0-e2c8c2a32efb-216525.jpg" alt="bulk model" /><br /></p><p><img src="https://api2.mubu.com/v3/document_image/cc833866-3d86-4421-83bd-cdd9dbfa3c01-216525.jpg" alt="proposed 2-cycle MPC" /><br /></p><p><img src="https://api2.mubu.com/v3/document_image/85b3f5c2-da52-4c22-9032-5a48bc056f8c-216525.jpg" alt="response under saturation" /><br /></p><h2 id="references">References</h2><blockquote><p><em>adaptive clocking</em></p><ul><li><p>[1] K. A. Bowman et al., "A 16 nm All-Digital Auto-Calibrating Adaptive Clock Distribution for Supply Voltage Droop Tolerance Across a Wide Operating Range," in IEEE Journal of Solid-State Circuits, vol. 51, no. 1, pp. 8-17, Jan. 2016, doi: 10.1109/JSSC.2015.2473655.<br /></p></li><li><p>[2] K. Wilcox et al., "Steamroller Module and Adaptive Clocking System in 28 nm CMOS," in IEEE Journal of Solid-State Circuits, vol. 50, no. 1, pp. 24-34, Jan. 2015, doi: 10.1109/JSSC.2014.2357428.</p></li></ul><p><em>time optimal control (TOC)</em></p><ul><li>[3] J. P. LaSalle, TIME OPTIMAL CONTROL SYSTEMS, Proceedings of the National Academy of Sciences Apr 1959, 45 (4) 573-577; DOI: 10.1073/pnas.45.4.573.<br /></li><li>[4] Y. Li, C. Chen and C. Tsai, "A Constant On-Time Buck Converter With Analog Time-Optimized On-Time Control," in IEEE Transactions on Power Electronics, vol. 35, no. 4, pp. 3754-3765, April 2020, doi: 10.1109/TPEL.2019.2938532.<br /></li></ul><p><em>Model Predictive Control (MPC)</em></p><ul><li>[6] S. Vazquez, J. Rodriguez, M. Rivera, L. G. Franquelo and M. Norambuena, "Model Predictive Control for Power Converters and Drives: Advances and Trends," in IEEE Transactions on Industrial Electronics, vol. 64, no. 2, pp. 935-947, Feb. 2017, doi: 10.1109/TIE.2016.2625238.<br />MPC theoretical analysis (stability)</li><li>[8] Carlos E. García, David M. Prett, Manfred Morari, Model predictive control: Theory and practice—A survey, Automatica, Volume 25, Issue 3, Pages 335-348, 1989, doi:10.1016/0005-1098(89)90002-2.<br /></li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h4 id=&quot;citation&quot;&gt;Citation&lt;/h4&gt;
+&lt;p&gt;Model Predictive Control of an Integrated Buck Converter for Digital SoC Domains in 65nm CMOS&lt;/p&gt;
+&lt;h2 id=</summary>
+      
+    
+    
+    
+    <category term="Conferences" scheme="https://papers.robin-ic.fun/categories/Conferences/"/>
+    
+    <category term="2020s" scheme="https://papers.robin-ic.fun/categories/Conferences/2020s/"/>
+    
+    
+    <category term="2020" scheme="https://papers.robin-ic.fun/tags/2020/"/>
+    
+    <category term="Power" scheme="https://papers.robin-ic.fun/tags/Power/"/>
+    
+    <category term="VLSI" scheme="https://papers.robin-ic.fun/tags/VLSI/"/>
+    
+    <category term="UW" scheme="https://papers.robin-ic.fun/tags/UW/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TVLSI-2019 Analysis of Bitwise and Samplewise Switched Passive Charge Sharing SAR ADCs</title>
+    <link href="https://papers.robin-ic.fun/papers/10209/"/>
+    <id>https://papers.robin-ic.fun/papers/10209/</id>
+    <published>2020-08-11T15:53:19.000Z</published>
+    <updated>2021-02-01T12:25:51.182Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="citation">Citation</h4><p>Analysis of Bitwise and Samplewise Switched Passive Charge Sharing SAR ADCs<br />C. -. R. Shi and A. Wang, "Analysis of Bitwise and Samplewise Switched Passive Charge Sharing SAR ADCs," in IEEE Transactions on Very Large Scale Integration (VLSI) Systems, vol. 27, no. 9, pp. 1977-1989, Sept. 2019, doi: 10.1109/TVLSI.2019.2909671.<br /><a href="https://ieeexplore.ieee.org/document/8701492">IEEE Link</a>  </p><h2 id="keypoints">Keypoints</h2><p><img src="https://api2.mubu.com/v3/document_image/493b09e5-c507-4282-ba57-a44c2c87598a-216525.jpg" alt="Keypoints" /><br /></p><h2 id="notes">Notes</h2><ul><li><p><strong>background</strong></p><ul><li>passive charge sharing [13]<ul><li>samplewise-switched reference reservoir (SS-RCR )<ul><li>a large capacitor precharged to the reference voltage as the reference for all bit switching [15]</li></ul></li><li>bitwise-swithced RCR (BS-RCR)<ul><li>a bit reference charge reservoir (RCR) with the capacitance β times larger than that of the bit weight capacitor is used to replace the reference source [16-18]</li></ul></li></ul></li><li>Merged capacitor switching (MCS) [3]<ul><li>energy-efficient SAR-ADC bit decision method</li></ul></li></ul></li><li><p><strong>bitwise and samplewise switched passive charge sharing SAR ADC</strong></p><ul><li>remove the power-hungry buffer</li><li><strong>BS-RCR</strong><ul><li>seperated RCR for each bit switching</li><li>the finite reservoir capacitance error appears in the form of bit weight error</li><li>naturally subradix-2</li><li>correction<ul><li>digitally corrected precisely</li><li>eliminated by using a sufficiently large β</li></ul></li></ul></li><li><strong>SS-RCR</strong><ul><li>using one sufficient large capcitor as the reference for every bit switching</li><li>the finite reservoir capacitance error appears is highly input dependent</li><li>super-radix-2 and subradix-2 properties depends on inputs<ul><li>shows the missing-level errors</li><li>cannot be corrected</li></ul></li></ul></li></ul></li><li><p>equivalent-circuit for the analysis of passive charge sharing</p></li><li><p>BS-RCRs have better linearity</p></li></ul><h2 id="figures">Figures</h2><p><img src="https://api2.mubu.com/v3/document_image/705f290a-93bf-4137-8dbe-b95bf04436ee-216525.jpg" alt="BS-RCR" /><br /></p><p><img src="https://api2.mubu.com/v3/document_image/cf471ba1-dc5e-4790-bde1-dc11d3ebbd76-216525.jpg" alt="SS-RCR" /><br /></p><h2 id="conclusion">Conclusion</h2><ul><li>theorical analysis</li><li>BS-RCR<ul><li>the reference error is in the form of bit weight error</li><li>essentially a subradix-2</li><li>correction<ul><li>digitally corrected precisely</li><li>eliminated by using a sufficiently large β</li></ul></li></ul></li><li>SS-RCR<ul><li>super-radix-2 and subradix-2 properties depends on inputs</li><li>shows the missing-level errors</li><li>cannot be corrected</li></ul></li></ul><h2 id="important-reference">Important Reference</h2><blockquote><p><em>merged capacitors witching</em></p><ul><li>[3] V. Hariprasath, J. Guerber, S.-H. Lee, and U.-K. Moon, “Merged capacitor switching based SAR ADC with highest switching energyefficiency,” Electron. Lett., vol. 46, no. 9, pp. 620–621, Apr. 2010.  </li></ul><p><em>samplewise RCR</em></p><ul><li>[15] R. Kapusta, J. Shen, S. Decker, H. Li, E. Ibaragi, and H. Zhu, “A 14 b 80 MS/s SAR ADC With 73.6 dB SNDR in 65 nm CMOS,” IEEE J. Solid-State Circuits, vol. 48, no. 12, pp. 3059–3066, Dec. 2013.  </li></ul><p><em>bitwise RCR</em></p><ul><li><p>[16] M. Maddox, B. Chen, M. Coln, R. Kapusta, J. Shen, and L. Fernando, “A 16 bit linear passive-charge-sharing SAR ADC in 55 nm CMOS,” in Proc. IEEE Asian Solid-State Circuits Conf. (A-SSCC), Nov. 2016, pp. 153–156.  </p></li><li><p>[17] J. Shen et al., “A 16-bit 16-MS/s SAR ADC with on-chip calibration in 55-nm CMOS,” IEEE J. Solid-State Circuits, vol. 53, no. 4, pp. 1149–1160, 2018.  </p></li><li><p>[18] B. Chen, M. Maddox, M. C. W. Coln, Y. Lu, and L. D. Fernando, “Precision passive-charge-sharing SAR ADC: Analysis, design, and measurement results,” IEEE J. Solid-State Circuits, vol. 53, no. 5, pp. 1481–1492, May 2018.  </p></li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h4 id=&quot;citation&quot;&gt;Citation&lt;/h4&gt;
+&lt;p&gt;Analysis of Bitwise and Samplewise Switched Passive Charge Sharing SAR ADCs&lt;br /&gt;
+C. -. R. Shi and A. Wan</summary>
+      
+    
+    
+    
+    <category term="Journals" scheme="https://papers.robin-ic.fun/categories/Journals/"/>
+    
+    <category term="2010s" scheme="https://papers.robin-ic.fun/categories/Journals/2010s/"/>
+    
+    
+    <category term="ADC" scheme="https://papers.robin-ic.fun/tags/ADC/"/>
+    
+    <category term="UW" scheme="https://papers.robin-ic.fun/tags/UW/"/>
+    
+    <category term="SAR" scheme="https://papers.robin-ic.fun/tags/SAR/"/>
+    
+    <category term="2019" scheme="https://papers.robin-ic.fun/tags/2019/"/>
+    
+    <category term="TVLSI" scheme="https://papers.robin-ic.fun/tags/TVLSI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JSSC-2020 A Low-Jitter and Low-Reference-Spur Ring-VCO Based Injection-Locked Clock Multiplier Using a Triple-Point Background Calibrator</title>
+    <link href="https://papers.robin-ic.fun/papers/21341/"/>
+    <id>https://papers.robin-ic.fun/papers/21341/</id>
+    <published>2020-06-04T16:26:18.000Z</published>
+    <updated>2021-02-01T12:25:51.182Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://img.mubu.com/document_image/29866003-7f86-4d1a-b2aa-5b6f2a64bd90-216525.jpg" alt="Keypoints" /><br /></p><h5 id="full-citation">Full Citation</h5><p>S. Yoo, S. Choi, Y. Lee, T. Seong, Y. Lim and J. Choi, "A Low-Jitter and Low-Reference-Spur Ring-VCO- Based Injection-Locked Clock Multiplier Using a Triple-Point Background Calibrator," in IEEE Journal of Solid-State Circuits, doi: 10.1109/JSSC.2020.2995326.<a href="https://ieeexplore.ieee.org/document/9103008">IEEE Link</a><br /></p><h2 id="keypoints">Keypoints</h2><ul><li>the triple-point frequency/phase/slope calibrator (TP-FPSC)<ul><li>accurately remove the three root causes of the frequency errors<ul><li>frequency drift</li><li>phase offset</li><li>slope modulation<ul><li>the slope of the injection signal changes the propagation delay of an inverter chain</li></ul></li></ul></li><li>suppression to the in-band phase noise</li><li>wide bandwidth of the injection-locking for very low-RMS jitter</li></ul></li></ul><h2 id="background">Background</h2><ul><li>a ring VCO-based ILCM<ul><li>benefits<ul><li>low jitter<ul><li>free-running VCO is corrected naturally by reference signals</li></ul></li></ul></li><li>drawbacks<ul><li>the phase-realignment has no capability of frequency correction</li><li>the RMS jitter and reference spur can be significantly degraded by drifted frequency</li><li>very difficult to reduce the level of the spur sufficiently for a high N</li></ul></li><li>requirements<ul><li>higher data rates</li><li>even more stringent peak-to-peak jitte</li><li>minimize reference spur level</li><li>precise and versatile background calibrator removes all three root causes of f_ERR<ul><li>frequency drift due to voltage and temperature fluctuations</li><li>phase offset due to any systematic errors of calibrators</li><li>slope modulation due to the periodic injection of a reference signal</li></ul></li></ul></li><li>solutions<ul><li>dedicated calibrator that can correct f_VCO continuously in the background</li></ul></li></ul></li></ul><h2 id="proposed">Proposed</h2><ul><li>ring-VCO-based ILCM<ul><li>can achieve a low-reference spur and low-RMS jitter</li><li>with a background triple-point frequency/phase/slope calibrator (TP-FPSC)</li></ul></li></ul><h2 id="details">Details</h2><ul><li><strong>Principle</strong><ul><li>three roots causes of frequency error<ul><li><strong>frequency drift</strong><ul><li>conventional frequency calibrators failed to completely remove f_DF<ul><li>limited accuracy of the calibration<ul><li>mismatches of the delay cells</li><li>input offsets of a PD</li><li>mismatches of differential signal paths</li></ul></li></ul></li></ul></li><li><strong>phase offset</strong><ul><li>causes<ul><li>systematic errors<ul><li>the calibrator reacts as if this phase error was generated due to f_DF</li><li>tune f_VCO to reduce the phase error</li><li>results in the generation of f_ERR</li></ul></li></ul></li><li>existing improvements<ul><li>pulse-gating technique</li><li>use additional calibrating circuits</li></ul></li></ul></li><li><strong>slope modulation</strong><ul><li>the change in SL_INJ changes the propagation delay of an inverter chain [31]</li><li>ultimately causing the phase error in φPD [1]</li><li>conventional frequency calibrator reacts to generate more f_ERR</li></ul></li></ul></li></ul></li><li><strong>Architecture</strong><ul><li>a five-stage ring VCO</li><li>the proposed TP-FPSC<ul><li>voltagecontrolled delay line (VCDL)</li><li>bang-bang PD (BBPD)</li><li>a multi-control voltage (VC) generator (MVG)<ul><li>generates three independent VCs delivered to a different target circuit for the three calibration mechanisms<ul><li>VC1 is used for the VCO to make fVCO close to N · fREF</li><li>VC2 is used for the VCDL to cancel the phase offset from any systematic errors</li><li>VC3 is used for the slope controller to equalize the slopes of SOUT</li></ul></li><li>three D-flip-flops (DFFs) to sample PDOUT from the PD sequentially<ul><li>extracted error information from the same output</li></ul></li><li>analog accumulator (A-ACC)<ul><li>all three VCj s are updated concurrently during a short pulse PSUD</li><li>enhance the resolution just by decreasing the pulsewidth of PSUD</li></ul></li></ul></li></ul></li></ul></li><li><strong>Operation</strong><ul><li>Three Error Detection Mechanisms of the TP-FPSC<ul><li>frequency drift<ul><li>when the first rising edges of SOUT and SVCDL or the second rising edges of SOUT and SVCDL are compared by the PD</li></ul></li><li>phase offset<ul><li>φPD becomes constant for all rising edges of SOUT and SVCDL after fERR calibration is done</li><li>use FE4 to sample PDOUT, which generates DER2</li></ul></li><li>slope modulation<ul><li>after the two foregoing calibrations are done</li><li>detected by sampling PDOUT by FE2</li></ul></li><li>bandwidth design<ul><li>the three calibrating loops were designed to have different bandwidth (settling speeds) of VC1,2,3</li><li>largest BW of frequenc calibrator to suppress the flicker noise of the VCO</li><li>BW of the phase-offset calibration was ten times smaller than that of the frequency calibration</li><li>BW of the slope calibration was the smallest</li></ul></li></ul></li></ul></li><li><strong>Implementation</strong><ul><li>slope controller<ul><li>three current-starved inverters</li><li>NAND gate</li><li>simple inverters</li><li>control the slope of SINJ<ul><li>by adjusting the bias voltage, VC3</li><li>the transistors of the three current-starved inverters</li></ul></li></ul></li><li>ring oscillator<ul><li>five stage delay cell<ul><li>digitally controlled capacitor bank, CBANK1</li><li>continuously adjusted by VC1 varactor, CVAR1</li></ul></li><li>embedded multiplexer in the delay cell<ul><li>enables that the first delay cell periodically receives the injection signal, SINJ</li></ul></li></ul></li></ul></li><li><strong>Noise Modeling</strong><ul><li>phase realignment by the injection locking</li><li>three parallel calibration loops<ul><li>frequency drift</li><li>phase offset</li><li>slope modulation</li></ul></li><li>principles<ul><li>two different time domains: f_REF, f_VCO</li><li>bridge time domains: ZOH reconstructors</li><li>the BBPD has different gains according to the variation in the jitter at the input each moment</li></ul></li></ul></li><li><strong>Limitation</strong><ul><li>the bandwidths of the three calibrators are limited by the loop stability and the detection sequence<ul><li>frequency drift cancelled first, then phase offsets are reduced</li><li>only f_ERR and phi_ERR are free, the residual error is considered from the slope modulation</li><li>error detection race</li></ul></li><li>the maximum fVCO could be limited due to the use of window signals</li></ul></li></ul><p><img src="https://img.mubu.com/document_image/b292b516-7cf3-449f-b9af-b7d0bd910185-216525.jpg" alt="Overall Architecture" /><br /></p><p><img src="https://img.mubu.com/document_image/4e526d53-abc5-4a91-b00c-e9e231ff3af9-216525.jpg" alt="Noise Model" /><br /></p><p><img src="https://img.mubu.com/document_image/23bc21f9-ba2d-4357-8858-39936e37b355-216525.jpg" alt="Implementation of the TP-FPSC" /><br /></p><p><img src="https://img.mubu.com/document_image/96f2e53e-3ab7-437d-8d9c-19130c73f0c9-216525.jpg" alt="Ring-based VCO" /><br /></p><h2 id="conclusion">Conclusion</h2><p><strong>TECH</strong> 65nm<br /><strong>REF</strong> 100MHz<br /><strong>OUT</strong> 2.2-2.5 GHz<br /><strong>REF SPUR</strong> -72 dBc<br /><strong>POWER</strong> 11 mW<br /><strong>RMS JITTER</strong> 142 fs<br /><strong>FOM</strong> -246.7 dB<br /></p><h2 id="important-references">Important References</h2><blockquote><p><em>ISSCC conference paper</em></p><ul><li>[3] D. Yang et al., “16.6 a calibration-free triple-loop bang-bang PLL achieving 131fsrms jitter and-70dBc fractional spurs,” in IEEE Int. Solid-State Circuits Conf. (ISSCC) Dig. Tech. Papers, Feb. 2019, pp. 266–267.<br /></li></ul><p>noise mechanism of ILCM</p><ul><li>[13] S. Ye, L. Jansson, and I. Galton, “A multiple-crystal interface PLL with VCO realignment to reduce phase noise,” IEEE J. Solid-State Circuits, vol. 37, no. 12, pp. 1795–1803, Dec. 2002.<br /></li></ul><p><em>impact of the phase offset to the reference spur</em></p><ul><li>[15] B. M. Helal, C.-M. Hsu, K. Johnson, and M. H. Perrott, “A low jitter programmable clock multiplier based on a pulse injection-locked oscillator with a highly-digital tuning loop,” IEEE J. Solid-State Circuits, vol. 44, no. 5, pp. 1391–1400, May 2009.<br /></li></ul><p><em>slope modulation mechanism</em></p><ul><li>[31] M. Rezzoug, J. M. Daga, and D. Auvergne, “Signal transition time effect on CMOS delay evaluation,” IEEE Trans. Circuits Syst. I, Fundam. Theory Appl., vol. 47, no. 9, pp. 1362–1369, Sep. 2000.<br /></li></ul><p>discrete time domain noise analysis</p><ul><li>[32] A. Santiccioli, C. Samori, A. L. Lacaita, and S. Levantino, “Time-variant modeling and analysis of multiplying delay-locked loops,” IEEE Trans. Circuits Syst.I,Reg.Papers, vol. 66, no. 10, pp. 3775–3785, Oct. 2019.<br /></li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://img.mubu.com/document_image/29866003-7f86-4d1a-b2aa-5b6f2a64bd90-216525.jpg&quot; alt=&quot;Keypoints&quot; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h5 id=&quot;full</summary>
+      
+    
+    
+    
+    <category term="JSSC" scheme="https://papers.robin-ic.fun/categories/JSSC/"/>
+    
+    <category term="2020" scheme="https://papers.robin-ic.fun/categories/JSSC/2020/"/>
+    
+    
+    <category term="2020" scheme="https://papers.robin-ic.fun/tags/2020/"/>
+    
+    <category term="KAIST" scheme="https://papers.robin-ic.fun/tags/KAIST/"/>
+    
+    <category term="UNIST" scheme="https://papers.robin-ic.fun/tags/UNIST/"/>
+    
+    <category term="JSSC" scheme="https://papers.robin-ic.fun/tags/JSSC/"/>
+    
+    <category term="ILCM" scheme="https://papers.robin-ic.fun/tags/ILCM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JSSC-2020 An Energy-Efficient Comparator With Dynamic Floating Inverter Amplifier</title>
+    <link href="https://papers.robin-ic.fun/papers/64667/"/>
+    <id>https://papers.robin-ic.fun/papers/64667/</id>
+    <published>2020-04-26T14:50:45.000Z</published>
+    <updated>2021-02-01T12:25:51.182Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://img.mubu.com/document_image/9eb8e6d4-1b25-4804-ad7e-8432158900f0-216525.jpg" alt="Keypoints" /><br /></p><h5 id="full-citation">Full Citation</h5><p>X. Tang et al., "An Energy-Efficient Comparator With Dynamic Floating Inverter Amplifier," in IEEE Journal of Solid-State Circuits, vol. 55, no. 4, pp. 1011-1022, April 2020.<br /><a href="https://ieeexplore.ieee.org/document/8947992">IEEE Link</a><br /></p><h2 id="keypoints">Keypoints</h2><ul><li>floating-inverter pre-amplifier<ul><li>powered by by a reservoir capacitor</li><li>benefits<ul><li>reduce PVT and input common mode sensitivity</li><li>dynamic biased<ul><li>reuse current</li><li>boost g_m/I_D</li><li>reduce noise</li></ul></li></ul></li></ul></li></ul><h2 id="background">Background</h2><ul><li>comparator requirements<ul><li>power efficiency<ul><li>limited by charging the integration capacitor</li></ul></li><li>common-mode insensitivity<ul><li>limited by tail transisitor in linear region</li></ul></li></ul></li><li>conventional approach<ul><li>dynamic comparator<ul><li>dynamic pre-amplifier</li><li>latch</li><li>typical: strong-arm (SA) latch<ul><li>embedded dynamic pre-amplifer</li><li>regenerative latch</li><li>large integration capacitors C_X<ul><li>low-noise design</li><li>limit energy efficiency</li></ul></li></ul></li><li>improvements<ul><li>dynamically biased (DB) integration [12]<br />3x energy efficiency improvement</li><li>cascade-input [1]<br />2x energy efficiency improvement</li><li>bi-directional integration to reuse current [13]<br />1.5x energy efficiency improvement</li><li>gain-boosted comparator [4]</li></ul></li></ul></li></ul></li><li>Review of prior works<ul><li>SA Latch</li><li>dynamically biased (DB) integration</li></ul></li></ul><h2 id="proposed">Proposed</h2><ul><li>dynamic comparator<ul><li>floating inverter amplifier (FIA)<br />7x energy efficiency improvement; CMOS DB Integration Pre-Amplifier<ul><li>powered by a reservoir capacitor</li><li>isolated power domian</li><li>amplification independent of the input common-mode voltage</li><li>constant output common mode</li><li>dynamic source degeneration increasing gm/I_D</li><li>prevent full discharge of the integration capacitors</li></ul></li><li>benefits<ul><li>high power efficiency</li><li>insensitive to supply and input common-mode</li><li>low noise</li></ul></li></ul></li></ul><h2 id="details">Details</h2><ul><li><strong>Principle</strong><ul><li><strong>CMOS DB Integration Pre-Amplifier</strong><ul><li>decreased overdrive voltage of the input pair<ul><li>increase the gm/I_D average by over 2.5 times</li></ul></li><li>constant common-mode at nominal corner<ul><li>avoid gain degradation</li><li>prevent full discharge of C_X</li></ul></li><li>risk of common-mode drift at other corner</li></ul></li><li><strong>Floating Inverter Pre-Amplifier With Reservoir Capacitor</strong><ul><li>merging the two tail capacitors C_TAIL into single floating reservoir capacitor C_RES</li><li>reduce capacitance size</li><li>isolated power domain</li><li>constant output common-mode</li><li>input common-mode insensitivity<ul><li>isolated voltage domain will be automatically shifted to balance the nMOS and pMOS overdrive voltages</li></ul></li></ul></li><li>Gain analysis <img src="https://img.mubu.com/document_image/f68b7b6a-7f8a-44c6-b5f4-52873e0cf1a8-216525.jpg" alt="Gain" /></li><li>Noise analysis <img src="https://img.mubu.com/document_image/287f98c1-9de5-43c8-910a-d619a473a940-216525.jpg" alt="Noise" /></li><li>Energy efficiency analysis<ul><li>FoM definition <img src="https://img.mubu.com/document_image/0ab66a44-a21b-4da7-b5ee-cae3cd79fe44-216525.jpg" alt="FoM definiton" /></li><li>SA FoM <img src="https://img.mubu.com/document_image/f12d1e68-ba6c-4d35-9da3-529f5fe8e925-216525.jpg" alt="SA FoM" /></li><li>FIA pre-amplifier FoM <img src="https://img.mubu.com/document_image/46e55672-350e-4c98-8c9f-a9229cd0a5f2-216525.jpg" alt="FIA FoM" /></li><li>FIA advantages from<ul><li>avoidance of unnecessary full discharge (VDD/VTHN)</li><li>increase gm/I_D</li><li>higher gain</li><li>improvement <img src="https://img.mubu.com/document_image/cb8d4e95-33f9-4275-b51c-83bec4ae9b81-216525.jpg" alt="FoM Improvement" /></li></ul></li></ul></li><li>Parasitic capacitance impact<ul><li>induced common-mode rejection degradation <img src="https://img.mubu.com/document_image/9d0043f8-c9d5-41db-a010-d9d45612c01d-216525.jpg" alt="Parasitic C" /></li></ul></li></ul></li><li><strong>Operation</strong><ul><li>integration phase<ul><li>voltage difference between source nodes decreases</li><li>only the differential charge is integrated on the loading capacitors</li><li>the common-mode voltage stays constant</li></ul></li><li>reset phase<ul><li>C_RES is pre-charged to VDD/GND</li><li>pre-amplifier output VX+/VX− is reset to VCM = VDD/2</li><li>VCM only needs to replenish the charge loss caused by the output common-mode shift</li></ul></li><li>resolving<ul><li>once the SA latch resolves, the FIA is disabled to prevent the further discharge</li></ul></li></ul></li><li><strong>Implementation</strong><ul><li>FIA stage<ul><li>chooseing C_RES<ul><li>large C_RES<ul><li>fast preamplification</li><li>weak degradation of gm/I_D boost</li><li>large area</li></ul></li><li>small C_RES<ul><li>worse kick-back noise</li><li>insuffiecnt gain</li></ul></li></ul></li></ul></li><li>standard SA latch</li></ul></li></ul><p><img src="https://img.mubu.com/document_image/0a6696ca-7598-4fc8-8dbb-872342890f73-216525.jpg" alt="Schematic" /><br /></p><p><img src="https://img.mubu.com/document_image/bfa51c2e-4e3a-4512-ab38-da7f50145023-216525.jpg" alt="Model" /> <img src="https://img.mubu.com/document_image/3260d0af-894a-4831-8d59-76fb6d25d9b1-216525.jpg" alt="Opeation" /><br /></p><h2 id="conclusion">Conclusion</h2><p><strong>TECH</strong> 180nm<br /><strong>ENERGY</strong> 0.98 pJ@1.2V<br /><strong>NOISE</strong> 46 uV<br /><strong>FOM</strong> 2.07 nJ·uV^2<br /></p><h2 id="important-reference">Important Reference</h2><blockquote><p><em>Conference Paper (VLSI 2019)</em></p><ul><li>[14] X. Tang, B. Kasap, L. Shen, X. Yang, W. Shi, and N. Sun, “An energyefficient comparator with dynamic floating inverter pre-amplifier,” in Proc. IEEE Symp. VLSI Circuits (VLSI), Jun. 2019, pp. C140–C141.<br /></li></ul><p><em>dynamically biased (DB) integration</em></p><ul><li>[12] H. S. Bindra, C. E. Lokin, D. Schinkel, A.-J. Annema, and B. Nauta, “A 1.2-V dynamic bias latch-type comparator in 65-nm CMOS with 0.4-mV input noise,” IEEE J. Solid-State Circuits, vol. 53, no. 7, pp. 1902–1912, Jul. 2018.<br /></li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://img.mubu.com/document_image/9eb8e6d4-1b25-4804-ad7e-8432158900f0-216525.jpg&quot; alt=&quot;Keypoints&quot; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h5 id=&quot;full</summary>
+      
+    
+    
+    
+    <category term="JSSC" scheme="https://papers.robin-ic.fun/categories/JSSC/"/>
+    
+    <category term="2020" scheme="https://papers.robin-ic.fun/categories/JSSC/2020/"/>
+    
+    
+    <category term="2020" scheme="https://papers.robin-ic.fun/tags/2020/"/>
+    
+    <category term="UTAustin" scheme="https://papers.robin-ic.fun/tags/UTAustin/"/>
+    
+    <category term="JSSC" scheme="https://papers.robin-ic.fun/tags/JSSC/"/>
+    
+    <category term="CMP" scheme="https://papers.robin-ic.fun/tags/CMP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ISSCC-2020 17.8 12-to-14.5GHz Subsampling PLL with a 150μW Frequency-Disturbance-Correcting Loop Using a Low-Power Unevenly Spaced Edge Generator</title>
+    <link href="https://papers.robin-ic.fun/papers/14088/"/>
+    <id>https://papers.robin-ic.fun/papers/14088/</id>
+    <published>2020-04-24T15:56:17.000Z</published>
+    <updated>2021-02-01T12:25:51.178Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://img.mubu.com/document_image/7b7bfedf-81d9-45b6-915e-38375b847de2-216525.jpg" alt="Keypoints" /><br /></p><h5 id="full-citation">Full Citation</h5><p>Y. Lim et al., "17.8 A 170MHz-Lock-In-Range and −253dB-FoMjitter 12-to-14.5GHz Subsampling PLL with a 150µW Frequency-Disturbance-Correcting Loop Using a Low-Power Unevenly Spaced Edge Generator," 2020 IEEE International Solid- State Circuits Conference - (ISSCC), San Francisco, CA, USA, 2020, pp. 280-282.<br /><a href="https://ieeexplore.ieee.org/document/9062921">IEEE Link</a> ​</p><h2 id="keypoints">Keypoints</h2><ul><li><span class="math inline">\(f_D\)</span> - correcting loop (FCL)<ul><li>reference signals<ul><li>generate <span class="math inline">\(S_{US}\)</span> signal from <span class="math inline">\(f_{REF}\)</span></li><li>with unevenly spaced edges aligned with the edges the SSPLL output</li></ul></li><li><span class="math inline">\(f_D\)</span> detection<ul><li>detect output polary and slope<ul><li>slope=1 : at falling edge, no <span class="math inline">\(f_D\)</span> event</li><li>slope=1 : wrong edge, <span class="math inline">\(f_D\)</span> event happens</li></ul></li></ul></li><li>frequency locking at <span class="math inline">\(f_D\)</span></li><li>edge position calibration at no <span class="math inline">\(f_D\)</span></li></ul></li></ul><h2 id="background">Background</h2><ul><li>Sub-sampling SSPLL for low jitter output<ul><li>limited lock-in range because of no divider (less than 40% <span class="math inline">\(f_{REF}\)</span>)<ul><li>lock failure with large frequency disturbance <span class="math inline">\(f_D\)</span></li><li>frequency-locked loops (FLL)<ul><li>conventional divider-based: high power</li><li>duty-cycled on: increase re-acquisition time <span class="math inline">\(T_{RA}\)</span></li></ul></li><li>increase <span class="math inline">\(f_{REF}\)</span><ul><li>high power</li><li>degrade frequency resolution of <span class="math inline">\(f_{OUT}\)</span></li></ul></li></ul></li></ul></li></ul><h2 id="proposed">Proposed</h2><ul><li>SSPLL robus to <span class="math inline">\(f_D\)</span> with wide lock-in range<ul><li><span class="math inline">\(f_D\)</span> - correcting loop (FCL)<ul><li>new signal of <span class="math inline">\(S_{US}\)</span> with unevenly spaced edges aligned with the edges the SSPLL output</li><li>relaxed jitter requirement of <span class="math inline">\(S_{US}\)</span> for only <span class="math inline">\(f_D\)</span> detection</li></ul></li></ul></li></ul><h2 id="details">Details</h2><ul><li><strong>Architecture</strong><ul><li>unevenly spaced edge generator (USEG): <span class="math inline">\(S_{US}\)</span></li><li>polarity/slope detector (PSD): <span class="math inline">\(D_P\)</span>, <span class="math inline">\(D_{SL}\)</span></li><li><span class="math inline">\(f_D\)</span> detector (FDD): EV</li><li>coarse frequency selector</li></ul></li><li><strong>Principle</strong><ul><li>frequency locking (when <span class="math inline">\(f_D\)</span> event detected, EV=0)<ul><li>FDD controls VCO capacitor bank for frequency locking<ul><li>uses frequency information (changes in the values of <span class="math inline">\(D_P\)</span> and <span class="math inline">\(D_{SL}\)</span>)</li><li>other than phase information</li><li>reduce <span class="math inline">\(T_{RA}\)</span> significantly</li></ul></li></ul></li><li>calibration (when no <span class="math inline">\(f_D\)</span> event, EV=0)<ul><li>D_P of the PSD is used for the USEG to calibrate the edges of S_US</li><li>make S_US aligned with the zero-crossing points of SOUT</li></ul></li></ul></li><li><strong>Implementation</strong><ul><li><strong>PSD</strong><ul><li><span class="math inline">\(D_{P}\)</span>: comparator (<span class="math inline">\(CMP_P\)</span>), compares <span class="math inline">\(V_{SH+}\)</span> and <span class="math inline">\(V_{SH–}\)</span></li><li><span class="math inline">\(D_{SL}\)</span>: comparator (<span class="math inline">\(CMP_{SL}\)</span>), compares <span class="math inline">\(V_{SH+}\)</span> and <span class="math inline">\(V&#39;_{SH+}\)</span> (slightly delayed sampled version)</li></ul></li><li><strong>FDD</strong><ul><li>Using <span class="math inline">\(D_{P}\)</span> and <span class="math inline">\(D_{SL}\)</span></li><li> 4 detected sections (DSs)<ul><li>S1: <span class="math inline">\(D_{P}=0\)</span>, <span class="math inline">\(D_{SL}=0\)</span></li><li>S2: <span class="math inline">\(D_{P}=0\)</span>, <span class="math inline">\(D_{SL}=1\)</span></li><li>S3: <span class="math inline">\(D_{P}=1\)</span>, <span class="math inline">\(D_{SL}=1\)</span></li><li>S4: <span class="math inline">\(D_{P}=1\)</span>, <span class="math inline">\(D_{SL}=0\)</span></li></ul></li><li><span class="math inline">\(f_D\)</span> event<ul><li>EV = 0 : stay at S2 or S3 (<span class="math inline">\(D_{SL}=1\)</span>)</li><li>EV=1 : S1(minus <span class="math inline">\(f_D\)</span>); S4(plus <span class="math inline">\(f_D\)</span>)</li></ul></li><li>FDD locking detection<ul><li>update <span class="math inline">\(CB_{CF}\)</span> by one</li><li>compare current <span class="math inline">\(DS_C\)</span> and previous <span class="math inline">\(DS_P\)</span></li><li>counting the same <span class="math inline">\(DS_C\)</span> in <span class="math inline">\(N_{SS}\)</span></li></ul></li><li>limitaion<ul><li> a phase shift of more than ±π cannot be corrected by the FCL</li><li>small target rms jitter ensure negligible effect of this limitation</li></ul></li></ul></li><li><strong>USEG</strong><ul><li>protect USEG from supply influtuation by a PMOS M_REG</li><li>Edge Position Calibrator (EPC)</li><li>Coarse Delay Generator (CDG)</li></ul></li></ul></li></ul><p><img src="https://img.mubu.com/document_image/79e891ec-9dd0-4d9a-a1b9-f2a8db043352-216525.jpg" alt="System Block Diagram" /><br /></p><h2 id="conclusion">Conclusion</h2><p><strong>TECH</strong> 65nm<br /><strong>REF</strong> 50MHz<br /><strong>OUT</strong> 12.0 ~ 14.5 GHz<br /><strong>REF SPUR</strong> -75 dBc<br /><strong>POWER</strong> 6.7 mW<br /><strong>RMS JITTER</strong> 83 fs<br /><strong>FOM</strong> -253 dB<br /></p><h2 id="important-reference">Important Reference</h2><blockquote><p><em>Lock-in Range theory analysis</em></p><ul><li>[1] G. Leonov et al., “Hold-In, Pull-In, and Lock-In Ranges of PLL Circuits: Rigorous Mathematical Definitions and Limitations of Classical Theory,” IEEE TCAS-I, vol. 62, no. 10, pp. 2454–2464, Oct. 2015.<br /></li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://img.mubu.com/document_image/7b7bfedf-81d9-45b6-915e-38375b847de2-216525.jpg&quot; alt=&quot;Keypoints&quot; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h5 id=&quot;full</summary>
+      
+    
+    
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/categories/ISSCC/"/>
+    
+    <category term="2020" scheme="https://papers.robin-ic.fun/categories/ISSCC/2020/"/>
+    
+    
+    <category term="PLL" scheme="https://papers.robin-ic.fun/tags/PLL/"/>
+    
+    <category term="2020" scheme="https://papers.robin-ic.fun/tags/2020/"/>
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/tags/ISSCC/"/>
+    
+    <category term="KAIST" scheme="https://papers.robin-ic.fun/tags/KAIST/"/>
+    
+    <category term="UNIST" scheme="https://papers.robin-ic.fun/tags/UNIST/"/>
+    
+    <category term="SSPD" scheme="https://papers.robin-ic.fun/tags/SSPD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ISSCC-2014 11.3 A 10b 0.6nW SAR ADC with data-dependent energy savings using LSB-first successive approximation</title>
+    <link href="https://papers.robin-ic.fun/papers/58117/"/>
+    <id>https://papers.robin-ic.fun/papers/58117/</id>
+    <published>2020-04-22T04:56:58.000Z</published>
+    <updated>2021-02-01T12:25:51.178Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://img.mubu.com/document_image/b818163a-f5c9-4185-b0c6-ba2f19dbc72a-216525.jpg" alt="Keypoints" /><br /></p><h5 id="full-citation">Full Citation</h5><p>F. M. Yaul and A. P. Chandrakasan, "11.3 A 10b 0.6nW SAR ADC with data-dependent energy savings using LSB-first successive approximation," 2014 IEEE International Solid-State Circuits Conference Digest of Technical Papers (ISSCC), San Francisco, CA, 2014, pp. 198-199.<br /><a href="https://ieeexplore.ieee.org/abstract/document/6757398">IEEE Link</a><br /></p><h2 id="keypoints">Keypoints</h2><ul><li>LSB-first successive approximation (SA)<ul><li>INIT Phase<ul><li>set the DAC to the initial geuess of D_PREV</li><li>get the biecycling DIR by the first comparison</li></ul></li><li>toMSB Phase<ul><li>start from the lowest bit = inv(DIR)</li></ul></li><li>toLSB Phase<ul><li>conventional SAR logic</li></ul></li><li>efficiency<ul><li>number of bitcycle: best 2; worst 2N+1</li><li>save energy during periods of low signal activity</li></ul></li></ul></li></ul><h2 id="background">Background</h2><ul><li>ADCs used in medical and industrial monitoring<ul><li>signal pattern<ul><li>short bursts of high activity</li><li>long idle periods</li></ul></li><li>current approaches to save energy<ul><li>variable resolution and sample rate systems</li><li>asynchronous level-crossing ADCs</li></ul></li></ul></li></ul><h2 id="proposed">Proposed</h2><ul><li>LSB-first successive approximation (SA)<ul><li>signal-activity-based power-saving algorithm</li><li>targeted at signals with low average activity</li><li>benefits<ul><li>maintains a constant sample rate and resolution</li><li>scales logarithmically with signal activity</li><li>not inherently suffer from slope overload</li><li>fewer bitcycle → reduced power</li></ul></li></ul></li></ul><h2 id="details">Details</h2><ul><li>implementation<ul><li>10b capacitive DAC<ul><li>5b main DAC</li><li>coupled a 5b sub-DAC with the capacitor Cc<br />bridged capictor Cc</li><li>2-stage dynamic comparator</li><li>bootstrapped switch (charge pump)</li><li>long tansistor length to reduce leakage</li></ul></li></ul></li><li>number of bitcyles (N bits resolution)<ul><li>best : 2</li><li>worst: 2N+1</li></ul></li><li>operation<ul><li>starts with an initial guess D_PREV (error = Δcode)</li><li>bit-cycles that determine the LSBs of D first</li><li>phases<ul><li>INIT Phase<ul><li>sample</li><li>set the DAC to the initial geuess of D_PREV</li><li>get the biecycling DIR by the first comparison<ul><li>cmp = 0, DIR = 1, D_RREV is smaller, increase</li><li>cmp = 1, DIR = 0, D_PREV is larger, decrease (from MSBs) (to LSBs)</li></ul></li></ul></li><li>toMSB Phase<br />(from LSBs)<ul><li>start from the lowest bit = inv(DIR)<br />Q = index( lowest_bit == inv (DIR) )</li><li>skip the bits == DIR already</li><li>until VDAC overshoot VIN<br />the comparator output flips</li></ul></li><li>toLSB Phase<br />(from MSBs)<ul><li>start from the end of toMSB Phase</li><li>conventional SAR logic</li><li>handle both polarities of DIR</li></ul></li><li>end<ul><li>DACs are purged</li></ul></li></ul></li><li>fast fullscale signal (even beyond Fs)<ul><li>an initial guess of 511 rather than D_PREV is used to limit the maximum error</li></ul></li></ul></li><li>power saving dependence<ul><li>the mean Δcode</li><li>signal's power probability density</li></ul></li></ul><p><img src="https://img.mubu.com/document_image/c91f64b7-3103-42c1-b623-a8d07eb03567-216525.jpg" alt="System Block Diagram" /><br /></p><p><img src="https://img.mubu.com/document_image/8d9daf4e-d869-436a-8afe-dc6ee5067f15-216525.jpg" alt="5b Example" /><br /></p><p><img src="https://img.mubu.com/document_image/f87b938a-a622-415a-a957-bca28bdbbc17-216525.jpg" alt="Flow Chart" /><br /></p><h2 id="conclusion">Conclusion</h2><p><strong>TECH</strong> 65 nm<br /><strong>RES</strong> 10-bit<br /><strong>SAMPLING RATE</strong> 20 KS/s<br /><strong>POWER</strong> 206 uW@0.55V<br /><strong>DNL</strong> 0.58 LSB<br /><strong>INL</strong> 0.57 LSB<br /><strong>ENOB</strong> 8.84<br /><strong>FOM_W</strong> 22.4 fJ/conv.-step<br /></p><h2 id="important-reference">Important Reference</h2><blockquote><p><em>variable resolution and sample rate systems</em></p><ul><li>[1] M. Yip and A. P. Chandrakasan, "A Resolution-Reconfigurable 5-to-10b 0.4-to-1V Power Scalable SAR ADC," ISSCC Dig. Tech. Papers, pp. 190-191, Feb. 2011.<br /></li></ul><p><em>asynchronous level-crossing ADCs</em></p><ul><li>[2] M. Trakimas and S. Sonkusale, "An Adaptive Resolution Asynchronous ADC Architecture for Data Compression in Energy Constrained Sensing Applications," IEEE J. Solid-State Circuits, vol. 58, no. 5, May 2011.<br /></li></ul><p><em>ADCs that bypass bitcycles when the signal is within a predefined small window</em></p><ul><li>[3] G. Y. Huang, et al., "A 1μW 10-bit 200-kS/s SAR ADC With a Bypass Window for Biomedical Applications," IEEE J. Solid-State Circuits, vol. 47, no. 11, Nov. 2012.</li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://img.mubu.com/document_image/b818163a-f5c9-4185-b0c6-ba2f19dbc72a-216525.jpg&quot; alt=&quot;Keypoints&quot; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h5 id=&quot;full</summary>
+      
+    
+    
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/categories/ISSCC/"/>
+    
+    <category term="2014" scheme="https://papers.robin-ic.fun/categories/ISSCC/2014/"/>
+    
+    
+    <category term="ADC" scheme="https://papers.robin-ic.fun/tags/ADC/"/>
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/tags/ISSCC/"/>
+    
+    <category term="2014" scheme="https://papers.robin-ic.fun/tags/2014/"/>
+    
+    <category term="MIT" scheme="https://papers.robin-ic.fun/tags/MIT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ISSCC-2020 17.7 A 12mW 10GHz FMCW PLL Based on an Integrating DAC with 90kHz rms Frequency Error for 23MHz/μs Slope and 1.2GHz Chirp Bandwidth</title>
+    <link href="https://papers.robin-ic.fun/papers/53818/"/>
+    <id>https://papers.robin-ic.fun/papers/53818/</id>
+    <published>2020-04-18T16:11:50.000Z</published>
+    <updated>2021-02-01T12:25:51.178Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://img.mubu.com/document_image/980ff1af-57e1-41a1-b69f-caeaeb0011fa-216525.jpg" alt="Keypoints" /><br /></p><h5 id="full-citation">Full Citation</h5><p>P. T. Renukaswamy et al., "17.7 A 12mW 10GHz FMCW PLL Based on an Integrating DAC with 90kHz rms Frequency Error for 23MHz/µs Slope and 1.2GHz Chirp Bandwidth," 2020 IEEE International Solid- State Circuits Conference - (ISSCC), San Francisco, CA, USA, 2020, pp. 278-280.<br /><a href="https://ieeexplore.ieee.org/document/9063080">IEEE Link</a><br /></p><h2 id="keypoints">Keypoints</h2><ul><li>QDAC<ul><li>low-resolution IDAC</li><li>programmable cap array</li><li>smooth output frequency change<ul><li>charging Cap with current I</li><li>compensate the VCO tuning-curve nonlinearity</li></ul></li><li>benefits<ul><li>low power</li><li>low resolution</li><li>low noise</li><li>smooth output</li></ul></li></ul></li><li>background linearity calibration<ul><li>the IDAC is pre-distorted by a LuT<ul><li>address the entry by the expected frequency</li><li>updated by the error detected in the SSPD</li></ul></li></ul></li></ul><h2 id="background">Background</h2><ul><li>FMCW radars: high-resolution indoor localization and tracking<ul><li>fast saw-tooth FMCW chirp<ul><li>short ramp time</li><li>large chirp bandwidth (C_BW)</li><li>high linearity</li></ul></li><li>fractionalN phase-locked loop (PLL)<ul><li>two-point-modulation (TPM) [1-3]<ul><li>overcome the bandwidth limitation</li></ul></li><li>DTC-based sub-sampling PLL (SSPLL)<ul><li>high-linearity</li><li>eliminate power-hungry divder</li></ul></li><li>modulating (DAC)<ul><li>power consumption imited by the low-noise requirements</li><li>high gain, very-sensitive tuning input of the VCO</li></ul></li></ul></li><li>conventional VDAC<ul><li>output stepped voltage</li><li>require high resolution</li><li>generates wideband noise<ul><li>sized with a small load resistance (around 50Ω)</li><li>to limit the up-conversion to phase noise by the high gain of the VCO</li><li>cannot Increase the C_tune for a similar noise-filtering<ul><li>directly impacts the settling time of the frequency step</li></ul></li></ul></li></ul></li></ul></li></ul><h2 id="proposed">Proposed</h2><ul><li>charge-integrating DAC (QDAC)<ul><li>low-power</li><li>low-resolution<ul><li>does not need a LSB size small enough to limit the quantization noise</li><li>only needs a limited number of bits to compensate for the VCO tuning-curve nonlinearity</li></ul></li><li>continuous-time</li><li>superior noise performance</li><li>generate a smooth output frequency change<ul><li>attenuates the signal replicas due to a stepped frequency change</li></ul></li></ul></li><li>background calibration algorithm<ul><li>calibrate the nonlinearity of the highpass modulation path</li><li>fast convergence</li></ul></li></ul><h2 id="details">Details</h2><ul><li><strong>architecture</strong><ul><li>linear ramp modulation<ul><li>highpass injection path using the QDAC</li><li>the lowpass injection path using the DTC</li><li>chirp slope<ul><li>The FMCW controller defines the charging and reset time of the QDAC capacitor C_tune</li></ul></li></ul></li><li>auxiliary FLL<ul><li>receive the frequency modulation data</li><li>avoid the false triggering of the dead zone (DZ)</li></ul></li><li>background calibraion</li></ul></li><li><strong>operation</strong><ul><li>voltage ramp on Vtune2<ul><li>closing the switch S_ramp</li><li>opening the switch S_reset</li><li> a charge from the QDAC is integrated on to the capacitor C_tune<ul><li>start: from a non-zero voltage V_reset</li><li>end: V_tune2 is reset to Vreset and the SSPLL re-acquires lock</li></ul></li><li>linear environment<ul><li>the QDAC input code is fixed</li><li>the VCO output frequency smoothly increases over time</li><li>great noise performance<ul><li>generates noise but at lower frequencies</li><li>suppressed by the PLL loop</li></ul></li></ul></li></ul></li></ul></li><li><strong>implementation</strong><ul><li><strong>QDAC</strong><ul><li>core 10b current DAC (IDAC)<ul><li>segmented current-steering DAC architecture<ul><li>5b binary for LSB</li><li>5b thermometric for MSB</li><li>output is mirrored with a programmable gain</li></ul></li></ul></li><li>a programmable capacitor array (C_tune)</li><li>the chirp slope is defined by the ratio of mean IDAC output current (IQDAC) and Ctune</li><li>the chirp starts from a non-zero voltage V_reset</li></ul></li><li><strong>background linearity calibration</strong><ul><li>the modulation data to the IDAC is pre-distorted by a LuT</li><li>the expected output frequency is used to address the appropriate LuT entry</li><li>The LuT is populated based on the correlation of error detected in the SSPD with the modulation data (Sign1)</li><li>procedure<ul><li>background monitoring: based on Sign1</li><li>empty LuT : informartion from FLL</li><li>initial calibration: update LuT with Sign1</li><li>larger frequency errors<ul><li>activate FLL</li><li>update LuT with Sign2</li><li>restart chirp</li></ul></li></ul></li></ul></li></ul></li></ul><p><img src="https://img.mubu.com/document_image/5f70f797-6c19-49e8-b3af-c523314ae4bf-216525.jpg" alt="System block diagram" /><br /></p><p><img src="https://img.mubu.com/document_image/5f65ff8f-a806-4fbb-bd8c-70dbd2c8476e-216525.jpg" alt="QDAC" /><br /></p><h2 id="conclusion">Conclusion</h2><p><strong>TECH</strong> 28nm<br /><strong>REF</strong> 80MHz<br /><strong>OUT</strong> 8.3 - 11.7 GHz<br /><strong>CHIRP BW</strong> 1.21 GHz<br /><strong>CHIRP SLOPE</strong> 23.5 MHz/us<br /><strong>POWER</strong> 11.7 mW<br /><strong>RMS FREQ ERROR</strong> 89 kHz<br /></p><h2 id="important-reference">Important Reference</h2><blockquote><p><em>two-point modulation (TPM) with DTC</em></p><ul><li>[1] Q. Shi et al., "A Self-Calibrated 16GHz Subsampling-PLL-Based 30μs Fast Chirp FMCW Modulator with 1.5GHz Bandwidth and 100kHz rms Error," ISSCC, pp. 408-410, Feb. 2019.<br /></li><li>[5] B. Ginsburg et al., "A Multimode 76-to-81GHz Automotive Radar Transceiver with Autonomous Monitoring," ISSCC, pp. 158-160, Feb. 2018.<br /></li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://img.mubu.com/document_image/980ff1af-57e1-41a1-b69f-caeaeb0011fa-216525.jpg&quot; alt=&quot;Keypoints&quot; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h5 id=&quot;full</summary>
+      
+    
+    
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/categories/ISSCC/"/>
+    
+    <category term="2020" scheme="https://papers.robin-ic.fun/categories/ISSCC/2020/"/>
+    
+    
+    <category term="PLL" scheme="https://papers.robin-ic.fun/tags/PLL/"/>
+    
+    <category term="2020" scheme="https://papers.robin-ic.fun/tags/2020/"/>
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/tags/ISSCC/"/>
+    
+    <category term="clock" scheme="https://papers.robin-ic.fun/tags/clock/"/>
+    
+    <category term="POLIMI" scheme="https://papers.robin-ic.fun/tags/POLIMI/"/>
+    
+    <category term="FMCW" scheme="https://papers.robin-ic.fun/tags/FMCW/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ISSCC-2013 15.1  A 6.3µW 20b incremental zoom-ADC with 6ppm INL and 1µV offset</title>
+    <link href="https://papers.robin-ic.fun/papers/55091/"/>
+    <id>https://papers.robin-ic.fun/papers/55091/</id>
+    <published>2020-04-17T14:07:37.000Z</published>
+    <updated>2021-02-01T12:25:51.178Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="full-citation">Full Citation</h5><p>Y. Chae, K. Souri and K. A. A. Makinwa, "A 6.3µW 20b incremental zoom-ADC with 6ppm INL and 1µV offset," 2013 IEEE International Solid-State Circuits Conference Digest of Technical Papers, San Francisco, CA, 2013, pp. 276-277.<br /><a href="https://ieeexplore.ieee.org/document/6487733">IEEE Link</a><br /></p><p><img src="https://api2.mubu.com/v3/document_image/c69cd2f4-799e-48d0-bb7b-f0ed3f9c20c7-216525.jpg" alt="Keypoints" /><br /></p><h2 id="notes">Notes</h2><ul><li>introduction: incremental ADC<ul><li>requirements<ul><li>high absolution accuracy and linearity</li><li>employ techniques<ul><li>robust offset</li><li>1/f noise reduction</li></ul></li></ul></li><li>poor power effeciency</li></ul></li><li>zoom ADC architecture (2-step)<ul><li>setup<ul><li>6b coarse SAR conversion</li><li>fine delta-sigma conversion</li></ul></li><li>principle<ul><li>coarse conversion of the SAR ADC first</li><li>fine delta-sigma then continues to digitized</li><li>reference of the fine conversion is define by the coarse conversion</li></ul></li></ul></li><li>inverter-based integrator<ul><li>dynamic bias for high dc gain</li><li>auto-zero process</li></ul></li></ul><h2 id="figures">Figures</h2><p><img src="https://img.mubu.com/document_image/45327735-68cc-43ab-8b74-d192cc72833f-216525.jpg" alt="system block diagram" /><br /></p><h2 id="conclusion">Conclusion</h2><p><strong>TECH</strong> 0.16um<br /><strong>RES</strong> 20-bit<br /><strong>CONVERSION TIME</strong> 40 ms<br /><strong>POWER</strong> 3.5uA@1.8V<br /><strong>INPUT RANGE</strong> 1.8 V<br /><strong>SNDR</strong> 119.8 dB<br /><strong>INL</strong> ±6 ppm<br /><strong>ENOB</strong> 12/24<br /><strong>FOM_S</strong> 182.7dB<br /></p><h2 id="important-reference">Important Reference</h2><blockquote><p><em>two-step and zoom ADC architecture</em></p><ul><li>[1] K. Souri and K.A.A. Makinwa, “A 0.12mm2 7.4μW Micropower Temperature Sensor with an Inaccuracy of ±0.2°C (3σ) from -30°C to 125°C,” IEEE J. SolidState Circuits, vol. 46, no. 7, pp. 1693-1700, July 2011.<br /></li><li>[2] K. Souri, Y. Chae and K.A.A. Makinwa, “A CMOS Temperature Sensor With a Voltage-Calibrated Inaccuracy of ±0.15°C (3σ) From -55 to 125°C,” IEEE J. Solid-State Circuits, vol. 47, no. 12, Jan. 2013.<br /></li></ul><p><em>extended counting architecture</em></p><ul><li>[4] A. Agah, K. Vleugels, P. B. Griffin, M. Ronaghi, J. D. Plummer, and B. A. Wooley, “A High-Resolution Low-Power Oversampling ADC with ExtendedRange for Bio-Sensor Arrays,” IEEE J. Solid-State Circuits, vol. 45, no. 6, pp. 1099-1110, June 2010.<br /></li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h5 id=&quot;full-citation&quot;&gt;Full Citation&lt;/h5&gt;
+&lt;p&gt;Y. Chae, K. Souri and K. A. A. Makinwa, &quot;A 6.3µW 20b incremental zoom-ADC with 6ppm INL and 1µV</summary>
+      
+    
+    
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/categories/ISSCC/"/>
+    
+    <category term="2013" scheme="https://papers.robin-ic.fun/categories/ISSCC/2013/"/>
+    
+    
+    <category term="ADC" scheme="https://papers.robin-ic.fun/tags/ADC/"/>
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/tags/ISSCC/"/>
+    
+    <category term="2013" scheme="https://papers.robin-ic.fun/tags/2013/"/>
+    
+    <category term="TUD" scheme="https://papers.robin-ic.fun/tags/TUD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ISSCC-2020 17.6 A 21.7-to-26.5GHz Charge-Sharing Locking Quadrature PLL with Implicit Digital Frequency-Tracking Loop Achieving 75fs Jitter and -250dB FoM</title>
+    <link href="https://papers.robin-ic.fun/papers/38304/"/>
+    <id>https://papers.robin-ic.fun/papers/38304/</id>
+    <published>2020-04-09T12:01:51.000Z</published>
+    <updated>2021-02-01T12:25:51.178Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://img.mubu.com/document_image/f0af506f-d7a6-4a05-9ea1-d37d3b84ddda-216525.jpg" alt="Keypoints" /><br /></p><h5 id="full-citation">Full Citation</h5><p>Y. Hu et al., "17.6 A 21.7-to-26.5GHz Charge-Sharing Locking Quadrature PLL with Implicit Digital Frequency-Tracking Loop Achieving 75fs Jitter and −250dB FoM," 2020 IEEE International Solid- State Circuits Conference - (ISSCC), San Francisco, CA, USA, 2020, pp. 276-278.<br /><a href="https://ieeexplore.ieee.org/document/9063024">IEEE Link</a><br /></p><h2 id="keypoints">Keypoints</h2><ul><li><strong>charge-sharing locking (CSL) technique</strong><ul><li>principle<ul><li>preset voltage by DAC<br />just like injection-locking reset initial phase</li><li>sharing the charge for the frequency fine tuning<br />integral path</li><li>sampling the residual voltage for the coarse freuqency tuning</li></ul></li><li>benefits<ul><li>sw-cap: low power, low noise</li><li>no VCO buffers requirement</li><li>potential of different inital phases setting → fractional operation</li></ul></li></ul></li><li>quadrature class-F oscillator<ul><li>quadrature 3rd-harmonic extraction</li><li>source-coupling [7]</li></ul></li></ul><h2 id="background">Background</h2><ul><li>ultra-low jitter 5G mm-wave(mmW) frequency generation<ul><li>sub-sampling (SS)<ul><li>avoid high speed divider</li><li>high power mmW VCO buffer</li><li>large area of analog filter</li></ul></li><li>injection-locking (IL)<ul><li>suppress the oscillator phase noise</li><li>cannot ensure robustness over PVT</li><li>require additional frequency-tracking loop (FTL)</li><li>timing race between the injection and FTL</li><li>phase averaging techiniqus [1] : require QVCO</li></ul></li></ul></li><li>mm-W oscillator<ul><li>low-Q of sw-cap banks</li><li>injection pulling by a PA</li><li>proposed: using a source-coupling [7] quadrature Class-F oscillator</li></ul></li></ul><h2 id="proposed">Proposed</h2><ul><li><strong>charge-sharing locking (CSL) technique</strong><ul><li>principle<ul><li>implicit digital FTL exploiting a minimalistic SAR-ADC</li><li>sharing capacitor Cshare (~1pF) shares charge with the resonant LC tank</li><li>resulting charge residue on Cshare is then sampled for frequency tracking</li></ul></li><li>benefits<ul><li>mitigate the timing-race problem</li><li>the FTL has ultra-low power and tiny area</li><li>relieves the tough requirements on the resolution<ul><li>a high-speed DSM</li><li>linearity of sw-cap</li></ul></li></ul></li></ul></li><li>Quadrature class-F oscillator<ul><li>quadrature 3rd-harmonic extraction</li><li>source-coupling [7]</li></ul></li></ul><h2 id="details">Details</h2><ul><li><strong>Charge Sharing Locking (CSL)</strong><ul><li>setup<ul><li>switches<ul><li>charge-sharing switches: improved bootstarpped</li><li>the other switches: plain transmission gates</li></ul></li><li>waveforms: gate nodes (VG,IP/IN/QP/QN with sinusoidal waveforms)</li><li>the SAR-ADC-based FTL: runs at 1/4 frequency of reference</li></ul></li><li><strong>operation</strong><ul><li><strong>updates the DAC input</strong><ul><li>clk_csl_2 = 1, preset the expected Vshare1/2 on Cshare1/2</li><li>clk_csl_2 = 0, preset to the DC offset of VG,IP/IN (i.e. VB of DCO (0.5V))</li></ul></li><li><strong>charge sharing</strong><ul><li>narrow pulse of clk_csl_1</li><li>connects Cshare1 (Cshare2) to VG,IP (VG,IN)</li><li>residual voltages ΔV1 = V_share1 - V_share2 can correct frequency error</li></ul></li><li><strong>error sampling</strong><ul><li>the charge residue is transferred from Cshare to Csar</li><li>ΔV2 sampled by ADC equals to Cshare/(Cshare+Csar)ΔV1</li><li>ΔV2 is used for tuning the fine capacitor bank</li><li>Csar with charge residue of ΔV2 is reset to 0 after conversion</li></ul></li></ul></li><li><strong>two-step locking</strong><ul><li>target<ul><li>solve locking uncertainty</li><li>avoid locking at the wrong edge</li></ul></li><li>operation<ul><li>first, peak/bottom locking<ul><li>set 1/0 to VG,QP/VG,QN respectively</li></ul></li><li>then, zero-crossing locking<ul><li>set offset to VG,IP/VG,IN respectively</li></ul></li><li>share with clk_csl_2</li><li>VG,IP is tuned to align with the pulse of clk_csl_1/2</li><li>steps controlled by a counter</li></ul></li></ul></li></ul></li><li>Quadrature class-F oscillator<ul><li>setup<ul><li>fundemental frequency = 8.75 GHz</li><li>two harmonic extractors(HEs)<ul><li>signals at drain nodes with a strong 3rd harmonic (~ 30%)</li></ul></li><li>The drain tank of the HE<ul><li>amplifies the 3rd harmonic</li><li>suppresses the fundamental</li></ul></li><li>differential tail tank<ul><li>further blocks the fundamental frequency</li></ul></li><li>coupling phase delay and coupling strength<ul><li>carefully designed</li><li>avoid the quadrature uncertainty (+90° or -90°)</li></ul></li></ul></li></ul></li></ul><p><img src="https://img.mubu.com/document_image/e8a1c59c-c435-459e-acaa-6c1e027baee6-216525.jpg" alt="System Concept Diagram" /><br /></p><p><img src="https://img.mubu.com/document_image/5de90214-1bd2-4c3e-8b3a-d65ea245e0a9-216525.jpg" alt="Locking Operation" /><br /></p><h2 id="conclusion">Conclusion</h2><p><strong>TECH</strong> 28nm LP<br /><strong>REF</strong> 250MHz<br /><strong>OUT</strong> 26.25 GHz<br /><strong>REF SPUR</strong> -45 dBc<br /><strong>POWER</strong> 16.5 mW<br /><strong>RMS JITTER</strong> 75 fs<br /><strong>FOM</strong> -250.2 dB<br /></p><h2 id="important-reference">Important Reference</h2><blockquote><p><em>quadrature oscillator with harmonic extractors (HEs)</em></p><ul><li>[5] Z. Zong et al., “A Low-Noise Fractional-N Digital Frequency Synthesizer with Implicit Frequency Tripling for mm-Wave Applications,” IEEE JSSC, vol. 54, no. 3, pp. 755-767, Mar. 2019.<br /></li></ul><p><em>quadrature 3rd-harmonic extraction based on a source-coupling</em></p><ul><li>[7] A. Ng and H. Luong, “A 1V 17-GHz 5-mW CMOS Quadrature VCO Based on Transformer Coupling,” IEEE JSSC, vol. 42, no. 9, pp. 1933-1942, Sept. 2007.<br /></li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://img.mubu.com/document_image/f0af506f-d7a6-4a05-9ea1-d37d3b84ddda-216525.jpg&quot; alt=&quot;Keypoints&quot; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h5 id=&quot;full</summary>
+      
+    
+    
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/categories/ISSCC/"/>
+    
+    <category term="2020" scheme="https://papers.robin-ic.fun/categories/ISSCC/2020/"/>
+    
+    
+    <category term="PLL" scheme="https://papers.robin-ic.fun/tags/PLL/"/>
+    
+    <category term="2020" scheme="https://papers.robin-ic.fun/tags/2020/"/>
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/tags/ISSCC/"/>
+    
+    <category term="clock" scheme="https://papers.robin-ic.fun/tags/clock/"/>
+    
+    <category term="UCD" scheme="https://papers.robin-ic.fun/tags/UCD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ISSCC-2020 17.3 A -58dBc-Worst-Fractional-Spur and -234dB-FoM jitter, 5.5GHz Ring-DCO-Based Fractional-N DPLL Using a Time-Invariant-Probability Modulator, Generating a Nonlinearity-Robust DTC-Control Word</title>
+    <link href="https://papers.robin-ic.fun/papers/26934/"/>
+    <id>https://papers.robin-ic.fun/papers/26934/</id>
+    <published>2020-04-09T00:58:27.000Z</published>
+    <updated>2021-02-01T12:25:51.178Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://img.mubu.com/document_image/5784ad7c-989f-4653-98df-2e2b63165d4f-216525.jpg" alt="Keypoints" /><br /></p><h5 id="full-citation">Full Citation</h5><p>T. Seong et al., "17.3 A −58dBc-Worst-Fractional-Spur and −234dB-FoMjitter, 5.5GHz Ring-DCO-Based Fractional-N DPLL Using a Time-Invariant-Probability Modulator, Generating a Nonlinearity-Robust DTC-Control Word," 2020 IEEE International Solid- State Circuits Conference - (ISSCC), San Francisco, CA, USA, 2020, pp. 270-272.<br /><a href="https://ieeexplore.ieee.org/document/9062948">IEEE Link</a><br /></p><h2 id="keypoints">Keypoints</h2><ul><li>mechanism<ul><li>non-lineariy <span class="math inline">\(f_{DTC}(D_{DCW})\)</span> + time-variante <span class="math inline">\(PDF(D_{DCW})\)</span><ul><li>time-variant expected value of error: <span class="math inline">\(E(\tau_{DTC})\)</span></li><li>→ spurs in the <span class="math inline">\(PSD(\tau_{DTC})\)</span></li></ul></li><li>time-invarient <span class="math inline">\(PDF(D_{DCW})\)</span><ul><li>even with non-linearity <span class="math inline">\(f_{DTC}(D_{DCW})\)</span></li><li>→ time-invarient <span class="math inline">\(PDF(\tau_{DTC})\)</span></li><li>→ no spurs in the <span class="math inline">\(PSD(\tau_{DTC})\)</span></li></ul></li></ul></li><li>modulating <span class="math inline">\(D_{DCW}\)</span><ul><li>use two split DTCs to achieve <span class="math inline">\(D_{AQ} = D_{DCW,D} – D_{DCW,R}\)</span></li><li>modulate the two DTCs with URNs</li><li>achieve time-invariant <span class="math inline">\(PDF(\tau_{DTC})\)</span></li></ul></li></ul><h2 id="background">Background</h2><ul><li>RO-DPLLs have difficulty of low phase noise and high-frequency resolution<ul><li>DSM-based fractional-N operation<ul><li>hard to achieve low-PN</li></ul></li><li>DTC quantization noise cancellation<ul><li>sensitive to no-nlinearity → fractional spurs</li><li>improve linearity<ul><li>pre-distorting <span class="math inline">\(D_{DCW}\)</span> → design complexity</li><li>successive requantizer (SA) instead of a DSM → large dynamic range of DTC</li></ul></li></ul></li></ul></li><li>spur theory<ul><li>constant signal <span class="math inline">\(E[X](t)\)</span> over time → <span class="math inline">\(PSD(X)\)</span> has no spurious tones</li></ul></li></ul><h2 id="proposed">Proposed</h2><ul><li>time-invariant probability modulator (TIPM)<ul><li>theory<ul><li>if the expected value of signal <span class="math inline">\(X\)</span>, <span class="math inline">\(E[X](t)\)</span>, is constant over time</li><li>the power spectral density (PSD) of <span class="math inline">\(X\)</span> shows no spurious tones</li></ul></li><li>principles<ul><li>modulate <span class="math inline">\(D_{DCW}\)</span> before it interacts with the DTC nonlinearity</li><li>obtain a time-invarient PDF and constant <span class="math inline">\(E[\tau_{DTC}](t)\)</span></li></ul></li><li>operation<ul><li>convert the accumulated DSΜ code <span class="math inline">\(D_{AQ}\)</span> to <span class="math inline">\(D_{DCW}\)</span></li></ul></li></ul></li></ul><h2 id="details">Details</h2><ul><li>theory analysis<ul><li>how does non-linearity function (<span class="math inline">\(f_{DTC}\)</span>) cause spurs<ul><li><span class="math inline">\(E[D_{DCW}](t)\)</span> is constant over time<ul><li>in frequency domain, <span class="math inline">\(PSD[D_{DCW}]\)</span> has no spurs</li><li>in time domain, <span class="math inline">\(PDF[D_{DCW}]\)</span> varies with time</li><li>probability of <span class="math inline">\(D_{DCW}\)</span> for the kth bin, <span class="math inline">\(P[D_{DCW,k}]\)</span> varies like an impulse train</li></ul></li><li><span class="math inline">\(\tau_{DTC}\)</span> must have some periodicity in <span class="math inline">\(PSD[\tau_{DTC}]\)</span></li></ul></li><li>idea<ul><li><span class="math inline">\(D_{DCW}\)</span> can be modulated to have a time-invariant <span class="math inline">\(PDF[D_{DCW}]\)</span></li><li><span class="math inline">\(\tau_{DTC}\)</span> can have a constant <span class="math inline">\(E[\tau_{DTC}](t)\)</span></li><li>irrespective of the characteristics of <span class="math inline">\(f_{DTC}(D_{DCW})\)</span></li><li>The time-invariant property is preserved even after passing nonlinear distortions</li></ul></li></ul></li><li>implementation<ul><li>two DTCs, splits <span class="math inline">\(D_{AQ}\)</span> into two <span class="math inline">\(D_{DCW}s: D_{DCW,D}\)</span> and <span class="math inline">\(D_{DCW,R}\)</span><ul><li>control <span class="math inline">\(DTC_D\)</span> and <span class="math inline">\(DTC_R\)</span> respectively</li><li>make <span class="math inline">\(PDF[D_{DCW},D]\)</span> and <span class="math inline">\(PDF[D_{DCW},R]\)</span> time-invariant</li><li>removing the Q-noise by maintaining <span class="math inline">\(D_{AQ} = D_{DCW,D} – D_{DCW,R}\)</span></li></ul></li><li>modulation<ul><li>using uniform random numbers (URNs) unrelated <span class="math inline">\(D_{AQ}\)</span></li></ul></li><li>DTC-gain controller<ul><li>using an LMS algorithm calibrates the two DTCs individually</li></ul></li><li>loop noise<ul><li>optimal-threshold TDC</li><li> a loop-gain controller</li></ul></li></ul></li></ul><figure><img src="https://img.mubu.com/document_image/3b9555c8-478b-42a4-be8f-8f8a40e71f74-216525.jpg" alt="" /><figcaption>system block diagram</figcaption></figure><p><img src="https://img.mubu.com/document_image/74e18dfc-23d2-4dc1-abd8-23dd6c8166c2-216525.jpg" alt="algorithm" /><br /></p><h2 id="conclusion">Conclusion</h2><p><strong>TECH</strong> 65nm<br /><strong>REF</strong> 100MHz<br /><strong>OUT</strong> 5.5 GHz<br /><strong>FRAC SPUR</strong> -58 dBc<br /><strong>POWER</strong> 9.88 mW @ 1.2 V<br /><strong>RMS JITTER</strong> 648 fs<br /><strong>FOM</strong> -233 dB<br /></p><h2 id="important-reference">Important Reference</h2><blockquote><p><em>PSD analysis of non-linearity: constant signal E<a href="t">X</a> over time, PSD(X) has no spurious tones.</em></p><ul><li>[4] Y. Donnelly et al., “Prediction of Phase Noise and Spurs in a Nonlinear Fractional-N Frequency Synthesizer,” IEEE TCAS-I, vol. 66, no. 11, pp. 4108-4121, Nov. 2019.<br /></li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://img.mubu.com/document_image/5784ad7c-989f-4653-98df-2e2b63165d4f-216525.jpg&quot; alt=&quot;Keypoints&quot; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h5 id=&quot;full</summary>
+      
+    
+    
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/categories/ISSCC/"/>
+    
+    <category term="2020" scheme="https://papers.robin-ic.fun/categories/ISSCC/2020/"/>
+    
+    
+    <category term="2020" scheme="https://papers.robin-ic.fun/tags/2020/"/>
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/tags/ISSCC/"/>
+    
+    <category term="clock" scheme="https://papers.robin-ic.fun/tags/clock/"/>
+    
+    <category term="KAIST" scheme="https://papers.robin-ic.fun/tags/KAIST/"/>
+    
+    <category term="UNIST" scheme="https://papers.robin-ic.fun/tags/UNIST/"/>
+    
+    <category term="DPLL" scheme="https://papers.robin-ic.fun/tags/DPLL/"/>
+    
+  </entry>
+  
+</feed>
