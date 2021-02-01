@@ -1,12 +1,15 @@
 ---
-title: CICC-2020 A 77.1-dB 6.25-MHz-BW Pipeline SAR ADC with Enhanced Interstage Gain Error Shaping and Quantization Error Shaping
+title: >-
+  CICC-2020 A 77.1-dB 6.25-MHz-BW Pipeline SAR ADC with Enhanced Interstage Gain
+  Error Shaping and Quantization Error Shaping
 toc: true
-date: 2021-01-01 16:27:22
 tags:
-	- ADC
-	- CICC
-	- 2020
-	- UTAustin
+  - ADC
+  - CICC
+  - 2020
+  - UTAustin
+abbrlink: 26608
+date: 2021-01-01 16:27:22
 ---
 
 ![keypoints](https://api2.mubu.com/v3/document_image/c7d5a9ff-6292-4809-bbeb-77a37fb23a1f-216525.jpg)

@@ -1,12 +1,15 @@
 ---
-title: CICC-2020 A 0.5V-to-0.9V 0.2GHz-to-5GHz Ultra-Low-Power Digitally-Assisted Analog Ring PLL with Less Than 200ns Lock Time in 22nm FinFET CMOS Technology
+title: >-
+  CICC-2020 A 0.5V-to-0.9V 0.2GHz-to-5GHz Ultra-Low-Power Digitally-Assisted
+  Analog Ring PLL with Less Than 200ns Lock Time in 22nm FinFET CMOS Technology
 toc: true
-date: 2021-01-01 16:17:45
 tags:
-	- PLL
-	- CICC
-	- 2020
-	- Intel
+  - PLL
+  - CICC
+  - 2020
+  - Intel
+abbrlink: 23879
+date: 2021-01-01 16:17:45
 ---
 
 ![keypoints](https://api2.mubu.com/v3/document_image/ab546327-2a7e-42bc-aa5c-a98fb4672596-216525.jpg) \
