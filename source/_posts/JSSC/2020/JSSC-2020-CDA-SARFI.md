@@ -1,6 +1,5 @@
 ---
-title: >-
-  JSSC-2020 An 8-Bit 1-GS/s Asynchronous Loop-Unrolled SAR-Flash ADC With
+title: JSSC-2020 An 8-Bit 1-GS/s Asynchronous Loop-Unrolled SAR-Flash ADC With
   Complementary Dynamic Amplifiers in 28-nm CMOS
 toc: true
 tags:
