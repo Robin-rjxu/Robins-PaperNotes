@@ -38,14 +38,14 @@ L. Zhang and A. Niknejad, "**A 480-Multiplication-Factor 13.2-to-17.3GHz Sub-Sam
 
 ## Conclusion
 
-**TECH**  28nm
-**REF**  30/60MHz
-**OUT**  13.2~17.3 GHz
-**REF SPUR**  -62.3/-57.2 dBc
-**FRAC SPUR**  NA
-**POWER**  6.6 mW
-**RMS JITTER**  153.4/116.5 fs
-**FOM**  -248.1/-250.5 dB
+- **TECH**  28nm \
+- **REF**  30/60MHz \
+- **OUT**  13.2~17.3 GHz \
+- **REF SPUR**  -62.3/-57.2 dBc \
+- **FRAC SPUR**  NA \
+- **POWER**  6.6 mW \
+- **RMS JITTER**  153.4/116.5 fs \
+- **FOM**  -248.1/-250.5 dB \
 
 ## Important Reference
 
