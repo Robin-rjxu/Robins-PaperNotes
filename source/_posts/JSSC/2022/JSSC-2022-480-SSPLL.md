@@ -56,4 +56,3 @@ L. Zhang and A. Niknejad, "**A 480-Multiplication-Factor 13.2-to-17.3GHz Sub-Sam
 > *diturbance FLL*
 > 
 > [2] Y. Lim et al., “17.8 A 170MHz-lock-in-range and −253dB-FoMjitter 12-to-14.5GHz subsampling PLL with a 150μW frequency-disturbance-correcting Loop using a low-power unevenly spaced edge generator,” ISSCC, pp. 280-282, Feb. 2020. \
-
