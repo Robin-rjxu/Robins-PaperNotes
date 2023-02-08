@@ -1,12 +1,15 @@
 ---
-title: VLSI-2020 Open-Source Synthesizable Analog Blocks for High-Speed Link Designs 20-GS/s 5b ENOB Analog-to-Digital Converter and 5-GHz Phase Interpolator
+title: >-
+  VLSI-2020 Open-Source Synthesizable Analog Blocks for High-Speed Link Designs
+  20-GS/s 5b ENOB Analog-to-Digital Converter and 5-GHz Phase Interpolator
 toc: true
-date: 2020-08-20 01:05:30
 tags:
-	- VLSI
-	- 2020
-	- ADC
-	- Stanford
+  - VLSI
+  - 2020
+  - ADC
+  - Stanford
+abbrlink: 13819
+date: 2020-08-20 01:05:30
 ---
 
 #### Citation

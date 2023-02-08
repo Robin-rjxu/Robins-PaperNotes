@@ -1,12 +1,16 @@
 ---
-title: ISSCC-2022 A 97fsrms-Jitter and 68-Multiplication Factor, 8.16GHz Ring-Oscillator Injection-Locked Clock Multiplier with Power-Gating Injection-Locking and Background Multi-Functional Digital Calibrator
+title: >-
+  ISSCC-2022 A 97fsrms-Jitter and 68-Multiplication Factor, 8.16GHz
+  Ring-Oscillator Injection-Locked Clock Multiplier with Power-Gating
+  Injection-Locking and Background Multi-Functional Digital Calibrator
 toc: true
-date: 2023-02-07 22:51:55
 tags:
   - ISSCC
   - 2022
   - ILCM
   - KAIST
+abbrlink: 6129
+date: 2023-02-07 22:51:55
 ---
 
 ![Keypoints](https://api2.mubu.com/v3/document_image/18318f18-d225-437a-b6c1-003232b47934-216525.jpg) \
@@ -22,22 +26,22 @@ S. Park, S. Yoo, Y. Shin, J. Lee and J. Choi, "**A 97fsrms-Jitter and 68-Multipl
 - two complementary power-gating DCOs
 - combining their outputs seamlessly
 - calibration for evenly spaced all output edges
-    - DCO periods
+  - DCO periods
     - power gating pulse width
     - delay line as the reference indicator
 - circuits
-    - phase-rotational div-4 reserves the freq resolution
-    - multiple calibrations with different bandwidth
-    - bidirectional pulse width adjustment
-        avoids 50% duty cycle requirement
+  - phase-rotational div-4 reserves the freq resolution
+  - multiple calibrations with different bandwidth
+  - bidirectional pulse width adjustment
+    avoids 50% duty cycle requirement
 
 ## Background
 
 - ILCMs have two main issues
-    - jitter performance is sensitive to PVT
-    - stability and jitter degrade as large multiplying factor
+  - jitter performance is sensitive to PVT
+  - stability and jitter degrade as large multiplying factor
 - power-gating provides strong effective injection
-    - the output is only partially available
+  - the output is only partially available
 
 ![Overall architecture of the proposed PG-ILCM](https://api2.mubu.com/v3/document_image/cd7a6393-235e-4050-ad44-7c35f6a80ec8-216525.jpg) \
 
