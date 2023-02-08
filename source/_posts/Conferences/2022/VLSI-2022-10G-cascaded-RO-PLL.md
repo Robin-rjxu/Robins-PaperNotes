@@ -58,3 +58,4 @@ Z. Yang, Z. Xu, M. Osada and T. Iizuka, "**A 10-GHz Inductorless Cascaded PLL wi
 **POWER**  30.82 mW \
 **RMS JITTER** 175.3 fs \
 **FOM** -240.21 dB \
+
