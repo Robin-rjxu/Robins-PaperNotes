@@ -40,7 +40,7 @@ Y. Dong, C. C. Boon, K. Yang and Z. Liu, "**A 2-GHz Dual-Path Sub-Sampling PLL w
   - feedback phase noise cancellation (FBPNC)
   - based on VCDL: power, area++
 
-<img src="https://api2.mubu.com/v3/document_image/00983291-3bf0-470a-8c2d-3cd20df00ca6-216525.jpg" width = "500" alt="Proposed Dual-Path SSPLL" align=center />
+<img src="https://api2.mubu.com/v3/document_image/00983291-3bf0-470a-8c2d-3cd20df00ca6-216525.jpg" width="500" alt="Proposed Dual-Path SSPLL" align=center />
 
 ## Conclusion
 
