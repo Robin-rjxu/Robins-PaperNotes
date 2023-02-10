@@ -1,5 +1,5 @@
 ---
-title: VLSI-2019-RSPLL
+title: VLSI-2019 A Reference Oversampling Digital Phase-Locked Loop with -240 dB FOM and -80 dBc Reference Spur
 toc: true
 abbrlink: 20694
 date: 2023-02-10 20:35:55
