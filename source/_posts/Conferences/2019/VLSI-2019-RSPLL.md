@@ -37,7 +37,7 @@ J. -H. Seol, D. Sylvester, D. Blaauw and T. Jang, "**A Reference Oversampling Di
   - MDLL/ILCM have poor ref spur
 - oversampling reference overcome the BW constraint
 
-<img src="https://api2.mubu.com/v3/document_image/fd9ce19e-52fc-4a9f-8131-2d406c6f2762-216525.jpg" width = "500" alt="Proposed Reference Oversampling PLL" align=center />
+<img src="https://api2.mubu.com/v3/document_image/fd9ce19e-52fc-4a9f-8131-2d406c6f2762-216525.jpg" width = "600" alt="Proposed Reference Oversampling PLL" align=center />
 
 ## Conclusion
 
