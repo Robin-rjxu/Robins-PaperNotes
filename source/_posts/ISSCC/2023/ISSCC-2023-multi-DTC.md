@@ -15,7 +15,7 @@ date: 2023-02-21 23:46:43
 
 ![Keypoints](https://api2.mubu.com/v3/document_image/f543c611-b42e-43ce-a23c-c0f961808b55-216525.jpg) \
 
-## Full Citation
+##### Full Citation
 
 Giacomo Castoro, et al, "**A 9.25GHz Digital PLL with Fractional-Spur Cancellation Based on a Multi-DTC Topology**,"
 
