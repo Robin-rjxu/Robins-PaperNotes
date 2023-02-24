@@ -39,7 +39,6 @@ Junjun Qiu, et al, "**A 32kHz-Reference 2.4GHz Fractional-N Nonuniform Oversampl
   - varying slope
   - difficult to predict and follow the optimum loop gain
 
-
 <img src="https://api2.mubu.com/v3/document_image/3f1b7f5f-2a5a-4ac0-9a24-d77addd9f9be-216525.jpg" width = "700" alt="Overall architecture of the proposed nonuniform OSPLL" align=center />
 
 ## Conclusion
