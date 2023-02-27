@@ -1,12 +1,14 @@
 ---
-title: ISSCC-2023 A 0.4V-VDD 2.25-to-2.75GHz ULV-SS-PLL Achieving 236.6fsrms Jitter, -253.8dB Jitter-Power FoM, and -76.1dBc Reference Spur
+title: >-
+  ISSCC-2023 A 0.4V-VDD 2.25-to-2.75GHz ULV-SS-PLL Achieving 236.6fsrms Jitter,
+  -253.8dB Jitter-Power FoM, and -76.1dBc Reference Spur
 toc: true
 tags:
   - ISSCC
   - 2023
   - IS-CAS
   - PLL
-abbrlink: 54004
+abbrlink: 60773
 date: 2023-02-26 16:58:01
 ---
 
