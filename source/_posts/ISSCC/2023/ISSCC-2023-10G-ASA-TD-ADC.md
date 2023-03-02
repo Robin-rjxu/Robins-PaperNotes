@@ -51,8 +51,7 @@ Qian Chen, et al, "**A Single-Channel 10GS/s 8b >36.4dB SNDR Time-Domain ADC Fea
     - provide gain from V-to-T conversion
     - suffers from linearity degradation
 
-<img src="https://api2.mubu.com/v3/document_image/d4820a4f-74f6-425a-ab63-7bb7c81df481-216525.jpg" width = "500" alt="Architecture and circuit blocks of the TD-ADC and timing diagram of
-the asynchronous SA" align=center />
+<img src="https://api2.mubu.com/v3/document_image/d4820a4f-74f6-425a-ab63-7bb7c81df481-216525.jpg" width = "500" alt="Architecture and circuit blocks of the TD-ADC and timing diagram of the asynchronous SA" align=center />
 
 ## Conclusion
 
