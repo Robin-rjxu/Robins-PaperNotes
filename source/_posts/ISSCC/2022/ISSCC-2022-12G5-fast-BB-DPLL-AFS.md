@@ -63,7 +63,7 @@ S. M. Dartizio et al., "**A 68.6fsrms-total-integrated-jitter and 1.56μs-lockin
     - introduces unwanted dependency among loops
     - limits locking time
 
-<img src="https://api2.mubu.com/v3/document_image/c17ba2c0-44f1-4149-bcc0-be811942d07e-216525.jpg" width = "500" alt=" Block diagram of the implemented BBPLL (upper part) and the high-level operation of the AFS and type-II GS techniques (bottom part)" align=center />
+<img src="https://api2.mubu.com/v3/document_image/c17ba2c0-44f1-4149-bcc0-be811942d07e-216525.jpg" width = "500" alt="Block diagram of the implemented BBPLL (upper part) and the high-level operation of the AFS and type-II GS techniques (bottom part)" align=center />
 
 ## Conclusion
 
