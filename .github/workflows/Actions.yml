@@ -41,5 +41,8 @@ jobs:
         run: |
           # add pandoc to PATH
           export PATH="$PATH:$RUNNER_TOOL_CACHE/pandoc-2.7.3/bin"
-          # publish
-          hexo generate && hexo deploy
+          # publish original
+          # hexo generate && hexo deploy
+          # publish modified
+          hexo clean
+          hexo deploy
