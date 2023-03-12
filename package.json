@@ -11,11 +11,11 @@
   ],
   "license": "MIT",
   "hexo": {
-    "version": "4.2.0"
+    "version": "latest"
   },
   "dependencies": {
     "hexo": "latest",
-    "hexo-abbrlink": "latest",
+    "hexo-abbrlink": "^2.2.1",
     "hexo-all-minifier": "latest",
     "hexo-autonofollow": "latest",
     "hexo-deployer-git": "latest",
