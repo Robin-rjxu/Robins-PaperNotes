@@ -77,7 +77,8 @@ index_generator:
   per_page: 5
 
 archive_generator:
-  per_page: infinity
+  enabled: true
+  per_page: 0
   yearly: true
   monthly: true
 
