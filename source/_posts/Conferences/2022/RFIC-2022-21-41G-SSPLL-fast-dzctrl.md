@@ -45,8 +45,7 @@ W. Chen et al., "**A 21.8-41.6GHz Fast-Locking Sub-Sampling PLL with Dead Zone A
     - remove DZ to shorten locking time
     - need to compensate delay mismatch between main loop and FLL
 
-<img src="https://api2.mubu.com/v3/document_image/2d5f991a-8406-4571-93cb-aaabf21de5a6-216525.jpg" width = "500" alt="Block diagram of the proposed wideband fast-locking SSPLL
-architecture" align=center />
+<img src="https://api2.mubu.com/v3/document_image/2d5f991a-8406-4571-93cb-aaabf21de5a6-216525.jpg" width = "500" alt="Block diagram of the proposed wideband fast-locking SSPLL architecture" align=center />
 
 ## Conclusion
 
