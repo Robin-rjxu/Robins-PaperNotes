@@ -1,9 +1,14 @@
 ---
-title: CICC-2019
+title: CICC-2019 An HDL-described Fully-synthesizable Sub-GHz IoT Transceiver with Ring Oscillator based Frequency Synthesizer and Digital Background EVM Calibration
 toc: true
 abbrlink: 28138
 date: 2023-03-14 23:53:34
 tags:
+  - CICC
+  - 2019
+  - TokyoTech
+  - TRX
+  - RF
 ---
 
 ![Keypoints](https://api2.mubu.com/v3/document_image/4d1030b9-17c7-40b3-926c-8740d2c79e4a-216525.jpg) \
