@@ -56,7 +56,6 @@ C. -R. Ho and M. S. -W. Chen, "**A digital frequency synthesizer with dither-ass
 - pulling paths for osc and ref are different
 - phase disturbances from two paths are indistinguishable at the TDC output
 
-
 <img src="https://api2.mubu.com/v3/document_image/6e89c6ab-2f68-4e8c-8f17-adbc7ce306d5-216525.jpg" width = "800" alt="Digital PLL architecture with the DCO-pulling and reference-pulling mitigation scheme" align=center />
 
 ## Conclusion
