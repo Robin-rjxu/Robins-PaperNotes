@@ -1,5 +1,5 @@
 ---
-title: CICC-2023-6G5-8G-both-frac-MDLL-DPLL
+title: CICC-2023 A 6.5-to-8GHz Cascaded Dual-Fractional-N Digital PLL Achieving -63.7dBc Fractional Spurs with 50MHz Reference
 toc: true
 tags:
   - CICC
@@ -16,7 +16,7 @@ date: 2023-05-31 23:49:27
 
 D. Xu et al., "**A 6.5-to-8GHz Cascaded Dual-Fractional-N Digital PLL Achieving -63.7dBc Fractional Spurs with 50MHz Reference**," 2023 IEEE Custom Integrated Circuits Conference (CICC), San Antonio, TX, USA, 2023, pp. 1-2, doi: 10.1109/CICC57935.2023.10121180.
 
-![IEEE Link](https://ieeexplore.ieee.org/document/10121180) \
+[IEEE Link](https://ieeexplore.ieee.org/document/10121180) \
 
 ## Keypoints
 
@@ -48,7 +48,7 @@ D. Xu et al., "**A 6.5-to-8GHz Cascaded Dual-Fractional-N Digital PLL Achieving 
   - large delay offset (tofst) 
   - worse PN
 
-<img src="https://api2.mubu.com/v3/document_image/96aa3c33-9951-4d2d-99d7-e17c1febba0f-216525.jpg" width = "700" alt="Overall architecture of proposed cascaded dual-fractional-N digital PLL" align=center />
+<img src="https://api2.mubu.com/v3/document_image/96aa3c33-9951-4d2d-99d7-e17c1febba0f-216525.jpg" width = "600" alt="Overall architecture of proposed cascaded dual-fractional-N digital PLL" align=center />
 
 ## Conclusion
 
