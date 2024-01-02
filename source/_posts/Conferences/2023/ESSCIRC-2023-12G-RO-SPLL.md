@@ -18,7 +18,7 @@ date: 2023-11-15 00:04:12
 
 X. Shen et al., "**A 4-12.1-GHz Fractional-N Ring Sampling PLL Based on Adaptively-Biased PD-Merged DTC Achieving -37.6± 0.9-dBc Integrated Phase Noise, 261.9-fs RMS Jitter, and -240.6-dB FoM**," ESSCIRC 2023- IEEE 49th European Solid State Circuits Conference (ESSCIRC), Lisbon, Portugal, 2023, pp. 257-260, doi: 10.1109/ESSCIRC59616.2023.10268691.
 
-![IEEE Link](https://ieeexplore.ieee.org/document/10268691) \
+[IEEE Link](https://ieeexplore.ieee.org/document/10268691) \
 
 ## Keypoints
 
