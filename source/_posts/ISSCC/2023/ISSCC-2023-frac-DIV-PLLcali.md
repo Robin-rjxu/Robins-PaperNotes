@@ -7,7 +7,7 @@ toc: true
 tags:
   - ISSCC
   - 2023
-  - TsinghuaU
+  - THU
   - DIV
   - DTC
 abbrlink: 19033
