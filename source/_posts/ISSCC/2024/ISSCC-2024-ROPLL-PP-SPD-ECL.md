@@ -78,7 +78,6 @@ Y. Huang, Y. Chen, Z. Yang, R. P. Martins and P. -I. Mak, "**7.4 A 0.027mm2 5.6-
   - high-frequency VCDL --> high power consumption
   - require off-chip gain calibration
 
-
 <img src="https://s21.ax1x.com/2024/10/07/pAGQg6e.png" width = "500" alt="The proposed RO-Based PP-S-PLL" align=center />
 
 ## Conclusion
