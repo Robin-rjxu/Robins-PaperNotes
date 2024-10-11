@@ -1,5 +1,6 @@
 ---
-title: ISSCC-2024-7G-BB-DPLL-cascaded-frac-div-pseudo-diff-dtc
+title: >-
+  ISSCC-2024 10.3 A 7GHz Digital PLL with Cascaded Fractional Divider and Pseudo-Differential DTC Achieving -62.1dBc Fractional Spur and 143.7fs Integrated Jitter
 toc: true
 tags:
   - ISSCC
@@ -68,12 +69,9 @@ D. Xu et al., "**10.3 A 7GHz Digital PLL with Cascaded Fractional Divider and Ps
     - without increasing random noise
     - long calibration time
 
-<img src="https://s21.ax1x.com/2024/10/10/pAJHsH0.png" width = "500" alt="Schematic of the proposed DPLL with a pseudo-differential DTC and
-a cascaded fractional divider." align=center />
+<img src="https://s21.ax1x.com/2024/10/10/pAJHsH0.png" width = "500" alt="Schematic of the proposed DPLL with a pseudo-differential DTC and a cascaded fractional divider." align=center />
 
-<img src="https://s21.ax1x.com/2024/10/10/pAJH6EV.png" width = "500" alt="Conventional single-DTC-based QN cancellation (left), proposed
-pseudo-differential DTC with even-order INL cancellation (right), and measured INL
-of different DTCs." align=center />
+<img src="https://s21.ax1x.com/2024/10/10/pAJH6EV.png" width = "500" alt="Conventional single-DTC-based QN cancellation (left), proposed pseudo-differential DTC with even-order INL cancellation (right), and measured INL of different DTCs." align=center />
 
 ## Conclusion
 
