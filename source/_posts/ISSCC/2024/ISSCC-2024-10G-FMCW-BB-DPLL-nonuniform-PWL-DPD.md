@@ -82,7 +82,6 @@ F. Tesolin et al., "**10.6 A 10GHz FMCW Modulator Achieving 680MHz/μs Chirp Slo
   - non-uniform piecewise-parabolic digital predistortion
     - specially mitigate non-smooth DCO non-linearies
 
-
 <img src="https://s21.ax1x.com/2024/10/15/pAtx3tA.png" width = "500" alt="Block diagram of the implemented digital PLL" align=center />
 
 <img src="https://s21.ax1x.com/2024/10/15/pAtx1kd.png" width = "500" alt="DCO non-linearity issue in FMCW modulators and DPD techniques" align=center />
