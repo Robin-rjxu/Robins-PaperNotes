@@ -68,7 +68,6 @@ L. Feng et al., "**14.7 A 0.45V 0.72mW 2.4GHz Bias-Current-Free Fractional-N Hyb
   - on-chip voltage booster
   - large decoupling capacitors
 
-
 <img src="https://s21.ax1x.com/2024/10/19/pAaFLtK.png" width = "500" alt="Overall architecture of the proposed HPLL with the TI-FFPD and VPI" align=center />
 
 <img src="https://s21.ax1x.com/2024/10/19/pAaFOfO.png" width = "500" alt="Q-noise reduction method of DTC, voltage-domain compensation and proposed VPI" align=center />
