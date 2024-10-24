@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Robin&#39;s Paper Reading Notes</title>
+  
+  <subtitle>Focus and summarize</subtitle>
+  <link href="https://papers.robin-ic.fun/atom.xml" rel="self"/>
+  
+  <link href="https://papers.robin-ic.fun/"/>
+  <updated>2024-10-24T13:01:51.428Z</updated>
+  <id>https://papers.robin-ic.fun/</id>
+  
+  <author>
+    <name>Robin-rjxu</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VLSI-2024 A 25.4-27.5 GHz Ping-Pong Charge-Sharing Locking PLL Achieving 42 fs Jitter with Implicit Reference Frequency Doubling</title>
+    <link href="https://papers.robin-ic.fun/papers/51502/"/>
+    <id>https://papers.robin-ic.fun/papers/51502/</id>
+    <published>2024-10-24T12:54:16.000Z</published>
+    <updated>2024-10-24T13:01:51.428Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://s21.ax1x.com/2024/10/24/pAwnqQx.png" alt="Keypoints" /><br /></p><h5 id="full-citation">Full Citation</h5><p>S. Kumar, P. Sawakewang, T. Siriburanon and R. B. Staszewski, "<strong>A 25.4-27.5 GHz Ping-Pong Charge-Sharing Locking PLL Achieving 42 fs Jitter with Implicit Reference Frequency Doubling</strong>," 2024 IEEE Symposium on VLSI Technology and Circuits (VLSI Technology and Circuits), Honolulu, HI, USA, 2024, pp. 1-2, doi: 10.1109/VLSITechnologyandCir46783.2024.10631558.</p><p><a href="https://ieeexplore.ieee.org/document/10631558">IEEE Link</a><br /></p><h2 id="keypoints">Keypoints</h2><ul><li>ping-pong charge-sharing locking (CSL)<ul><li>two ref phases of 50% duty cycle are used in ping-pong manner</li><li>not rely on the narrow pulse width</li><li>higher injection efficiency</li><li>wider possible bandwidth</li></ul></li><li>duty-cycle calibration<ul><li>charge residues can be read out and reused for DCC</li><li>implict 2x reference multiplication</li><li>DAC CM-voltage acquisition<ul><li>connect during the complementary phases</li><li>disconnect ping-pong hands</li></ul></li></ul></li><li>implementation<ul><li>either C_share or C_share' attaches to the LC tank</li><li>FTL and DCC has the similar circuits<ul><li>sample the charge residue</li><li>auxiliary BBPD</li></ul></li><li>class-F23 oscillator<ul><li>complementary charge-sharing capacitors</li><li>3rd harmonic extractor (H3E)</li><li>switches cancel feedthrough</li></ul></li><li>Ferr and DC_err calibration<ul><li>BBPDs</li><li>integrated and multiplied by the attenuation factor</li><li>errors can occur simultaneously</li><li>one type will be corrected at a time</li><li>range cover half of the OSC period</li></ul></li></ul></li></ul><h2 id="background">Background</h2><ul><li>complex modulation schemes --&gt;ultra-low jitter PLL</li><li>analog PLL<ul><li>charge-pump, sampling/sub-sampling PD</li><li>analog loop flter</li><li>large area</li><li>high power</li></ul></li><li>injection-lock (IL) PLL<ul><li>require FTL</li><li>accurate timing control</li></ul></li><li>charge-sharing locking<ul><li>digitally control of the charge injected to the LC tank</li><li>manual tuned injection pulse width</li><li>narrow pulse width, weak injection strength</li><li>lower bandwidth</li><li>precise CM-voltage control</li></ul></li></ul><h2 id="conclusion">Conclusion</h2><p><strong>TECH</strong> 28 nm<br /><strong>REF</strong> 250 MHz<br /><strong>OUT</strong> 25.4~27.5 GHz<br /><strong>REF SPUR</strong> -60.5 dBc<br /><strong>POWER</strong> 14 mW<br /><strong>RMS JITTER</strong> 41.75 fs<br /><strong>FOM</strong> -256.3 dB<br /></p><h2 id="important-references">Important References</h2><blockquote><p><em>analog PLL</em><br />[1] D. Turker, a at, ISSCC, pp. 378-380, 2018.<br />[2] Y. Zhao, et at, VLSI Circuits, pp. 1-2, 2021.<br />[3] X. Geng, et at, ISSCC, pp. 388-390, 2022.<br />[4] J. Gong, et at, JSSC, pp. 492-504, 2022.<br /></p><p><em>charge-sharing locking</em><br />[7] Y. Hu, a at, JSSC, pp. 518-534, 2022.</p><p><em>class-F23 oscillator with 3rd-harmonic extractor</em><br />[8] Y. Hu, a at, JSSC, pp. 1977-1987, 2018.</p><p>[5] E. Thaller, et at, ISSCC, pp. 451-453, 2021.<br />[6] W. Tao, et at, VLSI Circuits, pp. 1-2, 2023.<br /></p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://s21.ax1x.com/2024/10/24/pAwnqQx.png&quot; alt=&quot;Keypoints&quot; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h5 id=&quot;full-citation&quot;&gt;Full Citation&lt;/h5&gt;
+&lt;p&gt;S. Kuma</summary>
+      
+    
+    
+    
+    <category term="Conferences" scheme="https://papers.robin-ic.fun/categories/Conferences/"/>
+    
+    <category term="2024" scheme="https://papers.robin-ic.fun/categories/Conferences/2024/"/>
+    
+    
+    <category term="PLL" scheme="https://papers.robin-ic.fun/tags/PLL/"/>
+    
+    <category term="VLSI" scheme="https://papers.robin-ic.fun/tags/VLSI/"/>
+    
+    <category term="2024" scheme="https://papers.robin-ic.fun/tags/2024/"/>
+    
+    <category term="CSL" scheme="https://papers.robin-ic.fun/tags/CSL/"/>
+    
+    <category term="USD" scheme="https://papers.robin-ic.fun/tags/USD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VLSI-2024 Synthesizable 10-bit Stochastic TDC Using Common-Mode Time Dithering and Passive Approximate Adder with 0.012mm2 Active Area in 12nm FinFET</title>
+    <link href="https://papers.robin-ic.fun/papers/57135/"/>
+    <id>https://papers.robin-ic.fun/papers/57135/</id>
+    <published>2024-10-23T13:00:32.000Z</published>
+    <updated>2024-10-24T13:01:51.428Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://s21.ax1x.com/2024/10/23/pAd5kqA.png" alt="Keypoints" /><br /></p><h5 id="full-citation">Full Citation</h5><p>Q. Zhang, S. Su, B. R. Biswas, S. Gupta and M. S. -W. Chen, "<strong>Synthesizable 10-bit Stochastic TDC Using Common-Mode Time Dithering and Passive Approximate Adder with 0.012mm2 Active Area in 12nm FinFET</strong>," 2024 IEEE Symposium on VLSI Technology and Circuits (VLSI Technology and Circuits), Honolulu, HI, USA, 2024, pp. 1-2, doi: 10.1109/VLSITechnologyandCir46783.2024.10631528.</p><p><a href="https://ieeexplore.ieee.org/document/10631528">IEEE Link</a><br /></p><h2 id="keypoints">Keypoints</h2><ul><li>proposed stochastic TDC (STDC)<ul><li>common-mode time dithering<ul><li>phase folder outputs a time-error pulse</li><li>only one PN modulated DTC</li><li>shift pulse</li><li>exercise different section of the TDC and scramble the INL</li><li>no need to remove dithering noise</li></ul></li><li>passive approximate adders<ul><li>OA = 2 Ci + A</li><li>only two physical connection</li><li>error is only introduced when not all ones/zeros</li><li>negligible INL degradation</li></ul></li></ul></li></ul><h2 id="background">Background</h2><ul><li>high-res, low-cost TDC<ul><li>for mixed-signal system</li><li>such as time-based ADC, digital PLLs, LiDAR</li><li>precise time references</li><li>stringent matching</li><li>on-chip calibration</li></ul></li><li>stochastic TDCs<ul><li>use device mismatch and jitter to mitigate nonlinearity</li><li>require excessive number of time references/comparators/encoder</li><li>large area and power consumption</li></ul></li><li>conventional implementation<ul><li>time dithering<ul><li>PN modulated DTC</li><li>differentially between two TDC inputs</li><li>adaptive filter to remove dither noise</li><li>extra overhead</li><li>long convergence time</li></ul></li><li>unary to binary encoder<ul><li>full/half adder</li><li>large area and power</li></ul></li></ul></li></ul><p><img src="https://s21.ax1x.com/2024/10/23/pAd5Frd.png" width = "500" alt="Blocks of the proposed STDC" align=center /></p><p><img src="https://s21.ax1x.com/2024/10/23/pAd5EVI.png" width = "500" alt="STDC overview and design challenges" align=center /></p><h2 id="conclusion">Conclusion</h2><p><strong>TECH</strong> 12 nm FinFET<br /><strong>FREQ</strong> 100 MHz<br /><strong>RANGE</strong> ±3.9 ns<br /><strong>ENOB</strong> 9.3 bits<br /><strong>INL</strong> 0.61 LSB<br /><strong>POWER</strong> 2.68 mW<br /><strong>AREA</strong> 19.1 um2/conv.-step<br /><strong>FOM</strong> 160 dB<br /></p><h2 id="important-references">Important References</h2><blockquote><p><em>TDC in time-based ADC</em><br />[1] S.-J. Kim, VLSI, 2020, doi:10.1109NLSICircuits18222.2020.9162800. [2] S. Su, CICC, 2023, doi: 10.1109/CICC57935.2023.10121292.</p><p><em>TDC in PLLs</em><br />[3] Q. Zhang, JSSC, 2021, doi: 10.1109/JSSC.2021.3098009.</p><p><em>stochastic TDC</em><br />[4] S.-J. Kim, ISSCC, 2015, doi: 10.1109/ISSCC.2015.7063035.<br />[5] H. Chung, JSSC, 2021, doi: 10.1109/JSSC.2020.3036960.</p><p><em>conventional differential DTC PN modulation</em><br />[6] Q. Zhang, DAC, 2022, doi: 10.1145/3489517.3530502.</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://s21.ax1x.com/2024/10/23/pAd5kqA.png&quot; alt=&quot;Keypoints&quot; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h5 id=&quot;full-citation&quot;&gt;Full Citation&lt;/h5&gt;
+&lt;p&gt;Q. Zhan</summary>
+      
+    
+    
+    
+    <category term="Conferences" scheme="https://papers.robin-ic.fun/categories/Conferences/"/>
+    
+    <category term="2024" scheme="https://papers.robin-ic.fun/categories/Conferences/2024/"/>
+    
+    
+    <category term="VLSI" scheme="https://papers.robin-ic.fun/tags/VLSI/"/>
+    
+    <category term="TDC" scheme="https://papers.robin-ic.fun/tags/TDC/"/>
+    
+    <category term="USC" scheme="https://papers.robin-ic.fun/tags/USC/"/>
+    
+    <category term="2024" scheme="https://papers.robin-ic.fun/tags/2024/"/>
+    
+    <category term="dither" scheme="https://papers.robin-ic.fun/tags/dither/"/>
+    
+    <category term="UVirginia" scheme="https://papers.robin-ic.fun/tags/UVirginia/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ISSCC-2024 7.9 An 8b 6-12GHz 0.18mW/GHz DC Modulated Ramp-Based Phase Interpolator in 65nm CMOS Process</title>
+    <link href="https://papers.robin-ic.fun/papers/16479/"/>
+    <id>https://papers.robin-ic.fun/papers/16479/</id>
+    <published>2024-10-21T15:01:18.000Z</published>
+    <updated>2024-10-24T13:01:51.428Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://s21.ax1x.com/2024/10/21/pAdivH1.png" alt="Keypoints" /><br /></p><h5 id="full-citation">Full Citation</h5><p>S. Mohapatra, E. Afshar, Z. Zhou and D. Heo, "<strong>7.9 An 8b 6-12GHz 0.18mW/GHz DC Modulated Ramp-Based Phase Interpolator in 65nm CMOS Process</strong>," 2024 IEEE International Solid-State Circuits Conference (ISSCC), San Francisco, CA, USA, 2024, pp. 140-142, doi: 10.1109/ISSCC49657.2024.10454438.</p><p><a href="https://ieeexplore.ieee.org/document/10454438">IEEE Link</a><br /></p><h2 id="keypoints">Keypoints</h2><ul><li>proposed ramp-based PI<ul><li>50% output</li><li>no need for extra quad generator and slew circuitry at inputs</li><li>mitigates the speed limitation and noise challenges</li><li>4/2-phase output</li><li>technology scaling benefited</li></ul></li><li>8b PI implementation<ul><li>ramp generator<ul><li>current bias with V-to-I loading SC</li><li>noise current is high-pass filtering</li><li>I_BIAS is prop to C_L</li></ul></li><li>inverter-based comparator<ul><li>V_TH tracking</li><li>feedback with op-amp to control current</li></ul></li><li>4-phase selection + 6b DAC<ul><li>differential DC-modulated ramp signal</li><li>vary ±75 mV of inverter VTH</li><li>PWM outputs</li></ul></li><li>pulse generator to create fixed-width pulse</li><li>up to 90 degree shift</li><li>injection-locked ring oscillator (ILRO)</li><li>output phases<ul><li>4 phases of the RO</li><li>4-phase by the combined edge with XOR (2x frequency)</li></ul></li></ul></li><li>noise consideration<ul><li>SC in slope gen.</li><li>op-amp bandwidth</li><li>injection-locked filters the ramp generator noise</li></ul></li><li>ILRO frequency off-chip calibration</li></ul><h2 id="background">Background</h2><ul><li>multi-phase PI for CDR to sample time-interleaved ADCs<ul><li>high precision</li><li>extra quad-generator</li></ul></li><li>PI for baseband beamforming system for large antenna arrays<ul><li>wide signal bandwidth</li><li>high-speed</li><li>linear</li><li>fine-resolution</li><li>low power</li></ul></li><li>PI structure<ul><li>quad generators at inputs</li><li>current/voltage mode PI<ul><li>extra slew-rate control to have overlapped input</li><li>CMPI --&gt; linearity issues</li><li>VMPI --&gt; higher dynamic power</li></ul></li><li>integrating mode PI<ul><li>higher noise</li><li>slope varies a lot</li></ul></li><li>ramp based PI<ul><li>noisy with current source</li><li>high power due to static OPAMP-based CMP</li><li>limited operation speed</li><li>need DCC</li></ul></li></ul></li></ul><p><img src="https://s21.ax1x.com/2024/10/21/pAdizAx.png" width = "500" alt="the proposed PI architecture" align=center /></p><p><img src="https://s21.ax1x.com/2024/10/21/pAdFSN6.png" width = "500" alt="comparison of the prior PIs and the proposed architecture" align=center /></p><h2 id="conclusion">Conclusion</h2><p><strong>TECH</strong> 65 nm<br /><strong>FREQ</strong> 6-12 GHz<br /><strong>INL</strong> 1.7 LSB<br /><strong>DNL</strong> 0.8 LSB<br /><strong>POWER</strong> 2.2 mW<br /><strong>JITTER</strong> 68 fs<br /><strong>EFFICIENCY</strong> 0.18 mW/GHz<br /></p><h2 id="important-references">Important References</h2><blockquote><p><em>ramp-based PI</em><br />[1] S. Mohapatra et al., “Low-Power Process and Temperature-Invariant Constant Slope-and-Swing Ramp-Based Phase Interpolator,” IEEE JSSC, vol. 58, no. 8, pp. 2267-2277, Aug. 2023.</p><p><em>current (CMPI)</em><br />[2] Z. Wang and P. R. Kinget, “A 65nm CMOS, 3.5-to-11GHz, Less-Than-1.45LSB-INLpp, 7b Twin Phase Interpolator with a Wideband, Low-Noise Delta Quadrature Delay-Locked Loop for High-Speed Data Links,” ISSCC, pp. 292-294, Feb. 2022.</p><p><em>voltage (VMPI)</em><br />[3] S. Chen et al., “A 4-to-16GHz inverter-based injection-locked quadrature clock generator with phase interpolators for multi-standard I/Os in 7nm FinFET,” ISSCC, pp.390-392, Feb. 2018.</p><p><em>integrating mode PI (IMPI)</em><br />[4] A. K. Mishra et al., “A 9b-Linear 14GHz Integrating-Mode Phase Interpolator in 5nm FinFET Process,” ISSCC, pp. 294-295, Feb. 2022.</p><p>[5] Y.C. Huang and B.-J. Chen, “An 8b injection-locked phase rotator with dynamic multiphase injection for 28/56/112Gb/s Serdes application,” ISSCC, pp. 486–487, Feb. 2019.</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://s21.ax1x.com/2024/10/21/pAdivH1.png&quot; alt=&quot;Keypoints&quot; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h5 id=&quot;full-citation&quot;&gt;Full Citation&lt;/h5&gt;
+&lt;p&gt;S. Moha</summary>
+      
+    
+    
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/categories/ISSCC/"/>
+    
+    <category term="2024" scheme="https://papers.robin-ic.fun/categories/ISSCC/2024/"/>
+    
+    
+    <category term="RO" scheme="https://papers.robin-ic.fun/tags/RO/"/>
+    
+    <category term="PI" scheme="https://papers.robin-ic.fun/tags/PI/"/>
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/tags/ISSCC/"/>
+    
+    <category term="2024" scheme="https://papers.robin-ic.fun/tags/2024/"/>
+    
+    <category term="WSU" scheme="https://papers.robin-ic.fun/tags/WSU/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ISSCC-2024 14.3 A 3nm Adaptive Clock Duty-Cycle Controller for Mitigating Aging-Induced Clock Duty-Cycle Distortion</title>
+    <link href="https://papers.robin-ic.fun/papers/38776/"/>
+    <id>https://papers.robin-ic.fun/papers/38776/</id>
+    <published>2024-10-20T12:59:38.000Z</published>
+    <updated>2024-10-24T13:01:51.428Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://s21.ax1x.com/2024/10/20/pAaUoGT.png" alt="Keypoins" /><br /></p><h2 id="full-citation">Full Citation</h2><p>D. Yingling et al., "<strong>14.3 A 3nm Adaptive Clock Duty-Cycle Controller for Mitigating Aging-Induced Clock Duty-Cycle Distortion</strong>," 2024 IEEE International Solid-State Circuits Conference (ISSCC), San Francisco, CA, USA, 2024, pp. 258-260, doi: 10.1109/ISSCC49657.2024.10454421. <a href="https://ieeexplore.ieee.org/document/10454421">IEEE Link</a><br /></p><h2 id="keypoints">Keypoints</h2><ul><li>on-die adaptive clock duty-cycle controller (DCC) in a 3nm test chip<ul><li>clock path<ul><li>glitch-free MUX (GF-MUX) gates</li><li>a global CGC</li><li>an adaptive clock distribution (ACD)</li></ul></li><li>DCC<ul><li>duty-cycle monitor (DCM)<ul><li>configurable launching and capturing clocks</li><li>tunable-delay element (TDE)</li><li>time-to-digital converter (TDC)</li><li>clock-gating circuit (CGC)</li><li>two measurements<ul><li>TDE calibration<ul><li>use tdc_q[0] only</li><li>binary search dcm_cfg</li><li>(clk_l to din) = (din to clk_c)</li><li>slow</li><li>wide range</li></ul></li><li>constant TDE<ul><li>use all tdc_q</li><li>constant dcm_cfg</li><li>dcd = difference in the tdc_q</li><li>fast</li><li>limited by TDC range</li></ul></li></ul></li><li>duty-cycle adjuster (DCA)<ul><li>switch rise/fall by dca_cfg with XOR gates</li><li>high-phase extender (HPE) only</li></ul></li><li>adaptive control</li></ul></li></ul></li></ul></li></ul><h2 id="background">Background</h2><ul><li>duty cycle distortion degrades with aging<ul><li>the rising and falling clock-path delays change differently due to transistor aging</li><li>clock-path length and the stress time, voltage (VDD), and temperature</li><li>need an on-die system to monitor clock-leaf nodes and adjust the clock duty cycle</li></ul></li><li>ring-oscillator-based duty-cycle detector<ul><li>precise resolution</li><li>long measurement time</li><li>interface with a clock shaper circuit</li></ul></li></ul><p><img src="https://s21.ax1x.com/2024/10/20/pAaUIiV.png" width = "500" alt="block diagram of the adaptive clock duty-cycle controller (DCC)" align=center /></p><p><img src="https://s21.ax1x.com/2024/10/20/pAaU4I0.png" width = "500" alt="Duty-cycle monitor (DCM) and duty-cycle adjuster (DCA) circuits" align=center /></p><h2 id="conclusion">Conclusion</h2><p><strong>TECH</strong> 3 nm<br /><strong>SUPPLY</strong> 0.65 V<br /><strong>IN/OUT</strong> 1 GHz<br /><strong>POWER</strong> 0.127 mW<br /><strong>RESOLUTION</strong> 2 inverter<br /><strong>RANGE</strong> 64 x<br /></p><h2 id="important-references">Important References</h2><blockquote><p><em>the rising and falling clock-path delays change differently due to transistor aging</em><br />[1] J. Tschanz et al., “Tunable Replica Circuits and Adaptive Voltage-Frequency Techniques for Dynamic Voltage, Temperature, and Aging Variation Tolerance,” IEEE Symp. VLSI Circuits, pp. 112-113, 2009.</p><p><em>ring-oscillator-based duty-cycle detector</em><br />[2] H. Chen et al., “A 7nm 5G Mobile SoC Featuring a 3.0GHz Tri-Gear Application Processor Subsystem,” ISSCC, pp. 54-55, 2021.</p><p><em>adaptive clock duty-cycle controller (DCC)</em><br />[3] S.-Y. Wu et al., “A 3nm CMOS FinFlexTM Platform Technology with Enhanced Power Efficiency and Performance for Mobile SoC and High Performance Computing Applications,” IEEE IEDM, pp. 639-642, 2022.</p><p><em>binary search to tune the timing margin</em><br />[4] K. A. Bowman et al., “A 16 nm All-Digital Auto-Calibrating Adaptive Clock Distribution for Supply Voltage Droop Tolerance Across a Wide Operating Range,” IEEE JSSC, vol.51, no. 1, pp. 8-17, 2016.</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://s21.ax1x.com/2024/10/20/pAaUoGT.png&quot; alt=&quot;Keypoins&quot; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h2 id=&quot;full-citation&quot;&gt;Full Citation&lt;/h2&gt;
+&lt;p&gt;D. Yingl</summary>
+      
+    
+    
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/categories/ISSCC/"/>
+    
+    <category term="2024" scheme="https://papers.robin-ic.fun/categories/ISSCC/2024/"/>
+    
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/tags/ISSCC/"/>
+    
+    <category term="2024" scheme="https://papers.robin-ic.fun/tags/2024/"/>
+    
+    <category term="DCC" scheme="https://papers.robin-ic.fun/tags/DCC/"/>
+    
+    <category term="Qualcomm" scheme="https://papers.robin-ic.fun/tags/Qualcomm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ISSCC-2024 14.7 A 0.45V 0.72mW 2.4GHz Bias-Current-Free Fractional-N Hybrid PLL Using a Voltage-Mode Phase Interpolator in 28nm CMOS</title>
+    <link href="https://papers.robin-ic.fun/papers/39088/"/>
+    <id>https://papers.robin-ic.fun/papers/39088/</id>
+    <published>2024-10-19T14:30:11.000Z</published>
+    <updated>2024-10-24T13:01:51.428Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://s21.ax1x.com/2024/10/19/pAaFqk6.png" alt="Keypoints" /><br /></p><h5 id="full-citation">Full Citation</h5><p>L. Feng et al., "<strong>14.7 A 0.45V 0.72mW 2.4GHz Bias-Current-Free Fractional-N Hybrid PLL Using a Voltage-Mode Phase Interpolator in 28nm CMOS</strong>," 2024 IEEE International Solid-State Circuits Conference (ISSCC), San Francisco, CA, USA, 2024, pp. 266-268, doi: 10.1109/ISSCC49657.2024.10454404.</p><p><a href="https://ieeexplore.ieee.org/document/10454404">IEEE Link</a><br /></p><h2 id="keypoints">Keypoints</h2><ul><li>time-interleaving flip-flop phase detector (TI-FFPD)<ul><li>high linearity and low reference spur</li><li>duty-cycle-based</li></ul></li><li>voltage-mode phase interpolator (VPI)<ul><li>Q-noise cancellation</li><li>scales a stable reference voltage for the TCKV period</li><li>no gain calibration</li></ul></li><li>HPLL<ul><li>class-D D/VCO</li><li>frequency doubler (FD)<ul><li>a duty-cycle correction (DCC) circuit</li><li>DTC and LMS delay cali.</li></ul></li><li>feedback<ul><li>MMD with retiming DFFs</li><li>interpolation window phi_A and phe_B with Tckv</li></ul></li><li>prop. path<ul><li>RS-latch-based FFPDs alternatively with appropriate polarity</li><li>resistor-based digital-to-analog converter (RDAC)<ul><li>7b segmented RDAC</li><li>4b binary R-2R DAC and a 3b thermometer DAC</li><li>make voltages according to PICODE (SUM_FCW_FRAC)</li><li>the PICODE compensates frac-q-err</li><li>full scale of the RDAC tuned to adjust the PLL BW</li></ul></li><li>second-order RC filter</li></ul></li><li>intg. path<ul><li>dual-BBPD structure</li><li>avoid BBPD gain degradation in fractional-N mode</li></ul></li></ul></li></ul><h2 id="background">Background</h2><ul><li>low-voltage clock generation and modulation<ul><li>dynamic voltage scaling for low-power SoC</li><li>time domain at low supply voltage is challenging<ul><li>high-performance phase detector (PD)</li><li>effective ΔΣ quantization noise (Q-noise) reduction</li><li>time resolution of a DTC is severely degraded as V--</li></ul></li><li>voltage-domain compensation<ul><li>lower noise</li><li>better linearity</li><li>first convert from phase to voltage</li><li>consumes significant voltage headroom</li><li>nonlinearity ++</li></ul></li><li>on-chip voltage booster</li><li>large decoupling capacitors</li></ul></li></ul><p><img src="https://s21.ax1x.com/2024/10/19/pAaFLtK.png" width = "500" alt="Overall architecture of the proposed HPLL with the TI-FFPD and VPI" align=center /></p><p><img src="https://s21.ax1x.com/2024/10/19/pAaFOfO.png" width = "500" alt="Q-noise reduction method of DTC, voltage-domain compensation and proposed VPI" align=center /></p><h2 id="conclusion">Conclusion</h2><p><strong>TECH</strong> 28 nm<br /><strong>REF</strong> 50 MHz<br /><strong>OUT</strong> 2.4 GHz<br /><strong>REF SPUR</strong> -70.2 dBc<br /><strong>FRAC SPUR</strong> -57.7 dBc<br /><strong>POWER</strong> 0.72 mW<br /><strong>RMS JITTER</strong> 590 fs<br /><strong>FOM</strong> -246 dB<br /></p><h2 id="important-references">Important References</h2><blockquote><p><em>integer-N PLL at 0.4</em><br />[1] Z. Zhang et al., “A 0.4V-VDD 2.25-to-2.75GHz ULV-SS-PLL Achieving 236.6fsrms Jitter, −253.8dB Jitter-Power FoM, and −76.1dBc Reference Spur,” ISSCC, pp. 86-88, 2023.</p><p><em>voltage-domain compensation</em><br />[2] J. Kim et al., “A 104fsrms-Jitter and −61dBc-Fractional Spur 15GHz Fractional-N Subsampling PLL Using a Voltage-Domain Quantization-Error Cancelation Technique,” ISSCC, pp. 448−449, 2021.<br />[3] L. Wu et al., “A Power-Efficient Fractional-N DPLL with Phase Error Quantized in Fully Differential-Voltage Domain,” IEEE JSSC, vol. 56, no. 4, pp. 1254–1264, 2021.</p><p><em>on-chip voltage booster to supply</em><br />[4] N. Pourmousavian et al., “A 0.5-V 1.6-mW 2.4-GHz Fractional-N All-Digital PLL for Bluetooth LE with PVT-Insensitive TDC Using Switched-Capacitor Doubler in 28-nm CMOS,” IEEE JSSC, vol. 53, no. 9, pp. 2572-2583, 2018.</p><p><em>time-interleaving flip-flop phase detector (TI-FFPD)</em><br />[5] L. Feng et al., “A Low-Voltage Bias-Current-Free Pseudo-Differential Hybrid PLL Using a Time-Interleaving Flip-Flop Phase Detector,” IEEE A-SSCC, pp. 1-3, 2023.</p><p><em>frequency doubler (FD) with a duty-cycle correction (DCC) circuit</em><br />[6] W. Wu et al., “A 14-nm Ultra-Low Jitter Fractional-N PLL Using a DTC Range Reduction Technique and a Reconfigurable Dual-Core VCO,” IEEE JSSC, vol. 56, no. 12, pp. 3756–3767, 2021.</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://s21.ax1x.com/2024/10/19/pAaFqk6.png&quot; alt=&quot;Keypoints&quot; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h5 id=&quot;full-citation&quot;&gt;Full Citation&lt;/h5&gt;
+&lt;p&gt;L. Feng</summary>
+      
+    
+    
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/categories/ISSCC/"/>
+    
+    <category term="2024" scheme="https://papers.robin-ic.fun/categories/ISSCC/2024/"/>
+    
+    
+    <category term="PLL" scheme="https://papers.robin-ic.fun/tags/PLL/"/>
+    
+    <category term="PI" scheme="https://papers.robin-ic.fun/tags/PI/"/>
+    
+    <category term="THU" scheme="https://papers.robin-ic.fun/tags/THU/"/>
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/tags/ISSCC/"/>
+    
+    <category term="2024" scheme="https://papers.robin-ic.fun/tags/2024/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ISSCC-2024 19.1 A 7.5GHz Subharmonic Injection-Locked Clock Multiplier with a 62.5MHz Reference, -259.7dB FoMJ, and -56.6dBc Reference Spur</title>
+    <link href="https://papers.robin-ic.fun/papers/12490/"/>
+    <id>https://papers.robin-ic.fun/papers/12490/</id>
+    <published>2024-10-18T12:22:39.000Z</published>
+    <updated>2024-10-24T13:01:51.428Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://s21.ax1x.com/2024/10/18/pAU2aG9.png" alt="Keypoints" /><br /></p><h5 id="full-citation">Full Citation</h5><p>H. Choi and S. Cho, "<strong>19.1 A 7.5GHz Subharmonic Injection-Locked Clock Multiplier with a 62.5MHz Reference, -259.7dB FoMJ, and -56.6dBc Reference Spur</strong>," 2024 IEEE International Solid-State Circuits Conference (ISSCC), San Francisco, CA, USA, 2024, pp. 348-350, doi: 10.1109/ISSCC49657.2024.10454375.</p><p><a href="https://ieeexplore.ieee.org/document/10454375">IEEE Link</a><br /></p><h2 id="keypoints">Keypoints</h2><ul><li>SILCM with strong injection and low spur</li><li>injection schemes with reset and recovery</li><li>reset : short outputs</li><li>recovery<ul><li>repair output waveform</li><li>levels</li><li>timing</li></ul></li><li>implementation<ul><li>injection signal generation</li><li>injection circuit</li><li>interval generator<ul><li>cross high, mid, low threshold</li><li>period : period of mid</li><li>amplitude : period from high to low</li></ul></li><li>div-by-4 output : the injection at the end of the 4 cycles</li><li>calibration loops<ul><li>VCO frequency</li><li>recovery levels : adjust resistor</li><li>recovery timing : recovery pulse CH_P to CH_N</li><li>comparator offset</li></ul></li></ul></li></ul><h2 id="background">Background</h2><ul><li>subharmonic injection locking (SIL)<ul><li>injection strength tradeoff of phase noise reduction and ref spur</li><li>for RO<ul><li>square-wave-like waveform</li><li>strong injection with calibration is possible</li></ul></li><li>for LC<ul><li>sinusoidal nature</li><li>injection through shorted output<br />reset the tank charge</li><li>sever tradeoff and less benefit from calibration</li></ul></li></ul></li></ul><p><img src="https://s21.ax1x.com/2024/10/18/pAU2wx1.png" width = "500" alt="Overall architecture" align=center /></p><p><img src="https://s21.ax1x.com/2024/10/18/pAU2BKx.png" width = "500" alt="Detailed circuitry" align=center /></p><h2 id="conclusion">Conclusion</h2><p><strong>TECH</strong> 28 nm<br /><strong>REF</strong> 62.5 MHz<br /><strong>OUT</strong> 6.75 ~ 7.5 GHz<br /><strong>REF SPUR</strong> -56.6 dBc<br /><strong>POWER</strong> 2.33 mW<br /><strong>RMS JITTER</strong> 92.3 fs<br /><strong>FOM</strong> -257 dB<br /></p><h2 id="important-references">Important References</h2><blockquote><p><em>phase-noise reduction depends on the injection strength</em><br />[1] N. Da Dalt, “An Analysis of Phase Noise in Realigned VCOs,” IEEE TCAS-II, vol. 61, no. 3, pp. 143–147, Mar. 2014.</p><p><em>LC ILCM with shorted output</em> [2] Y.-C. Huang et al., “A 2.4GHz Sub-Harmonically Injection-Locked PLL with Self-Calibrated Injection Timing,” ISSCC, pp. 338-339, Feb. 2012.<br />[3] I.-T. Lee et al., “A Divider-Less Sub-Harmonically Injection-Locked PLL with Self-Adjusted Injection Timing,” ISSCC, pp. 414-415, Feb. 2013.</p><p><em>calibrated but poor ref spur</em><br />[4] D.-E. Jhou et al., “A 5.12-GHz Fractional-N Frequency Synthesizer with an LC-VCO-based MDLL,” IEEE Symp. VLSI Circuits, pp. C132-C133, June 2017.</p><p><em>high Fref</em><br />[5] H. Zhang et al., “0.2mW 70fsrms-Jitter Injection-Locked PLL Using De-Sensitized SSPD-Based Injecting-Time Self-Alignment Achieving -270dB FoM and -66dBc Reference Spur,” IEEE Symp. VLSI Circuits, pp. C38-C39, June 2019.<br />[7] Y.-A. Li et al., “A 138fsrms-Integrated-Jitter and -249dB-FoM Clock Multiplier with -51dBc Spur Using a Digital Spur Calibration Technique in 28-nm CMOS,” IEEE Symp. VLSI Circuits, pp. C42-C43, June 2019.</p><p><em>pulse-width comparator (PWC)</em><br />[6] H. Kim et al., “A 2.4GHz 1.5mW Digital MDLL Using Pulse-Width Comparator and Double Injection Technique in 28nm CMOS,”ISSCC, pp. 328-329, Feb. 2016.</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://s21.ax1x.com/2024/10/18/pAU2aG9.png&quot; alt=&quot;Keypoints&quot; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h5 id=&quot;full-citation&quot;&gt;Full Citation&lt;/h5&gt;
+&lt;p&gt;H. Choi</summary>
+      
+    
+    
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/categories/ISSCC/"/>
+    
+    <category term="2024" scheme="https://papers.robin-ic.fun/categories/ISSCC/2024/"/>
+    
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/tags/ISSCC/"/>
+    
+    <category term="ILCM" scheme="https://papers.robin-ic.fun/tags/ILCM/"/>
+    
+    <category term="KAIST" scheme="https://papers.robin-ic.fun/tags/KAIST/"/>
+    
+    <category term="2024" scheme="https://papers.robin-ic.fun/tags/2024/"/>
+    
+    <category term="LC" scheme="https://papers.robin-ic.fun/tags/LC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ISSCC-2024 10.9 A 23.2-to-26GHz Sub-Sampling PLL Achieving 48.3fsrms Jitter, -253.5dB FoMJ, and 0.55μs Locking Time Based on a Function-Reused VCO-Buffer and a Type-I FLL with Rapid Phase Alignment</title>
+    <link href="https://papers.robin-ic.fun/papers/4277/"/>
+    <id>https://papers.robin-ic.fun/papers/4277/</id>
+    <published>2024-10-17T14:07:03.000Z</published>
+    <updated>2024-10-24T13:01:51.428Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://s21.ax1x.com/2024/10/17/pAUMmhn.png" alt="Keypoints" /><br /></p><h5 id="full-citation">Full Citation</h5><p>H. Li, T. Xu, X. Meng, J. Yin, R. P. Martins and P. -I. Mak, "<strong>10.9 A 23.2-to-26GHz Sub-Sampling PLL Achieving 48.3fsrms Jitter, -253.5dB FoMJ, and 0.55μs Locking Time Based on a Function-Reused VCO-Buffer and a Type-I FLL with Rapid Phase Alignment</strong>," 2024 IEEE International Solid-State Circuits Conference (ISSCC), San Francisco, CA, USA, 2024, pp. 204-206, doi: 10.1109/ISSCC49657.2024.10454298.</p><p><a href="https://ieeexplore.ieee.org/document/10454298">IEEE Link</a><br /></p><h2 id="keypoints">Keypoints</h2><ul><li>type-II SSPLL<ul><li>low-jitter and low-spur</li><li>sub-us locking time (&lt;64 ref cycles)</li><li>master-slave SSPD with constant Gm<ul><li>isolate sampling from the VCO</li><li>sufficient PM with C_S1&gt;7x C_S2</li></ul></li></ul></li><li>function-reused(FR) VCO buffer<ul><li>eliminate noise and capacitive load from the buffer</li><li>no inductor</li><li>transistor as buffer is merged into the negative gm transistor<ul><li>naturally isolate the sampling from the tank</li></ul></li><li>low spur and low jitter<ul><li>decreasing RD and minimal C_S2</li><li>large SSPD gain</li><li>negligible PN degradation from RD</li></ul></li></ul></li><li>source-to-gate(S2G) transformer-feedback(TF) VCO<ul><li>superior PN and FoM</li><li>FR VCO buffer</li><li>isolate the nonlinear load capacitor from tank</li><li>reduce 1/f noise up-conversion</li></ul></li><li>fast frequency-locked loop (FLL)<ul><li>not contribute to the PN</li><li>decouple locking time and initial phase error</li><li>rapid phase alignment</li><li>coarse-fine-TDC-based type-I loop for SC search</li><li>operation flow<ul><li>step 1: phase aligner gates the DIV and delay fb CKD</li><li>step 2: CF-TDC config. the FLL as a type-I loop for SC search</li><li>step 3: SS loop without cycle slip</li></ul></li></ul></li></ul><h2 id="background">Background</h2><ul><li>PLL with low jitter for high-speed wireless comm.<ul><li>&lt;97fs at 26GHz for 5G FR2 using 256-QAM</li><li>robustly lock within sub-us</li></ul></li><li>previous low-jitter mm-wave PLL<ul><li>sub-10G PLL + frequency multipliers<ul><li>power- and area-hungry buffers</li><li>boost output power</li><li>suppress subharmonic spurs</li></ul></li><li>sub-sampling PLL<ul><li>directly synthesizing an mm-wave LO</li><li>low in-band PN</li><li>wide BW to suppress VCO PN</li><li>ref spur with isolation VCO buffer</li><li>small capture range of SSPD : long SC search and weak loop settling</li></ul></li></ul></li><li>previous FLL for SS-PLL<ul><li>freq-cnt-based : slow with small frequency error</li><li>type-II loop with DZ : limited and slow</li><li>cnt-and-TDC-based config as a type-I loop<ul><li>high-power with the TDC at VCO rate</li><li>always-on FLL loop to monitor the loose lock</li></ul></li></ul></li></ul><p><img src="https://s21.ax1x.com/2024/10/17/pAUMK10.png" width = "500" alt="Overall architecture of the proposed SSPLL using an FR VCO-buffer and a type-I FLL with rapid phase alignment" align=center /></p><p><img src="https://s21.ax1x.com/2024/10/17/pAUMupq.png" width = "500" alt="The locking chart flow, locking procedures, and locking time analysis of the proposed SSPLL" align=center /></p><h2 id="conclusion">Conclusion</h2><p><strong>TECH</strong> 28 nm<br /><strong>REF</strong> 100 MHz<br /><strong>OUT</strong> 23.2~26 GHz<br /><strong>REF SPUR</strong> -66 dBc<br /><strong>POWER</strong> 19.1 mW<br /><strong>RMS JITTER</strong> 48.3 fs<br /><strong>FOM</strong> -253.5 dB<br /></p><h2 id="important-references">Important References</h2><blockquote><p><em>sub-10GHz PLLs with frequencymultipliers</em><br />[1] J. Kim et al., “A 76fsrms Jitter and –40dBc Integrated-Phase-Noise 28-to-31GHz Frequency Synthesizer Based on Digital Sub-Sampling PLL Using Optimally Spaced Voltage Comparators and Background Loop-Gain Optimization,” ISSCC, pp. 258–259, Feb. 2019.</p><p><em>power- and area-hungry buffers for boosting the output power and suppressing the subharmonic spurs</em><br />[2] X. Geng et al., “A 25.8GHz Integer-N PLL with Time-Amplifying Phase-Frequency Detector Achieving 60fsrms Jitter, -252.8dB FoMJ, and Robust Lock Acquisition Performance,” ISSCC, pp. 388–389, Feb. 2022.<br />[3] Y. Hu et al., “A 21.7-to-26.5GHz Charge-Sharing Locking Quadrature PLL with Implicit Digital Frequency-Tracking Loop Achieving 75fs Jitter and −250dB FoM,” ISSCC, pp.276-277, Feb. 2020.</p><p><em>sub-sampling (SS) PLL</em><br />[4] X. Gao et al., “A Low Noise Sub-Sampling PLL in which Divider Noise is Eliminated and PD/CP Noise is Not Multiplied by N2,” IEEE JSSC, vol. 44, no. 12, pp. 3253-3263, Dec. 2009.</p><p><em>SSPLL has inferior reference (ref.) spur</em><br />[5] Z. Yang et al., “A 25.4-to-29.5GHz 10.2mW Isolated Sub-Sampling PLL Achieving -252.9dB Jitter-Power FoM and -63dBc Reference Spur,” ISSCC, pp. 270-271, Feb. 2019.</p><p><em>source-to-gate (S2G) transformer-feedback (TF) VCO</em><br />[6] C. Fan et al., “A 9mW 54.9-to-63.5GHz Current-Reuse LO Generator with a 186.7dBc/Hz FoM by Unifying a 20GHz 3rd-Harmonic-Rich Current-Output VCO, a Harmonic-Current Filter and a 60GHz TIA,” ISSCC, pp. 282-283, Feb. 2020.</p><p><em>ferror is within two times of the fBW, there is no cycle slip</em><br />[7] Y.-H. Liu et al., “An Ultra-Low Power 1.7-2.7 GHz Fractional-N Sub-Sampling Digital Frequency Synthesizer and Modulator for IoT Applications in 40 nm CMOS,” IEEE TCAS-I, vol. 64, no. 5, pp. 1094-1105, May 2017.</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://s21.ax1x.com/2024/10/17/pAUMmhn.png&quot; alt=&quot;Keypoints&quot; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h5 id=&quot;full-citation&quot;&gt;Full Citation&lt;/h5&gt;
+&lt;p&gt;H. Li, </summary>
+      
+    
+    
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/categories/ISSCC/"/>
+    
+    <category term="2024" scheme="https://papers.robin-ic.fun/categories/ISSCC/2024/"/>
+    
+    
+    <category term="PLL" scheme="https://papers.robin-ic.fun/tags/PLL/"/>
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/tags/ISSCC/"/>
+    
+    <category term="UMacau" scheme="https://papers.robin-ic.fun/tags/UMacau/"/>
+    
+    <category term="SSPD" scheme="https://papers.robin-ic.fun/tags/SSPD/"/>
+    
+    <category term="2024" scheme="https://papers.robin-ic.fun/tags/2024/"/>
+    
+    <category term="FLL" scheme="https://papers.robin-ic.fun/tags/FLL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ISSCC-2024 10.7 An 11GHz 2nd-order DPD FMCW Chirp Generator with 0.051% rms Frequency Error under a 2.3GHz Chirp Bandwidth, 2.3GHz/μs Slope, and 50ns Idle Time in 65nm CMOS</title>
+    <link href="https://papers.robin-ic.fun/papers/27355/"/>
+    <id>https://papers.robin-ic.fun/papers/27355/</id>
+    <published>2024-10-16T12:25:24.000Z</published>
+    <updated>2024-10-24T13:01:51.428Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://s21.ax1x.com/2024/10/16/pANWiqK.png" alt="Keypoints" /><br /></p><h5 id="full-citation">Full Citation</h5><p>DX. Wang et al., "<strong>10.7 An 11GHz 2nd-order DPD FMCW Chirp Generator with 0.051% rms Frequency Error under a 2.3GHz Chirp Bandwidth, 2.3GHz/μs Slope, and 50ns Idle Time in 65nm CMOS</strong>," 2024 IEEE International Solid-State Circuits Conference (ISSCC), San Francisco, CA, USA, 2024, pp. 200-202, doi: 10.1109/ISSCC49657.2024.10454283.</p><p><a href="https://ieeexplore.ieee.org/document/10454283">IEEE Link</a><br /></p><h2 id="keypoints">Keypoints</h2><ul><li>2nd-order curve-fitting (2nd-CF) DPD<ul><li>1st-LUT ahead of the ramp integrator<ul><li>ci is estimated with LMS</li><li>gi = c_i+1 - ci</li></ul></li><li>pre-running ramp tracker</li><li>multiplexer switches between the ramp tracker and the LUT</li></ul></li><li>FMCW SS-PLL of ultra-fast wideband fitting techniques<ul><li>2nd-CF DPD<ul><li>dynamic track-and-hold</li><li>integral path in the digital loop filter (DLF)</li><li>voltage tracking loop (VTL) for robust LUT calibration</li><li>involving an integral path to the DLF in the VTL</li><li>three states: tracking, stablized, hold</li></ul></li><li>zero-phase-error DTC modulator<ul><li>accumulated phase error ACC[k] is wrapped by the DTC gain KDTC[k]</li></ul></li><li>delay-spread calibration</li></ul></li></ul><h2 id="background">Background</h2><ul><li>short-range 3D imaging radar systems<ul><li>a 79GHz large-scale MIMO radar imaging system</li><li>quick and precise scanning</li><li>sub-millisecond snapshot duration</li><li>sub-centimeter depth resolution</li></ul></li><li>FMCW chirp generator<ul><li>ultra-fast chirp slope exceeding 15GHz/μs<ul><li>1μs chirp duration</li><li>&gt;15GHz bandwidth (BW)</li></ul></li><li>two-point-modulation (TPM) technique for fast chirp<ul><li>high chirp linearity</li><li>narrow PLL BW for low PN</li><li>quick loop response</li><li>chirp idle time (Tidle) ~ 50ns<ul><li>1st-order curve-fitting (1st-CF) DPD technique</li><li>1st-order look-up table (1st-LUT)</li><li>0th-order LUT for ramp-rate fitting</li></ul></li></ul></li></ul></li></ul><p><img src="https://s21.ax1x.com/2024/10/16/pANWPr6.png" width = "500" alt="Block diagram of the proposed FMCW synthesizer" align=center /></p><p><img src="https://s21.ax1x.com/2024/10/16/pANWkVO.png" width = "500" alt="Block diagram of the ramp-tracker-assisted 2nd-order curve-fitting DPD" align=center /></p><h2 id="conclusion">Conclusion</h2><p><strong>TECH</strong> 65 nm<br /><strong>REF</strong> 100 MHz<br /><strong>OUT</strong> 9.4~12.4 GHz<br /><strong>MAX BW CHIRP</strong> 2.3 GHz<br /><strong>MAX SLOPE</strong> 2.3 GHz/us<br /><strong>MAX FM ERROR RMS</strong> 1176 KHz<br /><strong>FRAC SPUR</strong> -52.49 dBc<br /><strong>POWER</strong> 50.8 mW<br /><strong>RMS JITTER</strong> 148.7 fs<br /></p><h2 id="important-references">Important References</h2><blockquote><p><em>two-point-modulation (TPM) in frac PLLs</em><br />[1] Z. Shen et al., “A 24GHz Self-Calibrated ADPLL-Based FMCW Synthesizer with 0.01% rms Frequency Error Under 3.2GHz Chirp Bandwidth and 320MHz/μs Slope,” ISSCC, pp.450-451, Feb. 2021.<br />[2] P. Renukaswamy et al., “A 12mW 10GHz FMCW PLL Based on an Integrating DAC with 90kHz rms Frequency Error for 23MHz/μs Slope and 1.2GHz Chirp Bandwidth,” ISSCC, pp. 278-279, Feb. 2020. (0th-order LUT for ramp-rate fitting)<br />[3] Q. Shi et al., ”A Self-Calibrated 16GHz Subsampling-PLL-Based 30μs Fast Chirp FMCW Modulator with 1.5GHz Bandwidth and 100kHz rms Error,” ISSCC, pp. 408-409, Feb. 2019. ( 1st-order look-up table (1st-LUT) for ramp fitting)<br />[4] D. Cherniak et al., “A 23-GHz Low-Phase-Noise Digital Bang-Bang PLL for Fast Triangular and Sawtooth Chirp Modulation,” IEEE JSSC, vol. 53, no. 12, pp. 3565-3575, Dec. 2018. (calibrated ramp rate and interactions among ci through the calculation of gi)<br />[5] A. Yan et al., “An 11.4-to-16.4GHz FMCW Digital PLL with Cycle-Slipping Compensation and Back-Tracking DPD Achieving 0.034% RMS Frequency Error under 3.4-GHz Chirp Bandwidth and 960-MHz/μs Chirp Slope,” IEEE Symp. VLSI Circuits, pp. 1-2, June 2023.<br /></p><p><em>1st-order digital pre-distortion (DPD) : [2-4]</em><br /></p><p><em>ramp non-linearity of a ramp tracker : [1, 5]</em><br /></p><p><em>extract the sign of the phase noise from the output current of a Gm : [2, 3]</em><br /></p><p><em>large frequency hopping : [2, 3]</em><br /></p><p><em>voltage tracking loop </em><br /></p><p>[6] W. Wu et al., ”A 28-nm 75-fsrms Analog Fractional-N Sampling PLL with a Highly Linear DTC Incorporating Background DTC Gain Calibration and Reference Clock Duty Cycle Correction,” IEEE JSSC, vol. 54, no. 5, pp. 1254-1265, May 2019.</p><p><em>delay-spread calibration</em><br />[7] G. Marzin et al., “A 20 Mb/s Phase Modulator Based on a 3.6GHz Digital PLL with -36dB EVM at 5mW Power,” IEEE JSSC, vol. 47, no. 12, pp. 2974-2988, Dec. 2012.</p><p>[8] P. Renukaswamy et al., “A 16GHz, 41kHzrms Frequency Error, Background-Calibrated, Duty-Cycled FMCW Charge-Pump PLL,” ISSCC, pp. 74-75, Feb. 2023.</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://s21.ax1x.com/2024/10/16/pANWiqK.png&quot; alt=&quot;Keypoints&quot; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h5 id=&quot;full-citation&quot;&gt;Full Citation&lt;/h5&gt;
+&lt;p&gt;DX. Wan</summary>
+      
+    
+    
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/categories/ISSCC/"/>
+    
+    <category term="2024" scheme="https://papers.robin-ic.fun/categories/ISSCC/2024/"/>
+    
+    
+    <category term="PLL" scheme="https://papers.robin-ic.fun/tags/PLL/"/>
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/tags/ISSCC/"/>
+    
+    <category term="FMCW" scheme="https://papers.robin-ic.fun/tags/FMCW/"/>
+    
+    <category term="SSPD" scheme="https://papers.robin-ic.fun/tags/SSPD/"/>
+    
+    <category term="2024" scheme="https://papers.robin-ic.fun/tags/2024/"/>
+    
+    <category term="SEU" scheme="https://papers.robin-ic.fun/tags/SEU/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ISSCC-2024 10G-FMCW-BB-DPLL-nonuniform-PWL-DPD 10.6 A 10GHz FMCW Modulator Achieving 680MHz/μs Chirp Slope and 150kHz rms Frequency Error Based on a Digital-PLL with a Non-Uniform Piecewise-Parabolic Digital Predistortion</title>
+    <link href="https://papers.robin-ic.fun/papers/22785/"/>
+    <id>https://papers.robin-ic.fun/papers/22785/</id>
+    <published>2024-10-15T13:02:40.000Z</published>
+    <updated>2024-10-24T13:01:51.428Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://s21.ax1x.com/2024/10/15/pAtx8fI.png" alt="Keypoints" /><br /></p><h5 id="full-citation">Full Citation</h5><p>F. Tesolin et al., "<strong>10.6 A 10GHz FMCW Modulator Achieving 680MHz/μs Chirp Slope and 150kHz rms Frequency Error Based on a Digital-PLL with a Non-Uniform Piecewise-Parabolic Digital Predistortion</strong>," 2024 IEEE International Solid-State Circuits Conference (ISSCC), San Francisco, CA, USA, 2024, pp. 198-200, doi: 10.1109/ISSCC49657.2024.10454289.</p><p><a href="https://ieeexplore.ieee.org/document/10454289">IEEE Link</a><br /></p><h2 id="keypoints">Keypoints</h2><ul><li>low-noise wide-range DCO<ul><li>low inductance value L_tank</li><li>large area capacitor bank</li><li>minimizing the FM error</li><li>non-smooth DCO tuning charateristic<ul><li>C-to-Freq 1/√ dependency</li><li>discontinuous derivatives at the row-switching codes</li></ul></li></ul></li><li>PWL-DPD<ul><li>map the digital modulation signals</li><li>increasing the number of points in the grid</li><li>additional hardware resources</li></ul></li><li>non-uniform PWL-DPD<ul><li>use a grid of non-uniformly spaced points X_j</li><li>X_row_i are adaptively calibrated belong to the grid</li><li>second-order polynomial interpolation instead of the linear one</li><li>implementation<ul><li>9 non-uniformly spaced Xj grid points<ul><li>X2, X4, X6 grid points are set by the adaptive point-calibration units (APCU)</li><li>X1, X3, X5, and X7 grid points are the average between their adjacent points</li></ul></li><li>9 corresponding Hj values of the inverse function<ul><li>H2, H4, and H6 values are fixed to 16, 32, and 48<br />the inverse function at Xrow1, Xrow2, and Xrow3</li><li>the adaptive height-calibration units (AHCU) provide the remaining Hj values</li></ul></li><li>converge to nullify the first-order difference of the PLL-phase-detector output e[k]</li><li>the non-smooth Hinv(.) function can be split in four sections<ul><li>approximated with a parabola</li><li>coefficients are estimated by a second-order polynomial engine with 3 grid points</li></ul></li></ul></li></ul></li><li>proposed FMCW BB DPLL<ul><li>segmented capacitor bank coarse/mid/fine</li><li>DSM and QE to fine stages</li><li>other calibrations</li><li>DCO mid/fine bank gain calibration<ul><li>digital timing skew calibration</li><li>DTC gain calibration</li></ul></li></ul></li></ul><h2 id="background">Background</h2><ul><li>CMOS FMCW radars<ul><li>spatial resolution</li><li>reliability</li></ul></li><li>FMCW digital PLL using the two-point modulation (TPM)<ul><li>fast and wide-bandwidth chirp modulation</li><li>short retrace time</li><li>low power area and phase noise</li></ul></li><li>the non-linearity of the DCO degrades chirp linearity<ul><li>significant spurs and false target</li><li>trade-off between linearity and phase noise</li></ul></li><li>improve DCO linearity<ul><li>induced by the practical layout</li><li>piecewise-linear digital predistortion (PWL-DPD)<ul><li>mitigates DCO linearity</li><li>limited effectiveness in non-smooth DCO tuning curves</li></ul></li><li>non-uniform piecewise-parabolic digital predistortion<ul><li>specially mitigate non-smooth DCO non-linearies</li></ul></li></ul></li></ul><p><img src="https://s21.ax1x.com/2024/10/15/pAtx3tA.png" width = "500" alt="Block diagram of the implemented digital PLL" align=center /></p><p><img src="https://s21.ax1x.com/2024/10/15/pAtx1kd.png" width = "500" alt="DCO non-linearity issue in FMCW modulators and DPD techniques" align=center /></p><h2 id="conclusion">Conclusion</h2><p><strong>TECH</strong> 28 nm<br /><strong>REF</strong> 250 MHz<br /><strong>OUT</strong> 9.25~10.5 GHz<br /><strong>MAX BW CHIRP</strong> 680 MHz<br /><strong>MAX SLOPE</strong> 647 MHz/us<br /><strong>MAX FM ERROR RMS</strong> 151 KHz<br /><strong>REF SPUR</strong> -70 dBc<br /><strong>FRAC SPUR</strong> -53.7 dBc<br /><strong>POWER</strong> 21 mW<br /><strong>RMS JITTER</strong> 87.1 fs<br /><strong>FOM</strong> -248 dB<br /></p><h2 id="important-references">Important References</h2><blockquote><p><em>FMCW digital PLL using two-point modulation</em><br />[1] D. Cherniak et al., “A 23GHz Low-Phase-Noise Digital Bang-Bang PLL for Fast Triangular and Saw-Tooth Chirp Modulation,” ISSCC, pp. 248-249, Feb. 2018<br />[2] H. Shanan et al., “A 9-to-12GHz Coupled-RTWO FMCW ADPLL with 97fs rms Jitter, -120dBc/Hz PN at 1MHz Offset, and With Retrace Time of 12.5ns and 2μs Chirp Settling Time,” ISSCC, pp. 146-147, Feb. 2022<br />[3] Z. Shen et al., “A 24GHz Self-Calibrated ADPLL-Based FMCW Synthesizer with 0.01% rms Frequency Error Under 3.2GHz Chirp Bandwidth and 320MHz/μs Slope,” ISSCC, pp.450-451, Feb. 2021.</p><p><em>piecewise-linear digital predistortion (PWL-DPD)</em><br />[1]<br />[4] P. T. Renukaswamy et al., “A 16GHz, 41kHzrms Frequency Error, Background-Calibrated, Duty-Cycled FMCW Charge-Pump PLL,” ISSCC, pp. 74-75, Feb. 2023.<br />[5] Q. Shi et al., “A Self-Calibrated 16GHz Subsampling-PLL-Based 30μs Fast Chirp FMCW Modulator with 1.5GHz Bandwidth and 100kHz rms Error,” ISSCC, pp. 408-409, Feb. 2019.</p><p><em>varactor driven by a DAC : [4, 5]</em><br /></p><p><em>digital skew calibration algorithm</em><br />[6] G. Marzin et al., “A 20 Mb/s Phase Modulator Based on a 3.6 GHz Digital PLL With −36 dB EVM at 5 mW Power,” IEEE JSSC, vol. 47, no. 12. pp. 2974-2988, Dec. 2012.</p><p><em>classical LMS calibration : [1]</em><br /></p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://s21.ax1x.com/2024/10/15/pAtx8fI.png&quot; alt=&quot;Keypoints&quot; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h5 id=&quot;full-citation&quot;&gt;Full Citation&lt;/h5&gt;
+&lt;p&gt;F. Teso</summary>
+      
+    
+    
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/categories/ISSCC/"/>
+    
+    <category term="2024" scheme="https://papers.robin-ic.fun/categories/ISSCC/2024/"/>
+    
+    
+    <category term="Polimi" scheme="https://papers.robin-ic.fun/tags/Polimi/"/>
+    
+    <category term="BBPD" scheme="https://papers.robin-ic.fun/tags/BBPD/"/>
+    
+    <category term="DCO" scheme="https://papers.robin-ic.fun/tags/DCO/"/>
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/tags/ISSCC/"/>
+    
+    <category term="DPLL" scheme="https://papers.robin-ic.fun/tags/DPLL/"/>
+    
+    <category term="FMCW" scheme="https://papers.robin-ic.fun/tags/FMCW/"/>
+    
+    <category term="2024" scheme="https://papers.robin-ic.fun/tags/2024/"/>
+    
+    <category term="DPD" scheme="https://papers.robin-ic.fun/tags/DPD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ISSCC-2024 10.5 A 76 fsrms- Jitter and -65dBc- Fractional-Spur Fractional-N Sampling PLL Using a Nonlinearity-Replication Technique</title>
+    <link href="https://papers.robin-ic.fun/papers/56977/"/>
+    <id>https://papers.robin-ic.fun/papers/56977/</id>
+    <published>2024-10-13T15:14:01.000Z</published>
+    <updated>2024-10-24T13:01:51.428Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://s21.ax1x.com/2024/10/13/pAtkRsI.png" alt="Keypoints" /><br /></p><h5 id="full-citation">Full Citation</h5><p>Y. Shin, J. Lee, J. Kim, Y. Jo and J. Choi, "<strong>10.5 A 76 fsrms- Jitter and -65dBc- Fractional-Spur Fractional-N Sampling PLL Using a Nonlinearity-Replication Technique</strong>," 2024 IEEE International Solid-State Circuits Conference (ISSCC), San Francisco, CA, USA, 2024, pp. 196-198, doi: 10.1109/ISSCC49657.2024.10454557.</p><p><a href="https://ieeexplore.ieee.org/document/10454557">IEEE Link</a><br /></p><h2 id="keypoints">Keypoints</h2><ul><li>SPD NL-replication (SNL-REP)<ul><li>use a DAC precisely follow the non-linear output of the SPD</li><li>Q-error is naturally cancelled by the voltage comparator (VC)</li><li>currnt DAC and a capacitor C<br />the same current and C as the SPD</li><li>V_SPD and V_RNL-DAC have the same distorted profile</li></ul></li><li>proposed frac-N sampling PLL<ul><li>RNL-DAC naturally cancelled by the VC<ul><li>charge-integration DAC (QDAC)</li><li>remain low in-band noise</li><li>wide dynamic range with the full-range N and P type VCs together<ul><li>in parallel</li><li>use DAC to predict the level of V_SPD and V_RNL-DAC to determine the VC</li><li>double tail comparator</li><li>calibrated input offset with LMS</li></ul></li></ul></li><li>share the same layout and close to the SPD</li></ul></li><li>6b fine DTC<ul><li>improve the compensation resolution</li><li>narrow range</li><li>minimal peak INL</li></ul></li><li>MASH 1-1 DSM (2Tvco)</li><li>gain calibration of the SPD and the DAC</li><li>1b output code of the VC is used for the DLF</li></ul><h2 id="background">Background</h2><ul><li>frac-N sampling PLL<ul><li>high-gain sampling phase detector</li><li>reduce in-band PN</li><li>must remove the Q-error of the DSM</li></ul></li><li>Q-error cancellation<ul><li>DTC in time domain<ul><li>nonlinearity and compensation</li><li>digital predistortion (DPD)</li><li>high linear DTC: constant-slope, inverse constant-slope</li></ul></li><li>NL and PN tradeoff</li></ul></li><li>DAC in voltage domain</li></ul><p><img src="https://s21.ax1x.com/2024/10/13/pAtk2QA.png" width = "500" alt="Overall architecture of the proposed fractional-N SPLL" align=center /></p><h2 id="conclusion">Conclusion</h2><p><strong>TECH</strong> 40 nm<br /><strong>REF</strong> 150 MHz<br /><strong>OUT</strong> 10.4~11.8 GHz<br /><strong>REF SPUR</strong> -69 dBc<br /><strong>FRAC SPUR</strong> -65 dBc<br /><strong>POWER</strong> 15.3 mW<br /><strong>RMS JITTER</strong> 76 fs<br /><strong>FOM</strong> -250.5 dB<br /></p><h2 id="important-references">Important References</h2><blockquote><p><em>frac PLL with DTC</em><br />[1] W. Wu et al., “A 14-nm Ultra-Low Jitter Fractional-N PLL Using a DTC Range Reduction Technique and a Reconfigurable Dual-Core VCO,” IEEE JSSC, vol. 56, no. 12, pp. 3756-3767, Dec. 2021.</p><p><em>DTC NL DPD</em><br />[2] S. Levantino et al., “An Adaptive Pre-Distortion Technique to Mitigate the DTC Nonlinearity in Digital PLLs,” IEEE JSSC, vol. 49, no. 8, pp. 1762-1772, Aug. 2014.</p><p><em>inverse constant-slope DTC (ICS-DTC)</em><br />[3] S. M. Dartizio et al., “A 76.7fs-lntegrated-Jitter and −71.9dBc In-Band Fractional-Spur Bang-Bang Digital PLL Based on an Inverse-Constant-Slope DTC and FCW Subtractive Dithering,” ISSCC, pp. 78-79, Feb. 2023.</p><p><em>remove the Q-error in the voltage domain using a DAC</em><br />[5] G. Castoro et al., “A 9.25GHz Digital PLL with Fractional-Spur Cancellation Based on a Multi-DTC Topology,” ISSCC, pp. 82-83, Feb. 2023.<br />[4] J. Kim et al., “A 104fsrms-Jitter and −61dBc-Fractional Spur 15GHz Fractional-N Subsampling PLL Using a Voltage-Domain Quantization-Error Cancelation Technique,” ISSCC, pp. 448-449, Feb. 2021.</p><p><em>frac PLL in time mode</em><br />[6] Z. Gao et al., “A 2.6-to-4.1GHz Fractional-N Digital PLL Based on a Time-Mode Arithmetic Unit Achieving -249.4dB FoM and -59dBc Fractional Spurs,” ISSCC, pp. 380-381, Feb. 2022.</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://s21.ax1x.com/2024/10/13/pAtkRsI.png&quot; alt=&quot;Keypoints&quot; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h5 id=&quot;full-citation&quot;&gt;Full Citation&lt;/h5&gt;
+&lt;p&gt;Y. Shin</summary>
+      
+    
+    
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/categories/ISSCC/"/>
+    
+    <category term="2024" scheme="https://papers.robin-ic.fun/categories/ISSCC/2024/"/>
+    
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/tags/ISSCC/"/>
+    
+    <category term="SPD" scheme="https://papers.robin-ic.fun/tags/SPD/"/>
+    
+    <category term="KAIST" scheme="https://papers.robin-ic.fun/tags/KAIST/"/>
+    
+    <category term="2024" scheme="https://papers.robin-ic.fun/tags/2024/"/>
+    
+    <category term="SPLL" scheme="https://papers.robin-ic.fun/tags/SPLL/"/>
+    
+    <category term="DAC" scheme="https://papers.robin-ic.fun/tags/DAC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ISSCC-2024 10.4 A 45.5fs-Integrated-Random-Jitter and -75dBc-Integer-Boundary-Spur BiCMOS Fractional-N PLL with Suppression of Fractional, Horn, and Wandering Spurs</title>
+    <link href="https://papers.robin-ic.fun/papers/34771/"/>
+    <id>https://papers.robin-ic.fun/papers/34771/</id>
+    <published>2024-10-12T13:40:31.000Z</published>
+    <updated>2024-10-24T13:01:51.428Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://s21.ax1x.com/2024/10/12/pAY5861.png" alt="Keypoints" /><br /></p><h5 id="full-citation">Full Citation</h5><p>M. P. Kennedy, V. Mazzaro, S. Tulisi, M. Scully, N. McDermott and J. Breslin, "<strong>10.4 A 45.5fs-Integrated-Random-Jitter and -75dBc-Integer-Boundary-Spur BiCMOS Fractional-N PLL with Suppression of Fractional, Horn, and Wandering Spurs</strong>," 2024 IEEE International Solid-State Circuits Conference (ISSCC), San Francisco, CA, USA, 2024, pp. 194-196, doi: 10.1109/ISSCC49657.2024.10454462.</p><p><a href="https://ieeexplore.ieee.org/document/10454462">IEEE Link</a><br /></p><h2 id="keypoints">Keypoints</h2><ul><li>enhanced non-linearity-induced-noise-performance (ENOP) D-DSM<ul><li>provably immune to polynomial distortion</li><li>no horn or wandering spurs</li></ul></li><li>frac-N CP PLL<ul><li>ENOP D-DSM (mixed radix MASH-ENOP hybrid)<ul><li>main and auxiliary modulators (24b+25b)<br />49b frequency resolution</li><li>STF remains the same</li><li>NTF is changed to (1-z-1)2(1-z-2-z-4+z-6+z-7-z-9)<br />compared to (1-z-2)3 for the MASH</li><li>quantization noise is greater as (-6 ~ +7)<br />(-3 ~ +4 for the MASH)</li><li>non-linearity-induced folded noise is greater</li><li>exhibit high frequency bump</li><li>slightly minimum in-band noise floor and integrated jitter</li></ul></li><li>bipolar bleed current in CP to linearize the TIMS</li><li>fourth-order off-chip loop filter</li></ul></li></ul><h2 id="background">Background</h2><ul><li>fractional-N PLL spurs<ul><li>causes<ul><li>quantization noise</li><li>time-interval measurement (TIMS) non-linearity<ul><li>PFD+CP</li><li>TDC+DTC</li></ul></li></ul></li><li>types<ul><li>fixed spurs</li><li>moving or wandering spurs</li></ul></li><li>implementation: digital delta-sigma modulator D-DSM</li></ul></li><li>solution<ul><li>CP-PLL : offset the operation point using bleed current</li><li>ADPLL<ul><li>dither strategies</li><li>successive requantizer (SR) instead of D-DSM</li><li>probability mass redistribution (PMR)</li><li>DTC controlling<ul><li>range reduction</li><li>probability density shaping (PDS)</li><li>subtractive dither</li></ul></li></ul></li></ul></li></ul><p><img src="https://s21.ax1x.com/2024/10/12/pAY53lR.png" width = "500" alt="Block diagram of fractional-N frequency synthesizer with the mixed-radix MASH/ENOP divider controller" align=center /></p><h2 id="conclusion">Conclusion</h2><p><strong>TECH</strong> 0.18 um SiGe BiCMOS<br /><strong>REF</strong> 198.76 MHz<br /><strong>OUT</strong> 6.4~12.8 GHz<br /><strong>REF SPUR</strong> -118 dBc<br /><strong>FRAC SPUR</strong> -75 dBc<br /><strong>POWER</strong> 2100 mW<br /><strong>RMS JITTER</strong> 46.4 fs<br /></p><h2 id="important-references">Important References</h2><blockquote><p><em>successive requantizer (SR)</em><br />[1] E. Familier and I. Galton, “Second and Third-Order Successive Requantizers for Spurious Tone Reduction in Low-Noise Fractional-N PLLs,” IEEE CICC, pp.1–4, May 2017.</p><p><em>probability mass redistribution (PMR)</em><br />[2] M.P. Kennedy et al., “4.48GHz 180nm SiGe BiCMOS Exact Frequency Fractional-N Frequency Synthesizer with Spurious-Tone Suppression Yielding a -80dBc In-Band Fractional Spur,” ISSCC, pp. 272–273, Feb. 2019.</p><p><em>sampling PD and a DTC</em><br />[3] W. Wu et al., “A 14nm Analog Sampling Factional-N PLL with a Digital-to-Time Converter Range-Reduction Technique Achieving 80fs Integrated Jitter and 93fs at Near-Integer Channels,” ISSCC, pp. 444–445, Feb. 2021.</p><p><em>probability density shaping (PDS)</em><br />[4] H. Park et al., “A 365fsrms-Jitter and -63dBc-Fractional Spur 5.3GHz-Ring-DCO-Based Fractional-N DPLL Using a DTC Second/Third-Order Nonlinearity Cancelation and a Probability-Density-Shaping ΔΣM,” ISSCC, pp. 442–443, Feb. 2021.</p><p><em>DTC and subtractive dither</em><br />[5] S.M. Dartizio et al., “A 76.7fs-Integrated-Jitter and -71.9dBc In-Band Fractional-Spur Bang-Bang Digital PLL Based on an Inverse-Constant-Slop DTC and FCW Subtractive Dithering,” ISSCC, pp. 78–79, Feb. 2023.</p><p><em>enhanced non-linearity-induced-noise-performance (ENOP) DΔΣM</em><br />[6] V. Mazzaro and M.P. Kennedy, “A Family of ΔΣ Modulators with High Spur Immunity and Low Folded Noise When Used in Fractional-N Frequency Synthesizers,” IEEE TCAS-I, vol. 69, no. 11, pp. 4499–4509, Nov. 2022.</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://s21.ax1x.com/2024/10/12/pAY5861.png&quot; alt=&quot;Keypoints&quot; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h5 id=&quot;full-citation&quot;&gt;Full Citation&lt;/h5&gt;
+&lt;p&gt;M. P. K</summary>
+      
+    
+    
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/categories/ISSCC/"/>
+    
+    <category term="2024" scheme="https://papers.robin-ic.fun/categories/ISSCC/2024/"/>
+    
+    
+    <category term="PLL" scheme="https://papers.robin-ic.fun/tags/PLL/"/>
+    
+    <category term="UCD" scheme="https://papers.robin-ic.fun/tags/UCD/"/>
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/tags/ISSCC/"/>
+    
+    <category term="2024" scheme="https://papers.robin-ic.fun/tags/2024/"/>
+    
+    <category term="CP" scheme="https://papers.robin-ic.fun/tags/CP/"/>
+    
+    <category term="DSM" scheme="https://papers.robin-ic.fun/tags/DSM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ISSCC-2024 10.2 A 5.5μs-Calibration-Time, Low-Jitter, and Compact-Area Fractional-N Digital PLL Using the Recursive-Least-Squares (RLS) Algorithm </title>
+    <link href="https://papers.robin-ic.fun/papers/50215/"/>
+    <id>https://papers.robin-ic.fun/papers/50215/</id>
+    <published>2024-10-11T11:52:00.000Z</published>
+    <updated>2024-10-24T13:01:51.428Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://s21.ax1x.com/2024/10/11/pAY1fRx.png" alt="Keypoints" /><br /></p><h5 id="full-citation">Full Citation</h5><p>S. Jang, M. Chae, H. Park, C. Hwang and J. Choi, "<strong>10.2 A 5.5μs-Calibration-Time, Low-Jitter, and Compact-Area Fractional-N Digital PLL Using the Recursive-Least-Squares (RLS) Algorithm</strong>," 2024 IEEE International Solid-State Circuits Conference (ISSCC), San Francisco, CA, USA, 2024, pp. 190-192, doi: 10.1109/ISSCC49657.2024.10454495.</p><p><a href="https://ieeexplore.ieee.org/document/10454495">IEEE Link</a><br /></p><h2 id="keypoints">Keypoints</h2><ul><li>fast-converging DCD-RLS MVC<ul><li>dichotomous-coordinate-descent (DCD)-algorithm-based iterative process</li><li>on-chip implementation of the RLS-based MVC</li></ul></li><li>fast settling BB-DPLL<ul><li>type-II gear shifting (GS)</li><li>3 aux TDCs with different threshold</li></ul></li><li>low jitter<ul><li>wide loop BW</li><li>jitter reduction<ul><li>DTC cancels DSM QN</li><li>DTC range reduction with PSEL</li><li>MVC cancels various circuit NLs</li></ul></li></ul></li><li>DCD-RLS MVS<ul><li>xn-vector generator (XVG)</li><li>hn-vector generator (HVG)</li><li>predistortion-code generator (PCG)</li><li>find approx. hn<ul><li>iterative process based on DCD (3-steps)</li><li>solve the Auxiliary Normal Equation</li></ul></li><li>5-track DSM</li></ul></li></ul><h2 id="background">Background</h2><ul><li>low jitter PLL<ul><li>narrow loop BW<ul><li>suppress in-band noise</li><li>low-PN LC VCO is vital, like multicore LC VCO</li></ul></li><li>wide loop BW<ul><li>rely on removing in-band noise</li><li>cancel Q-noise with DTC</li><li>reduce DTC range with PSEL (phase selector) and MMD</li></ul></li></ul></li><li>multivariable calibration (MVC)<ul><li>DTC gain</li><li>compensate DTC nonlinearity</li><li>convergence time grows exponentially</li><li>LMS-based MVC<ul><li>fixed updating steps mu</li><li>without considering correlations between inputs<ul><li>calibrations can interfere and race</li><li>set mu sufficiently different from each other<ul><li>less mutual interference</li><li>increase overall calibration time due to sluggish settling</li></ul></li></ul></li><li>simple hardware<ul><li>only ADD and MULT</li></ul></li></ul></li></ul></li><li>RLS-based MVC<ul><li>find all variable collectively</li><li>correlation matrix Rn instead of fixed mu<ul><li>reflect the correlations between inputs (auto- and cross-)</li><li>convergence time can be reduced significantly</li></ul></li><li>complex hardware<ul><li>need to solve Normal Equation</li><li>involves Matrix Inversion</li><li>need DIV and many MULT</li></ul></li></ul></li></ul><p><img src="https://s21.ax1x.com/2024/10/11/pAY1WJ1.png" width = "500" alt="Overall architecture of the fractional-N DPLL" align=center /></p><p><img src="https://s21.ax1x.com/2024/10/11/pAY1IsO.png" width = "500" alt="Problem of a typical LMS-based MVC and principle of an RLS-based MVC" align=center /></p><p><img src="https://s21.ax1x.com/2024/10/11/pAY15QK.png" width = "500" alt="Schematics of the proposed DCD-RLS MVC " align=center /></p><h2 id="conclusion">Conclusion</h2><p><strong>TECH</strong> 40 nm<br /><strong>REF</strong> 100 MHz<br /><strong>OUT</strong> 6.4~8.2 GHz<br /><strong>REF SPUR</strong> -64 dBc<br /><strong>FRAC SPUR</strong> -68 dBc<br /><strong>POWER</strong> 15.7 mW<br /><strong>RMS JITTER</strong> 88 fs<br /><strong>FOM</strong> -249.1 dB<br /></p><h2 id="important-references">Important References</h2><blockquote><p><em>multicore LC VCOs</em><br />[1] E. Thaller et al., “A K-Band 12.1-to-16.6GHz Subsampling ADPLL with 47.3fsrms Jitter Based on a Stochastic Flash TDC and Coupled Dual-Core DCO in 16nm FinFET CMOS,” ISSCC, pp. 452-453, Feb. 2021.<br />[2] W. Wu et al., “A 14-nm Ultra-Low Jitter Fractional-N PLL Using a DTC Range Reduction Technique and a Reconfigurable Dual-Core VCO,” IEEE JSSC, vol. 56, no. 12, pp. 3756-3767, Dec. 2021.<br /><em>(DTC range reduction)</em></p><p><em>DTC cancels DSM QN</em><br />[3] H. Park et al., “A 365fsrms-Jitter and -63dBc-Fractional Spur 5.3GHz-Ring-DCO-Based Fractional-N DPLL Using a DTC Second/Third-Order Nonlinearity Cancelation and a Probability-Density-Shaping ΔΣM,” ISSCC, pp. 442-443, Feb. 2021.</p><p><em>type-II gear shift</em><br />[4] S. M. Dartizio et al., “A 68.6fsrms-Total-Integrated-Jitter and 1.56μs-Locking-Time Fractional-N Bang-Bang PLL Based on Type-II Gear Shifting and Adaptive Frequency Switching,” ISSCC, pp. 386-387, Feb. 2022.</p><p>[5] Z. Gao et al., “A 2.6-to-4.1GHz Fractional-N Digital PLL Based on a Time-Mode Arithmetic Unit Achieving -249.4dB FoM and -59dBc Fractional Spurs,” ISSCC, pp. 380-381, Feb. 2020.</p><p><em>solve the Auxiliary Normal Equation</em><br />[6] Y. Zakharov et al., “Low-Complexity RLS Algorithms Using Dichotomous Coordinate Descent Iterations,” IEEE Trans. Signal Process., vol. 56, no. 7, pp. 3150-3161, July. 2008.</p><p><em>TDC aux path for frequency acquisition</em><br />[7] L. Bertulessi et al., “A Low-Phase-Noise Digital Bang-Bang PLL with Fast Lock over a Wide Lock Range,” ISSCC, pp. 252-253, Feb.</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://s21.ax1x.com/2024/10/11/pAY1fRx.png&quot; alt=&quot;Keypoints&quot; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h5 id=&quot;full-citation&quot;&gt;Full Citation&lt;/h5&gt;
+&lt;p&gt;S. Jang</summary>
+      
+    
+    
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/categories/ISSCC/"/>
+    
+    <category term="2024" scheme="https://papers.robin-ic.fun/categories/ISSCC/2024/"/>
+    
+    
+    <category term="BBPD" scheme="https://papers.robin-ic.fun/tags/BBPD/"/>
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/tags/ISSCC/"/>
+    
+    <category term="DPLL" scheme="https://papers.robin-ic.fun/tags/DPLL/"/>
+    
+    <category term="KAIST" scheme="https://papers.robin-ic.fun/tags/KAIST/"/>
+    
+    <category term="DTC" scheme="https://papers.robin-ic.fun/tags/DTC/"/>
+    
+    <category term="2024" scheme="https://papers.robin-ic.fun/tags/2024/"/>
+    
+    <category term="RLS" scheme="https://papers.robin-ic.fun/tags/RLS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ISSCC-2024 10.3 A 7GHz Digital PLL with Cascaded Fractional Divider and Pseudo-Differential DTC Achieving -62.1dBc Fractional Spur and 143.7fs Integrated Jitter</title>
+    <link href="https://papers.robin-ic.fun/papers/50501/"/>
+    <id>https://papers.robin-ic.fun/papers/50501/</id>
+    <published>2024-10-10T13:14:09.000Z</published>
+    <updated>2024-10-24T13:01:51.428Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://s21.ax1x.com/2024/10/10/pAJHrBq.png" alt="Keypoints" /><br /></p><h5 id="full-citation">Full Citation</h5><p>D. Xu et al., "<strong>10.3 A 7GHz Digital PLL with Cascaded Fractional Divider and Pseudo-Differential DTC Achieving -62.1dBc Fractional Spur and 143.7fs Integrated Jitter</strong>," 2024 IEEE International Solid-State Circuits Conference (ISSCC), San Francisco, CA, USA, 2024, pp. 192-194, doi: 10.1109/ISSCC49657.2024.10454284.</p><p><a href="https://ieeexplore.ieee.org/document/10454284">IEEE Link</a><br /></p><h2 id="keypoints">Keypoints</h2><ul><li>cascaded-fractional-divider technique<ul><li>main and aux (FCW, DSM, DTC)</li><li>generate far-integer FCW_main + FCW_aux<ul><li>QN is cancelled</li><li>INL shifted to high-frequency</li><li>filtered easily by the PLL BW</li><li>both low jitter and low frac spur</li></ul></li></ul></li><li>pseudo-differential DTC<ul><li>cancel even-order nonlinearity in each unit DTC</li><li>DTC_p and DTC_n are placed before the two inputs of the PD</li><li>DTCs are symmetrical</li><li>delay range is halved</li><li>INL is reduced</li></ul></li><li>frac-N BB-DPLL<ul><li>BBPD reduces the chip footprint</li><li>2nd-order 15b DSM for DSM_main<ul><li>QN is cancelled by the DTC_main and DTC_fine</li></ul></li><li>1st-order 15b DSM for DSM_main<ul><li>QN is cancelled by the DTC_aux</li></ul></li><li>DTCs<ul><li>6b DTC_main and DTC_fine; 3b DTC_aux</li><li>all pseudo-differential</li><li>gain cali<ul><li>10b DAC</li><li>tuning the bias voltage of a PMOS resistor</li><li>3 LMS in the background</li></ul></li></ul></li><li>div-2 prescaler<ul><li>DTC range reduction</li><li>multiphase generator (MPG)</li></ul></li></ul></li></ul><h2 id="background">Background</h2><ul><li>modern wireless transceivers and FMCW radar systems<ul><li>stringent PLL integrated jitter and jitter performance</li><li>lower EVM</li><li>higher position accuracy</li></ul></li><li>frac-N PLLs<ul><li>DTC cancels QN from DSM which controls MMD<ul><li>the INL of DTCs causes periodic patterns --&gt; frac spur</li><li>use dither to mitigate the frac spur<ul><li>strong suppression of the frac spur</li><li>increase random noise --&gt; integrated jitter</li></ul></li></ul></li><li>digital pre-distortion (DPD)<ul><li>without increasing random noise</li><li>long calibration time</li></ul></li></ul></li></ul><p><img src="https://s21.ax1x.com/2024/10/10/pAJHsH0.png" width = "500" alt="Schematic of the proposed DPLL with a pseudo-differential DTC and a cascaded fractional divider." align=center /></p><p><img src="https://s21.ax1x.com/2024/10/10/pAJH6EV.png" width = "500" alt="Conventional single-DTC-based QN cancellation (left), proposed pseudo-differential DTC with even-order INL cancellation (right), and measured INL of different DTCs." align=center /></p><h2 id="conclusion">Conclusion</h2><p><strong>TECH</strong> 65 nm<br /><strong>REF</strong> 100 MHz<br /><strong>OUT</strong> 6.5~7.5 GHz<br /><strong>REF SPUR</strong> -62.5 dBc<br /><strong>FRAC SPUR</strong> -62.1 dBc<br /><strong>POWER</strong> 8.89 mW<br /><strong>RMS JITTER</strong> 143.7 fs<br /><strong>FOM</strong> -247.4 dB<br /></p><h2 id="important-references">Important References</h2><blockquote><p><em>frac-N PLL with DTC with range reduction</em><br />[1] W. Wu et al., “A 14nm Analog Sampling Fractional-N PLL with a Digital-to-Time Converter Range-Reduction Technique Achieving 80fs Integrated Jitter and 93fs at Near-Integer Channels,” ISSCC, pp. 444-445, Feb. 2021.</p><p><em>dither</em><br />[2] S. M. Dartizio et al., “A 76.7fs-lntegrated-Jitter and −71.9dBc In-Band Fractional-Spur Bang-Bang Digital PLL Based on an Inverse-Constant-Slope DTC and FCW Subtractive Dithering,” ISSCC, pp. 3-4, Feb. 2023.<br />[3] Q. Zhang et al., “A Fractional-N Digital MDLL with Injection-Error Scrambling and Background Third-Order DTC Delay Equalizer Achieving −67dBc Fractional Spur,” ISSCC, pp. 226-227, Feb. 2023.<br />[4] C.-R. Ho and M. S.-W. Chen, “ A Fractional-N Digital PLL with Background-Dither-Noise-Cancellation Loop Achieving &lt;-62.5dBc Worst-Case Near-Carrier Fractional Spurs in 65nm CMOS,” ISSCC, pp. 395-395, Feb. 2018.</p><p><em>DPD</em><br />[5] H. Park et al., “A 365fsrms-Jitter and -63dBc-Fractional Spur 5.3GHz-Ring-DCO-Based Fractional-N DPLL Using a DTC Second/Third- Order Nonlinearity Cancelation and a Probability- Density-Shaping ΔΣM,” ISSCC, pp. 442-443, Feb. 2021.<br />[6] Z. Gao et al., “A 2.6-to-4.1GHz Fractional-N Digital PLL Based on a Time-Mode Arithmetic Unit Achieving -249.4dB FoM and -59dBc Fractional Spurs,” ISSCC, pp. 380-381, Feb. 2022.</p><p><em>shift spur by 0.5</em><br />[7] H.-Y. Jan et al., “A Fractional-N PLL for Multiband (0.8-6 GHz) Communications Using Binary-Weighted D/A Differentiator and Offset-Frequency Δ-Σ Modulator,” IEEE JSSC, vol. 45, no. 4, pp. 768 780, Apr. 2010.</p><p><em>pseudo-diff DTC</em><br />[8] A. Ba et al., “A 0.62nJ/b Multi-Standard WiFi/BLE Wideband Digital Polar TX with Dynamic FM Correction and AM Alias Suppression for IoT Applications,” IEEE RFIC, pp. 308-311, Aug. 2018.</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://s21.ax1x.com/2024/10/10/pAJHrBq.png&quot; alt=&quot;Keypoints&quot; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h5 id=&quot;full-citation&quot;&gt;Full Citation&lt;/h5&gt;
+&lt;p&gt;D. Xu e</summary>
+      
+    
+    
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/categories/ISSCC/"/>
+    
+    <category term="2024" scheme="https://papers.robin-ic.fun/categories/ISSCC/2024/"/>
+    
+    
+    <category term="TokyoTech" scheme="https://papers.robin-ic.fun/tags/TokyoTech/"/>
+    
+    <category term="BBPD" scheme="https://papers.robin-ic.fun/tags/BBPD/"/>
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/tags/ISSCC/"/>
+    
+    <category term="DPLL" scheme="https://papers.robin-ic.fun/tags/DPLL/"/>
+    
+    <category term="DTC" scheme="https://papers.robin-ic.fun/tags/DTC/"/>
+    
+    <category term="2024" scheme="https://papers.robin-ic.fun/tags/2024/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ISSCC-2024 10.1 An 8.75GHz Fractional-N Digital PLL with a Reverse-Concavity Variable-Slope DTC Achieving 57.3fsrms Integrated Jitter and −252.4dB FoM</title>
+    <link href="https://papers.robin-ic.fun/papers/1775/"/>
+    <id>https://papers.robin-ic.fun/papers/1775/</id>
+    <published>2024-10-09T14:54:26.000Z</published>
+    <updated>2024-10-24T13:01:51.428Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://s21.ax1x.com/2024/10/09/pAJQG8K.png" alt="Keypoints" /><br /></p><h5 id="full-citation">Full Citation</h5><p>M. Rossoni et al., "<strong>10.1 An 8.75GHz Fractional-N Digital PLL with a Reverse-Concavity Variable-Slope DTC Achieving 57.3fsrms Integrated Jitter and −252.4dB FoM</strong>," 2024 IEEE International Solid-State Circuits Conference (ISSCC), San Francisco, CA, USA, 2024, pp. 188-190, doi: 10.1109/ISSCC49657.2024.10454388.</p><p><a href="https://ieeexplore.ieee.org/document/10454388">IEEE Link</a><br /></p><h2 id="keypoints">Keypoints</h2><ul><li>reverse-concavity variable-slope DTC<ul><li>C_T --&gt; prop. to DTC_code downward concavity</li><li>R_T --&gt; inversely prop. to DTC_code upward concavity<ul><li>compensate the nonlinearity</li><li>unit R is controlled by a V-DAC to tune the upward concavity</li></ul></li><li>noise effect<ul><li>R_T required for is much smaller than output res.</li><li>R_T and V-DAC has negligible thermal noise and power consumption</li></ul></li></ul></li><li>frac-N BB-DPLL<ul><li>coarse RCVS-DTC<ul><li>128-cell</li><li>improve linearity with the complementary concavity</li></ul></li><li>fine VS-DTC<ul><li>narrow range &lt;--&gt; good linearity</li><li>good q-noise</li></ul></li><li>adaptive concavity zeroing (ACZ)<ul><li>compensated concavity &lt;--&gt; zero quadratic term</li><li>extract the sign the DTC_INL : a[k] = e[k] * h[k]</li><li>h[k] = Q[k]^2 ~ |Q[k]| for simplification</li><li>e[k] = dout_BBPD[k]</li></ul></li></ul></li></ul><h2 id="background">Background</h2><ul><li>advanced wireless transceivers<ul><li>high-order modulation schemes</li><li>high-spectral-purity frequency synthesizers</li><li>frac-N PLL with digital-to-time converter (DTC)<ul><li>remove time q-error</li><li>nonlinearity and noise degrade spectral purity</li><li>poor fractional spurs and higher in-band noise</li></ul></li></ul></li><li>DTCs<ul><li>variable-slope DTC (VS-DTC)<ul><li>the most used</li><li>linearity is affected by the slope-dependent propagation delay</li><li>downward concavity</li><li>adding C_fix trades a better INL for higher noise and power</li></ul></li><li>constant-slope DTC (CS-DTC)<ul><li>better linearity</li><li>similar trade-off of linearity and PN/power</li><li>worse power-jitter product</li></ul></li></ul></li></ul><p><img src="https://s21.ax1x.com/2024/10/09/pAJQlU1.png" width = "500" alt="Block diagram of the implemented PLL and the working principle of the adaptive concavity zeroing algorithm." align=center /></p><p><img src="https://s21.ax1x.com/2024/10/09/pAJQ14x.png" width = "500" alt="Issues of DTC-based fractional-N PLLs and the comparison between conventional and reverse-concavity variable-slope DTCs" align=center /></p><h2 id="conclusion">Conclusion</h2><p><strong>TECH</strong> 28 nm<br /><strong>REF</strong> 250 MHz<br /><strong>OUT</strong> 8.75~10.2 GHz<br /><strong>REF SPUR</strong> -69.4 dBc<br /><strong>FRAC SPUR</strong> -63.4 dBc<br /><strong>POWER</strong> 17.5 mW<br /><strong>RMS JITTER</strong> 57.3 fs<br /><strong>FOM</strong> -253.5 dB<br /></p><h2 id="important-references">Important References</h2><blockquote><p><em>frac-N PLL with DTC</em><br />[1] S. M. Dartizio et al., “A 76.7fs-lntegrated-Jitter and −71.9dBc In-Band Fractional-Spur Bang-Bang Digital PLL Based on an Inverse-Constant-Slope DTC and FCW Subtractive Dithering,” ISSCC, pp. 3-4, Feb. 2023.<br /></p><p><em>VS-DTC</em><br />[2] H. Park et al. “A 365fsrms-Jitter and −63dBc-Fractional Spur 5.3GHz-Ring-DCO-Based Fractional-N DPLL Using a DTC Second/Third-Order Nonlinearity Cancelation and a Probability-Density-Shaping ΔΣM,” ISSCC, pp. 442-443, Feb. 2021.<br />[3] A. Santiccioli et al., “Power-Jitter Trade-off Analysis in Digital-to-Time Converters,” Electron. Lett., vol. 53, pp. 306-308, Mar. 2017.<br />[4] W. Wu et al., “A 28-nm 75-fsrms Analog Fractional-N Sampling PLL with a Highly Linear DTC Incorporating Background DTC Gain Calibration and Reference Clock Duty Cycle Correction,” IEEE JSSC, vol. 54, no. 5, pp. 1254–1265, May 2019.<br />[5] D. Xu et al., “A 6.5-to-8GHz Cascaded Dual-Fractional-N Digital PLL Achieving -63.7dBc Fractional Spurs with 50MHz Reference,” IEEE CICC, pp. 1-2, Apr. 2023.<br /></p><p><em>CS-DTC</em><br />[6] J. Ru et al., “A High-Linearity Digital-to-Time Converter Technique: Constant-Slope Charging,” IEEE JSSC, vol. 50, no. 6, pp. 1412-1423, June 2015.</p><p><em>frac-N PLL</em><br />[7] W. Wu et al., “A 14nm Analog Sampling Fractional-N PLL with a Digital-to-Time Converter Range-Reduction Technique Achieving 80fs Integrated Jitter and 93fs at Near- Integer Channels,” ISSCC, pp. 444-445, Feb. 2021.<br />[8] J. Kim et al., “A 104fsrms-Jitter and -61dBc-Fractional Spur 15GHz Fractional-N Subsampling PLL Using a Voltage-Domain Quantization-Error Cancelation Technique,” ISSCC, pp. 448-449, Feb. 2021.</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://s21.ax1x.com/2024/10/09/pAJQG8K.png&quot; alt=&quot;Keypoints&quot; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h5 id=&quot;full-citation&quot;&gt;Full Citation&lt;/h5&gt;
+&lt;p&gt;M. Ross</summary>
+      
+    
+    
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/categories/ISSCC/"/>
+    
+    <category term="2024" scheme="https://papers.robin-ic.fun/categories/ISSCC/2024/"/>
+    
+    
+    <category term="Polimi" scheme="https://papers.robin-ic.fun/tags/Polimi/"/>
+    
+    <category term="BBPD" scheme="https://papers.robin-ic.fun/tags/BBPD/"/>
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/tags/ISSCC/"/>
+    
+    <category term="DPLL" scheme="https://papers.robin-ic.fun/tags/DPLL/"/>
+    
+    <category term="DTC" scheme="https://papers.robin-ic.fun/tags/DTC/"/>
+    
+    <category term="2024" scheme="https://papers.robin-ic.fun/tags/2024/"/>
+    
+    <category term="LC" scheme="https://papers.robin-ic.fun/tags/LC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ISSCC-2024 7.8 A 69.3fs Ring-Based Sampling-PLL Achieving 6.8GHz-14GHz and −54.4dBc Spurs Under 50mV Supply Noise</title>
+    <link href="https://papers.robin-ic.fun/papers/36481/"/>
+    <id>https://papers.robin-ic.fun/papers/36481/</id>
+    <published>2024-10-08T11:13:02.000Z</published>
+    <updated>2024-10-24T13:01:51.428Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://s21.ax1x.com/2024/10/08/pAGc0HA.md.png" alt="Keypoints" /><br /></p><h5 id="full-citation">Full Citation</h5><p>M. A. Khalil et al., "<strong>7.8 A 69.3fs Ring-Based Sampling-PLL Achieving 6.8GHz-14GHz and −54.4dBc Spurs Under 50mV Supply Noise</strong>," 2024 IEEE International Solid-State Circuits Conference (ISSCC), San Francisco, CA, USA, 2024, pp. 138-140, doi: 10.1109/ISSCC49657.2024.10454445.</p><p><a href="https://ieeexplore.ieee.org/document/10454445">IEEE Link</a><br /></p><h2 id="keypoints">Keypoints</h2><ul><li>proposed RO-PLL<ul><li>sampling structure</li><li>high Kpd and wide BW</li></ul></li><li>type-III loop<ul><li>expand frequency range</li><li>suppress supply noise and RO flicker</li></ul></li><li>circuits<ul><li>sampling phase detector (SPD)<ul><li>slope generator</li><li>TH circuit (Cs + Ch)<ul><li>Rs = 60 Ohm</li><li>Cs = 1.2 pF</li></ul></li></ul></li></ul></li><li>high SPD gain and low KT/C noise<ul><li>two integrators<ul><li>GM1-C1 integrator<ul><li>sets the integral path</li><li>make prop. and intg. share the same Vref1</li></ul></li><li>GM2-C2 integrator + NMOS based regulator<ul><li>set the RO supply voltage</li></ul></li></ul></li><li>type-III loop<ul><li>wide continuous tuning range</li><li>expand the frequency tuning range</li><li>suppress supply noise and RO flicker PN</li></ul></li><li>current mirror transconductance amplifiers</li></ul></li><li>a voltage-controlled RO (VCRO) tuning frequency by<ul><li>8-phase with 4 pseudu-differential AC-coupled buffers</li><li>supply voltage</li><li>varactor adjustments biased the gate via Rb</li><li>feed-forward resistors Rx</li></ul></li><li>integer-N divider<ul><li>TSPC div-by-2</li></ul></li></ul><h2 id="background">Background</h2><ul><li>multi-phase clock generation for high-speed serial link transceivers<ul><li>minimal jitter &lt; 100 fs</li><li>multiple sub-rate clock phases</li></ul></li><li>LC-based PLLs<ul><li>large space</li><li>lack of efficiency in generation multiple phases</li><li>vulnerable to EM coupling</li></ul></li><li>RO-based<ul><li>compact footprint</li><li>suitability multi-phase generation</li><li>excessive RO PN</li><li>supply requirement across a wide temperature range</li></ul></li><li>prior investigation : widen RO PN suppression BW<ul><li>ILCM</li><li>extend the BW to 1/6 Fref</li><li>intricate FTL</li></ul></li><li>high Fref</li><li>sampling PLLs</li></ul><p><img src="https://s21.ax1x.com/2024/10/08/pAGcwBd.png" width = "500" alt="Block diagram of the type-III supply-regulated sampling PLL." align=center /></p><h2 id="conclusion">Conclusion</h2><p><strong>TECH</strong> 22 nm FinFET<br /><strong>REF</strong> 812.5 MHz<br /><strong>OUT</strong> 6.8~14 GHz<br /><strong>REF SPUR</strong> -62.2 dBc<br /><strong>POWER</strong> 84.9 mW<br /><strong>RMS JITTER</strong> 69.3 fs<br /><strong>FOM</strong> -243.9 dB<br /></p><h2 id="important-references">Important References</h2><blockquote><p><em>LC-based PLL</em><br />[1] W. Wu et al., “A 28-nm 75-fsrms Analog Fractional-N Sampling PLL With a Highly Linear DTC Incorporating Background DTC Gain Calibration and Reference Clock Duty Cycle Correction,” IEEE JSSC, vol. 54, no. 5, pp. 1254-1265, May 2019.</p><p><em>RO-based PLL</em><br />[2] T. -H. Tsai et al., “A Cascaded PLL (LC-PLL + RO-PLL) with a Programmable Double Realignment Achieving 204fs Integrated Jitter (100kHz to 100MHz) and -72dB Reference Spur,” ISSCC, pp. 376-377, Feb. 2022. [3] C. Hwang et al., “A 188fsrms-Jitter and −243dB-FoMjitter 5.2GHz-Ring-DCO-Based Fractional-N Digital PLL with a 1/8 DTC-Range-Reduction Technique Using a Quadruple-Timing-Margin Phase Selector,” ISSCC, pp. 378-380, Feb. 2022. <em>high-Fref of 1.85GHz</em><br />[4] Y. Jo et al., “A 135fsrms-Jitter 0.6-to-7.7GHz LO Generator Using a Single LC-VCO-Based Subsampling PLL and a Ring-Oscillator-Based Sub-Integer-N Frequency Multiplier,” ISSCC, pp. 76-77, Feb. 2023.</p><p><em>PVT stable</em><br />[5] H. Kim et al., “A Low-Jitter 8-GHz RO-Based ADPLL With PVT-Robust Replica-Based Analog Closed Loop for Supply Noise Compensation,” IEEE JSSC, vol. 57, no. 6, pp. 1712-1722, June 2022. [6] D. Turker et al., “A 7.4-to-14GHz PLL with 54fsrms jitter in 16nm FinFET for integrated RF-data-converter SoCs,” ISSCC, pp. 378-380, Feb. 2018.</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://s21.ax1x.com/2024/10/08/pAGc0HA.md.png&quot; alt=&quot;Keypoints&quot; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h5 id=&quot;full-citation&quot;&gt;Full Citation&lt;/h5&gt;
+&lt;p&gt;M. A</summary>
+      
+    
+    
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/categories/ISSCC/"/>
+    
+    <category term="2024" scheme="https://papers.robin-ic.fun/categories/ISSCC/2024/"/>
+    
+    
+    <category term="PLL" scheme="https://papers.robin-ic.fun/tags/PLL/"/>
+    
+    <category term="RO" scheme="https://papers.robin-ic.fun/tags/RO/"/>
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/tags/ISSCC/"/>
+    
+    <category term="UIUC" scheme="https://papers.robin-ic.fun/tags/UIUC/"/>
+    
+    <category term="SPD" scheme="https://papers.robin-ic.fun/tags/SPD/"/>
+    
+    <category term="2024" scheme="https://papers.robin-ic.fun/tags/2024/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ISSCC-2024 7.4 A 0.027mm2 5.6-7.8GHz Ring-Oscillator-Based Ping-Pong Sampling PLL Scoring 220.3fsrms Jitter and -74.2dBc Reference Spur</title>
+    <link href="https://papers.robin-ic.fun/papers/45281/"/>
+    <id>https://papers.robin-ic.fun/papers/45281/</id>
+    <published>2024-10-07T12:28:56.000Z</published>
+    <updated>2024-10-24T13:01:51.428Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://s21.ax1x.com/2024/10/07/pAGQ2OH.md.png" alt="Keypoints" /><br /></p><h5 id="full-citation">Full Citation</h5><p>Y. Huang, Y. Chen, Z. Yang, R. P. Martins and P. -I. Mak, "<strong>7.4 A 0.027mm2 5.6-7.8GHz Ring-Oscillator-Based Ping-Pong Sampling PLL Scoring 220.3fsrms Jitter and -74.2dBc Reference Spur</strong>," 2024 IEEE International Solid-State Circuits Conference (ISSCC), San Francisco, CA, USA, 2024, pp. 130-132, doi: 10.1109/ISSCC49657.2024.10454291.</p><p><a href="https://ieeexplore.ieee.org/document/10454291">IEEE Link</a><br /></p><h2 id="keypoints">Keypoints</h2><ul><li>dual-path RO-based PLL<ul><li>ping-pong sampling phase detector (PP-SPD)</li><li>implicit Fref doubling behavior</li><li>extend loop BW</li><li>reduce SH delay to Tref/2</li></ul></li><li>separate integral path (I-path)<ul><li>suppress the flicker noise</li><li>constrain the locking point within the high Kpd region</li></ul></li><li>edge correction loop (ECL)<ul><li>correct delay of the ping-pong paths</li><li>adjusting the threshold of the inverter-based REF buffer</li><li>fast locking (&lt;2.5μs)</li></ul></li><li>circuits<ul><li>slope generator + SPD + gm<ul><li>unit-gain buffer (UGB)</li><li>isolate sampling and hold capacitors</li><li>eliminate the charge-sharing effect</li></ul></li><li>T-shape switches<ul><li>mitigate ref feedthrough</li><li>dual-path share the same Vref</li></ul></li><li>three-stage differential RO<ul><li>two sets of varactors array for I/P-path respectively</li></ul></li><li>tunable stacked REF buffer<ul><li>two parallel branches<ul><li>main branch</li><li>scaled assistant branch controlled by the ECL</li></ul></li><li>lowering power consumption</li><li>ground disturbance</li></ul></li></ul></li></ul><h2 id="background">Background</h2><ul><li>RO-based PLL is promising for multi-lane applications<ul><li>small footprint</li><li>wide tuning range</li><li>multi-phase generation</li><li>frequency-pulling resilience</li></ul></li><li>other schemes<ul><li>ILCM / MDLL</li><li>suppress RO PN</li><li>increasing ref spur</li><li>complex calibration</li></ul></li><li>type-I PLL<ul><li>high PD gain<ul><li>wide bandwidth</li><li>good stability maximum 45 degree PM at 1/4 Fref</li></ul></li><li>limited by Fref</li></ul></li><li>ref frequency multiplier<ul><li>relieve BW-stability</li><li>slow digital calibration for duty cycle correction</li></ul></li><li>cascading PLL and delay-locked loop for noise cancellation<ul><li>large PN filtering effect</li><li>high-frequency VCDL --&gt; high power consumption</li><li>require off-chip gain calibration</li></ul></li></ul><p><img src="https://s21.ax1x.com/2024/10/07/pAGQg6e.png" width = "500" alt="The proposed RO-Based PP-S-PLL" align=center /></p><h2 id="conclusion">Conclusion</h2><p><strong>TECH</strong> 65 nm<br /><strong>REF</strong> 100 MHz<br /><strong>OUT</strong> 5.6 ~ 7.8 GHz<br /><strong>REF SPUR</strong> -74.2 dBc<br /><strong>POWER</strong> 16.47 mW<br /><strong>RMS JITTER</strong> 220.3 fs<br /><strong>FOM</strong> -241 dB<br /></p><h2 id="important-references">Important References</h2><blockquote><p><em>type-I PLL</em><br />[3] L. Kong et al., “A 2.4 GHz 4 mW Integer-N Inductorless RF Synthesizer,” IEEE JSSC, vol. 51, no. 3, pp. 626–635, Mar. 2016.</p><p><em>multi-phase ref generation</em><br />[4] A. Khashaba et al., “A low-noise frequency synthesizer using multiphase generation and combining techniques,” IEEE JSSC, vol. 55, no. 3, pp. 592–601, Mar. 2020.</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://s21.ax1x.com/2024/10/07/pAGQ2OH.md.png&quot; alt=&quot;Keypoints&quot; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h5 id=&quot;full-citation&quot;&gt;Full Citation&lt;/h5&gt;
+&lt;p&gt;Y. H</summary>
+      
+    
+    
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/categories/ISSCC/"/>
+    
+    <category term="2024" scheme="https://papers.robin-ic.fun/categories/ISSCC/2024/"/>
+    
+    
+    <category term="PLL" scheme="https://papers.robin-ic.fun/tags/PLL/"/>
+    
+    <category term="RO" scheme="https://papers.robin-ic.fun/tags/RO/"/>
+    
+    <category term="ISSCC" scheme="https://papers.robin-ic.fun/tags/ISSCC/"/>
+    
+    <category term="UMacau" scheme="https://papers.robin-ic.fun/tags/UMacau/"/>
+    
+    <category term="SPD" scheme="https://papers.robin-ic.fun/tags/SPD/"/>
+    
+    <category term="2024" scheme="https://papers.robin-ic.fun/tags/2024/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CICC-2023 A 2.6GHz ΔΣ Fractional-N Bang-Bang PLL with FIR-Embedded Injection-Locking Phase-Domain Low-Pass Filter</title>
+    <link href="https://papers.robin-ic.fun/papers/23542/"/>
+    <id>https://papers.robin-ic.fun/papers/23542/</id>
+    <published>2024-01-11T15:57:12.000Z</published>
+    <updated>2024-10-24T13:01:51.428Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://i0.imgs.ovh/2024/01/11/IjJTD.png" alt="Keypoints" /><br /></p><h5 id="full-citation">Full Citation</h5><p>L. Feng, W. Rhee and Z. Wang, "<strong>A 2.6GHz ΔΣ Fractional-N Bang-Bang PLL with FIR-Embedded Injection-Locking Phase-Domain Low-Pass Filter</strong>," 2023 IEEE Custom Integrated Circuits Conference (CICC), San Antonio, TX, USA, 2023, pp. 1-2, doi: 10.1109/CICC57935.2023.10121264.</p><p><a href="https://ieeexplore.ieee.org/document/10121264">IEEE Link</a><br /></p><h2 id="keypoints">Keypoints</h2><ul><li>DTC-free frac IL-FIR BB-PLL<ul><li>FIR-embedded phase-domain LPF (PDLPF)</li><li>attenuate QN and suppress noise aliasing</li><li>require no NL calibration</li><li>not sensitive to mismatch/NL/supply</li></ul></li><li>implementation<ul><li>FIR-IL in the fb path<ul><li>ILO</li><li>1st-order PLL</li><li>anti-aliasing PDLPF</li><li>reduce area, power and complexity</li></ul></li><li>8-tap FIR in phase domain<ul><li>average QN before injected to ILO</li><li>ensure ILO locking</li></ul></li></ul></li><li>fractional operation<ul><li>DCO --&gt; 4/5 prescaler</li><li>DSM modulate FCW at high-freq</li><li>8-tap FIR phase filter<ul><li>8-phase phase rotator (7 DFFs)</li><li>pulse generator<ul><li>adjustable width and amplitude</li><li>inj strength and BW</li></ul></li><li>pulse-gm-current is summed up</li></ul></li><li>ILO filters QN as PDLPF<ul><li>locked at 600MHz</li><li>BPF BW ~ 5M, Q ~ 60</li></ul></li></ul></li></ul><h2 id="background">Background</h2><ul><li>BB-DPLL enables good frequency generation<ul><li>low complexity</li><li>capacity of modulation</li><li>good in-band PN</li><li>but requires DTC compensate QN<ul><li>require high resolution</li><li>complex calibration for non-lineariy</li><li>vulnerable to supply distrubance</li></ul></li></ul></li><li>DTC-free frac BB-PLL<ul><li>FIR-embedded</li></ul></li></ul><p><img src="https://i0.imgs.ovh/2024/01/12/Ij5rs.png" width = "700" alt="Proposed BBPLL with FIR-IL PDLPF" align=center /></p><h2 id="conclusion">Conclusion</h2><p><strong>TECH</strong> 65 nm<br /><strong>REF</strong> 60 MHz<br /><strong>OUT</strong> 2.2~2.7 GHz<br /><strong>REF SPUR</strong> -78.7 dBc<br /><strong>FRAC SPUR</strong> -59 dBc<br /><strong>POWER</strong> 4.3 mW<br /><strong>RMS JITTER</strong> 1.32 ps<br /><strong>FOM</strong> -231 dB<br /></p><h2 id="important-references">Important References</h2><blockquote><p><em>BBPD-PLL</em><br />[1] S. M. Dartizio et al., "A 68.6fsrms-Total-Integrated-Jitter and 1.56μs-Locking-Time Fractional-N Bang-Bang PLL Based on TypeII Gear Shifting and Adaptive Frequency Switching", ISSCC, pp. 386387, Feb. 2022.</p><p><em>DTC compensation</em><br />[2] H. Park et al., "A 365fsrms-Jitter and -63 dBc-Fractional Spur 5.3GHz-Ring-DCO-Based Fractional-N DPLL Using a DTC Second/Third-Order Nonlinearity Cancelation and a ProbabilityDensity-Shaping ΔΣM", ISSCC, pp. 442-443, Feb. 2021.</p><p><em>anti-aliasing PDLPF</em><br />[3] L. Feng et al., "A Quantization Noise Reduction Method for DeltaSigma Fractional-N PLLs Using Cascaded Injection-Locked Oscillators", IEEE TCAS-II, vol. 69, no. 5, pp. 2448-2452, May 2022.</p><p><em>PLL-based PDLPF</em><br />[4] P. Park et al., "A 2.4GHz Fractional-N Frequency Synthesizer with High-OSR ΔΣ Modulator and Nested PLL", IEEE JSSC, vol. 47, no. 10, pp. 2433-2443, Oct. 2012.<br />[5] M. Osada et al., "An Inductorless Fractional-N PLL Using Harmonic-Mixer-Based Dual Feedback and High-OSR Delta-SigmaModulator with Phase-Domain Filtering", ESSCIRC, pp. 245-248, Sept. 2022.</p><p><em>FIR noise filtering without NL cali</em><br />[6 ]X. Yu et al., "AΔΣ Fractional-N Frequency Synthesizer with Customized Noise Shaping for WCDMA/HSDPA Applications", IEEE JSSC, vol. 44, no. 8, pp. 2193-2201, Aug. 2009.</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i0.imgs.ovh/2024/01/11/IjJTD.png&quot; alt=&quot;Keypoints&quot; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h5 id=&quot;full-citation&quot;&gt;Full Citation&lt;/h5&gt;
+&lt;p&gt;L. Feng, W</summary>
+      
+    
+    
+    
+    <category term="Conferences" scheme="https://papers.robin-ic.fun/categories/Conferences/"/>
+    
+    <category term="2023" scheme="https://papers.robin-ic.fun/categories/Conferences/2023/"/>
+    
+    
+    <category term="PLL" scheme="https://papers.robin-ic.fun/tags/PLL/"/>
+    
+    <category term="CICC" scheme="https://papers.robin-ic.fun/tags/CICC/"/>
+    
+    <category term="BBPD" scheme="https://papers.robin-ic.fun/tags/BBPD/"/>
+    
+    <category term="2023" scheme="https://papers.robin-ic.fun/tags/2023/"/>
+    
+    <category term="FIR" scheme="https://papers.robin-ic.fun/tags/FIR/"/>
+    
+    <category term="THU" scheme="https://papers.robin-ic.fun/tags/THU/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ASSCC-2023 A 12.75-to-16-GHz Spur-Jitter-Joint-Optimization SS-PLL Achieving -94.55-dBc Reference Spur, 31.9-fs Integrated Jitter and -260.1-dB FoM</title>
+    <link href="https://papers.robin-ic.fun/papers/6402/"/>
+    <id>https://papers.robin-ic.fun/papers/6402/</id>
+    <published>2024-01-02T15:00:46.000Z</published>
+    <updated>2024-10-24T13:01:51.428Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://api2.mubu.com/v3/document_image/fc25d61f-397c-4177-a0ec-191632372c3c-216525.jpg" alt="Keypoints" /><br /></p><h5 id="full-citation">Full Citation</h5><p>Y. Li et al., "<strong>A 12.75-to-16-GHz Spur-Jitter-Joint-Optimization SS-PLL Achieving -94.55-dBc Reference Spur, 31.9-fs Integrated Jitter and -260.1-dB FoM</strong>," 2023 IEEE Asian Solid-State Circuits Conference (A-SSCC), Haikou, China, 2023, pp. 1-3, doi: 10.1109/A-SSCC58667.2023.10347983.<br /></p><p><a href="https://ieeexplore.ieee.org/document/10347983">IEEE Link</a><br /></p><h2 id="keypoints">Keypoints</h2><ul><li>improve isolation of the SS-PD<ul><li>small-size common-drain transistor</li><li>regulated narrow pulse generator (R-NPG)<ul><li>pulse width is set by current ratio</li><li>low-noise falling edge independent on delay</li></ul></li></ul></li><li>maintain high gain of the SS-PD<ul><li>large-swing class-F VCO : 4x VDD</li></ul></li></ul><h2 id="background">Background</h2><ul><li>Sub-sampling PLL<ul><li>ultra-low in-band PN due to high PD gain</li><li>nonidealies degrades ref spurs<ul><li>isolated buffer between VCO and SPD (high-power)</li><li>(isolated) iSS-PD (lower gain--&gt; PN++)</li></ul></li></ul></li><li>iSS-PD<ul><li>trade-off between gain and nonidealies<ul><li>large-size : gain++ and PN-- / ref_spur++</li><li>small-size : gain-- and PN++ / ref_spur--</li></ul></li><li>conventional sampling pulse<ul><li>gate delay</li><li>PVT sensitive</li><li>delay dependent noise</li></ul></li></ul></li></ul><p><img src="https://api2.mubu.com/v3/document_image/1202e9c2-0c5c-43b1-a1c4-a221e8d6568a-216525.jpg" width = "700" alt="Overall Architecture of the proposed FN-RSPLL" align=center /></p><h2 id="conclusion">Conclusion</h2><p><strong>TECH</strong> 40 nm<br /><strong>REF</strong> 125 MHz<br /><strong>OUT</strong> 12.75 ~ 16 GHz<br /><strong>REF SPUR</strong> -94.55 dBc<br /><strong>POWER</strong> 9.5 mW<br /><strong>RMS JITTER</strong> 31.9 fs<br /><strong>FOM</strong> -260.1 dB<br /></p><h2 id="important-references">Important References</h2><blockquote><p><em>Isolated Buffer</em><br />[2] X. Gao, et al., "A Low Noise Sub-Sampling PLL in Which Divider Noise is Eliminated and PD/CP Noise is Not Multiplied by N2," IEEE JSSC, vol. 44, no. 12, pp. 3253-3263, Dec. 2009.<br /></p><p><em>Isolated PD</em><br />[4] Z. Yang et al., "16.8 A 25.4-to-29.5GHz 10.2mW Isolated Sub- Sampling PLL Achieving -252.9dB Jitter-Power FoM and -63dBc Reference Spur," ISSCC, pp. 270-272, Feb. 2019.<br />[5] D. -G. Lee, et al., "A Sub-mW 2.4-GHz Active-Mixer-Adopted Sub-Sampling PLL Achieving an FoM of −256 dB," IEEE JSSC, vol. 55, no. 6, pp. 1542-1552, Jun. 2020.<br />[7] Z. Yang, et al., "A 3.3-GHz Integer N-Type-II Sub-Sampling PLL Using a BFSK-Suppressed Push–Pull SS-PD and a Fast-Locking FLL Achieving −82.2-dBc REF Spur and −255-dB FOM," IEEE TVLSI, vol. 30, no. 2, pp. 238-242, Feb. 2022.<br /></p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://api2.mubu.com/v3/document_image/fc25d61f-397c-4177-a0ec-191632372c3c-216525.jpg&quot; alt=&quot;Keypoints&quot; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h5 id=&quot;</summary>
+      
+    
+    
+    
+    <category term="Conferences" scheme="https://papers.robin-ic.fun/categories/Conferences/"/>
+    
+    <category term="2023" scheme="https://papers.robin-ic.fun/categories/Conferences/2023/"/>
+    
+    
+    <category term="PLL" scheme="https://papers.robin-ic.fun/tags/PLL/"/>
+    
+    <category term="ASSCC" scheme="https://papers.robin-ic.fun/tags/ASSCC/"/>
+    
+    <category term="2023" scheme="https://papers.robin-ic.fun/tags/2023/"/>
+    
+    <category term="SS" scheme="https://papers.robin-ic.fun/tags/SS/"/>
+    
+    <category term="class-F" scheme="https://papers.robin-ic.fun/tags/class-F/"/>
+    
+    <category term="IS-CAS" scheme="https://papers.robin-ic.fun/tags/IS-CAS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ESSCIRC-2023 A 4-12.1-GHz Fractional-N Ring Sampling PLL Based on Adaptively-Biased PD-Merged DTC Achieving -37.6± 0.9-dBc Integrated Phase Noise, 261.9-fs RMS Jitter, and -240.6-dB FoM</title>
+    <link href="https://papers.robin-ic.fun/papers/22332/"/>
+    <id>https://papers.robin-ic.fun/papers/22332/</id>
+    <published>2023-11-14T16:04:12.000Z</published>
+    <updated>2024-10-24T13:01:51.428Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://api2.mubu.com/v3/document_image/a4503e72-40d5-4db7-a506-2d7df4f533ce-216525.jpg" alt="Keypoints" /><br /></p><h5 id="full-citation">Full Citation</h5><p>X. Shen et al., "<strong>A 4-12.1-GHz Fractional-N Ring Sampling PLL Based on Adaptively-Biased PD-Merged DTC Achieving -37.6± 0.9-dBc Integrated Phase Noise, 261.9-fs RMS Jitter, and -240.6-dB FoM</strong>," ESSCIRC 2023- IEEE 49th European Solid State Circuits Conference (ESSCIRC), Lisbon, Portugal, 2023, pp. 257-260, doi: 10.1109/ESSCIRC59616.2023.10268691.</p><p><a href="https://ieeexplore.ieee.org/document/10268691">IEEE Link</a><br /></p><h2 id="keypoints">Keypoints</h2><ul><li>Adaptively-Biased Phase-Detector-Merged Digital-to-Time Converter (AB-PD-DTC)<ul><li>analog-domain coefficient multiplication (A-CM)<ul><li>VDAC --&gt; charging current --&gt; tuning gain</li><li>relax DAC resolution for QNC</li><li>reduce power and complexity</li></ul></li><li>DSM --&gt; preset PD sampling starting point --&gt; QNC</li></ul></li><li>PLL BW ~ proportional gain = Kpd<em>Kcco </em>Kv2i /N<ul><li>common current bias Ispd ∝ Icco ∝ fout</li><li>Kpd = Ispd / (2pi * fref * C1)</li><li>Kv2i = 1/Rsc = 1/(4<em>fref</em>Cp)</li><li>BW ∝ 1/Rsc ∝ 1/fref (PVT-constant)</li></ul></li><li>common bias --&gt; local feedback to track variation</li><li>analog bias vs. digital multiplication</li><li>switched-cap --&gt; frequency-dependent --&gt; PVT-constant</li></ul><h2 id="background">Background</h2><ul><li>ROs have wide frequency tuning range (FTR), small area, and free of inductive coupling</li><li>wide frequency tuning range<ul><li>BW varies as wide-range N</li><li>need wide-range DTC to realize fractional operation</li><li>gain sampling PD varies as Fout</li><li>limit to use narrow-band FIR filter</li></ul></li><li>need wide bandwidth to suppress poor phase noise<ul><li>good for phase noise</li><li>bad for stability</li></ul></li></ul><p><img src="https://api2.mubu.com/v3/document_image/b1b2cd64-41ef-4343-a64c-8109796ceaea-216525.jpg" width = "700" alt="Overall Architecture of the proposed FN-RSPLL" align=center /></p><h2 id="conclusion">Conclusion</h2><p><strong>TECH</strong> 40 nm<br /><strong>REF</strong> 100 MHz<br /><strong>OUT</strong> 4 ~ 12.1 GHz<br /><strong>REF SPUR</strong> -47.1 dBc<br /><strong>FRAC SPUR</strong> -49.61 dBc<br /><strong>POWER</strong> 12.8 mW<br /><strong>RMS JITTER</strong> 261.9 fs<br /><strong>FOM</strong> -240.6 dB<br /></p><h2 id="important-references">Important References</h2><blockquote><p><em>wide-BW for reducing RO PN</em><br />[6] H. Park et al., "A 365fsrms-Jitter and -63dBc-Fractional Spur 5.3GHz-Ring-DCO-Based Fractional-N DPLL Using a DTC Second/ Third-Order Nonlinearity Cancelation and a Probability-Density- Shaping ΔΣM," IEEE Int. Solid-State Circuits Conf. (ISSCC) Dig. Tech. Papers, pp. 442-444, Feb. 2021.</p><p><em>FIR filter for fractional operation</em><br />[7] L. Kong and B. Razavi, "A 2.4-GHz RF Fractional-N Synthesizer With BW = 0.25fREF," IEEE Journal of Solid-State Circuits, vol. 53, no. 6, pp. 1707-1718, Jun. 2018.</p><p><em>DAC-DTC and SPD gain variation</em><br />[8] G. Jin, et al., "A 3.3-4.5GHz Fractional-N Sampling PLL with A Merged Constant Slope DTC and Sampling PD in 40nm CMOS," IEEE Radio Frequency Integrated Circuits Symposium (RFIC), pp. 63-66, Jun. 2021.</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://api2.mubu.com/v3/document_image/a4503e72-40d5-4db7-a506-2d7df4f533ce-216525.jpg&quot; alt=&quot;Keypoints&quot; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h5 id=&quot;</summary>
+      
+    
+    
+    
+    <category term="Conferences" scheme="https://papers.robin-ic.fun/categories/Conferences/"/>
+    
+    <category term="2023" scheme="https://papers.robin-ic.fun/categories/Conferences/2023/"/>
+    
+    
+    <category term="PLL" scheme="https://papers.robin-ic.fun/tags/PLL/"/>
+    
+    <category term="RO" scheme="https://papers.robin-ic.fun/tags/RO/"/>
+    
+    <category term="ESSCIRC" scheme="https://papers.robin-ic.fun/tags/ESSCIRC/"/>
+    
+    <category term="2023" scheme="https://papers.robin-ic.fun/tags/2023/"/>
+    
+    <category term="CAS" scheme="https://papers.robin-ic.fun/tags/CAS/"/>
+    
+    <category term="DAC-DTC" scheme="https://papers.robin-ic.fun/tags/DAC-DTC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ASSCC-2022 An Attachable Fractional Divider Transforming an Integer-N PLL Into a Fractional-N PLL with SSC Capability</title>
+    <link href="https://papers.robin-ic.fun/papers/19998/"/>
+    <id>https://papers.robin-ic.fun/papers/19998/</id>
+    <published>2023-09-03T14:38:26.000Z</published>
+    <updated>2024-10-24T13:01:51.424Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://api2.mubu.com/v3/document_image/2b584bad-64da-4499-8da2-622aa8e58db3-216525.jpg" alt="Keypoints" /><br /></p><h5 id="full-citation">Full Citation</h5><p>A. Motozawa, Y. Hiraku, Y. Hirai, N. Hiyama, Y. Imanaka and F. Morishita, "<strong>An Attachable Fractional Divider Transforming an Integer-N PLL Into a Fractional-N PLL with SSC Capability</strong>," 2022 IEEE Asian Solid-State Circuits Conference (A-SSCC), Taipei, Taiwan, 2022, pp. 1-3, doi: 10.1109/A-SSCC56115.2022.9980697.</p><p><a href="https://ieeexplore.ieee.org/document/9980697">IEEE Link</a><br /></p><h2 id="keypoints">Keypoints</h2><ul><li>transform an Int-N PLL into a Frac-N PLL with a frac-DIV to generate FB signal<ul><li>reduce operating frequency by DIV2+DIV8</li><li>INT code generates EN window (INT_coarse)</li><li>EN intermitted signal selects PI input signals (INT_fine)</li><li>PI deals with EDG1 and EDG2 with 1Tvco interval</li></ul></li><li>improve PI linearity by auto-region-keeping (ARK)<ul><li>CMOS PI controls voltage slope by current DACs (2b coarse+3b fine)</li><li>a feedback path to ensure nMOS IN saturation region</li></ul></li></ul><h2 id="background">Background</h2><ul><li>use fractional divider to make a int-N PLL to a frac-N PLL<ul><li>fast migration from existing design</li><li>less design complexity in analog phase detection(TDC/DTC)</li><li>no need of extra digital calibration</li></ul></li><li>transform an Int-N PLL into a Frac-N PLL with a frac-DIV to generate FB<ul><li>need extra frequency information</li><li>not common for every PLLs</li></ul></li></ul><p><img src="https://api2.mubu.com/v3/document_image/a948cf8e-1fb7-461e-86d1-d2ad1fc33f17-216525.jpg" width = "600" alt="Circuit diagram of the proposed PI and its waveform" align=center /></p><h2 id="conclusion">Conclusion</h2><p><strong>TECH</strong> 12 nm<br /><strong>REF</strong> 30 MHz<br /><strong>OUT</strong> 1.5-4.2 GHz<br /><strong>FRAC SPUR</strong> -69.3 dBc<br /><strong>POWER</strong> 3.2 mW<br /><strong>RMS JITTER</strong> 5.99 ps<br /><strong>FOM</strong> -229.5 dB<br /></p><h2 id="important-references">Important References</h2><blockquote><p><em>extra coarse frequency control is needed to generate the frequency information</em><br />[3] Tsung-Kai Kao et al., “ A Wideband Fractional-N Ring PLL with Fractional-Spur Suppression Using Spectrally Shaped Segmentation,” ISSCC 2013:416, 417.</p><p><em>two-step phase interpolation, one PI is in PD, cannot be widely applied to any PLL</em><br />[4] J. Tao et al., “ A 1.6-GHz 3.3-mW 1.5-MHz Wide Bandwidth ∆∑ Fractional-N PLL with a Single Path FIR Phase Noise Filtering, “ ASSCC 2018:215-218.</p><p><em>one time interval of the output clock is directly interpolated in 5b resolution</em><br />[5] T. Saeki et al., “ A 1.3-cycle lock time, non-PLL/DLL clock multiplier based on direct clock cycle interpolation for "clock on demand", “ JSSC 2000 Vol.35, No.11, Nov.: 1581-1590.</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://api2.mubu.com/v3/document_image/2b584bad-64da-4499-8da2-622aa8e58db3-216525.jpg&quot; alt=&quot;Keypoints&quot; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;h5 id=&quot;</summary>
+      
+    
+    
+    
+    <category term="Conferences" scheme="https://papers.robin-ic.fun/categories/Conferences/"/>
+    
+    <category term="2022" scheme="https://papers.robin-ic.fun/categories/Conferences/2022/"/>
+    
+    
+    <category term="PLL" scheme="https://papers.robin-ic.fun/tags/PLL/"/>
+    
+    <category term="RO" scheme="https://papers.robin-ic.fun/tags/RO/"/>
+    
+    <category term="ASSCC" scheme="https://papers.robin-ic.fun/tags/ASSCC/"/>
+    
+    <category term="2022" scheme="https://papers.robin-ic.fun/tags/2022/"/>
+    
+    <category term="Renesas" scheme="https://papers.robin-ic.fun/tags/Renesas/"/>
+    
+    <category term="PI" scheme="https://papers.robin-ic.fun/tags/PI/"/>
+    
+  </entry>
+  
+</feed>
