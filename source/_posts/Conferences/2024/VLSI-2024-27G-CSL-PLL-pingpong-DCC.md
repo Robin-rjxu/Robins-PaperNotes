@@ -68,7 +68,9 @@ S. Kumar, P. Sawakewang, T. Siriburanon and R. B. Staszewski, "**A 25.4-27.5 GHz
   - lower bandwidth
   - precise CM-voltage control
 
+<img src="https://s21.ax1x.com/2024/10/24/pAwnbS1.png" width = "500" alt="detailed of the proposed PP-CSL PLL" align=center />
 
+<img src="https://s21.ax1x.com/2024/10/24/pAwnLy6.png" width = "500" alt="conceptual of the injection locking and the charge-sharing locking" align=center />
 
 ## Conclusion
 

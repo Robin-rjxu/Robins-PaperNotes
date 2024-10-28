@@ -60,7 +60,6 @@ Q. Zhang, S. Su, B. R. Biswas, S. Gupta and M. S. -W. Chen, "**Synthesizable 10-
     - full/half adder
     - large area and power
 
-
 <img src="https://s21.ax1x.com/2024/10/23/pAd5Frd.png" width = "500" alt="Blocks of the proposed STDC" align=center />
 
 <img src="https://s21.ax1x.com/2024/10/23/pAd5EVI.png" width = "500" alt="STDC overview and design challenges" align=center />
