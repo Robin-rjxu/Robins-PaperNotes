@@ -29,7 +29,7 @@ X. Kong, K. Xu, R. B. Staszewski, M. Jian and C. Guo, "**A 9-GHz Subsampling-Cho
   - need rail-to-rail CM-FB to remove CM noise
 - charge-sharing cancellation (CSC)
   - the nonlinearity is mostly from parasitic Cpar and LP C1
-  - swapping the same polarity ΔQ' = C_par (V_n(k-2)
+  - swapping the same polarity ΔQ' = C_par (V_n(k-2) - V_n(k-1))
   - preserved voltage in C_par minimize the charge exchange
 - circuits
   - high chopping rate (Fref/2)
