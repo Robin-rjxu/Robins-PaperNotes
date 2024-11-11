@@ -77,7 +77,6 @@ S. M. Dartizio et al., "**A 59.3fs Jitter and -62.1dBc Fractional-Spur Digital P
   - DTC range reduction
     - only achieve 2x reduction
 
-
 <img src="https://s21.ax1x.com/2024/11/11/pA6xjqe.png" width = "500" alt="Block diagram of the implemented PLL" align=center />
 
 <img src="https://s21.ax1x.com/2024/11/11/pA6xOKO.png" width = "500" alt="Implementation of the circuits" align=center />
