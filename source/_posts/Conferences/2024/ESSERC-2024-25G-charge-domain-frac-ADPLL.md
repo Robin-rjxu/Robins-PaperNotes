@@ -6,7 +6,7 @@ toc: true
 tags:
   - ESSERC
   - 2024
-  - ADPLL
+  - DPLL
   - ADC-PD
   - SPD
   - USTC
