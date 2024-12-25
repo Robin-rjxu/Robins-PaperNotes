@@ -14,7 +14,7 @@ abbrlink: 46814
 date: 2024-12-16 17:12:51
 ---
 
-![Keypoints](https://api2.mubu.com/v3/document_image/216525_5ad0236b-e442-45c1-97c8-960d81157c6a.png) \
+![Keypoints](https://s21.ax1x.com/2024/12/23/pAjpZv9.png) \
 
 ##### Full Citation
 
@@ -69,11 +69,11 @@ Z. Yang, M. Osada, S. Li, Y. Zhu and T. Iizuka, "**A Reference-Sampling PLL with
       - differential multiplexed sampling paths
         - double input load
 
-<img src="https://api2.mubu.com/v3/document_image/216525_f3e34e60-ccd9-4f42-f130-3c4588e0f5b6.png" width = "500" alt="Overall Architecture of Proposed RSPLL" align=center />
+<img src="https://s21.ax1x.com/2024/12/23/pAjpPEV.png" width = "500" alt="Overall Architecture of Proposed RSPLL" align=center />
 
-<img src="https://api2.mubu.com/v3/document_image/216525_b5afab7c-9825-45b9-febd-f470e8a88473.png" width = "500" alt="comparison of the Ref SPD" align=center />
+<img src="https://s21.ax1x.com/2024/12/23/pAjpiNT.png" width = "500" alt="comparison of the Ref SPD" align=center />
 
-<img src="https://api2.mubu.com/v3/document_image/216525_8a7b6956-d601-4df4-f28a-e8edbcc69d3d.png" width = "500" alt="Proposed low-ripple SPD" align=center />
+<img src="https://s21.ax1x.com/2024/12/23/pAjpVgJ.png" width = "500" alt="Proposed low-ripple SPD" align=center />
 
 ## Conclusion
 
